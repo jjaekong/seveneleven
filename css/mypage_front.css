@@ -58,7 +58,7 @@
     width: 10.925vw;
     height: 7.5vw;
     border: 1px solid #fff;
-    background:url('../images/menu/icon_barcodeMore.png') no-repeat 50% 50%;
+    background:url('/images/menu/icon_barcodeMore.png') no-repeat 50% 50%;
     background-size: 4.814vw auto;
 }
 .member_box .detail_box{
@@ -89,7 +89,7 @@
     width: 8.33vw;
     height: 8.33vw;
     border-radius: 50%;
-    background: url('../images/menu/icon_refresh_common.png') no-repeat 50% 50%;
+    background: url('/images/menu/icon_refresh_common.png') no-repeat 50% 50%;
     background-color: #fff;
     background-size: 4.537vw auto;
 }
@@ -119,7 +119,7 @@
 .member_box .member_code dd .btn_codeCopy{
     width: 7.055vw;
     height: 6.555vw;
-    background: url('../images/menu/icon_copy_my.png') 1.944vw 1.48vw;
+    background: url('/images/menu/icon_copy_my.png') 1.944vw 1.48vw;
     background-size: 3.055vw;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -217,7 +217,7 @@
     right: 5.55vw;
     width: 3.888vw;
     height: 5.277vw;
-    background-image: url('../images/icons/store_pin_big.png');
+    background-image: url('/images/icons/store_pin_big.png');
     background-repeat: no-repeat;
     background-size: 3.888vw auto;
 }
@@ -233,7 +233,7 @@
     color:#666;
 }
 .eval_box li.disabled .btn_location{
-    background-image: url('../images/icons/store_pinOff_big.png');
+    background-image: url('/images/icons/store_pinOff_big.png');
 }
 
 /* reward link */
@@ -275,18 +275,18 @@
 .reward_link .lunch{
     color: #f56230;
     border: 1px solid #fedfd4;
-    background-image: url('../images/icons/icon_my_lunch.png');
+    background-image: url('/images/icons/icon_my_lunch.png');
 }
 .reward_link .lunch .tit{
-    background-image: url('../images/icons/txt_arrow_color1.png');
+    background-image: url('/images/icons/txt_arrow_color1.png');
 }
 .reward_link .cafe{
     color: #009c7a;
     border: 1px solid #d9f0eb;
-    background-image: url('../images/icons/icon_my_cafe.png');
+    background-image: url('/images/icons/icon_my_cafe.png');
 }
 .reward_link .cafe .tit{
-    background-image: url('../images/icons/txt_arrow_color2.png');
+    background-image: url('/images/icons/txt_arrow_color2.png');
 }
 .reward_link .num{
     display: block;

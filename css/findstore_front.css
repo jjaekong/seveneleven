@@ -89,7 +89,7 @@
     transform: translateY(-50%);
     width: 5.74vw;
     height: 5.74vw;
-    background: url('../images/findstore/ico_myplace.png') 0 center no-repeat;
+    background: url('/images/findstore/ico_myplace.png') 0 center no-repeat;
     background-size: 3.88vw 3.88vw;
 
 }
@@ -117,7 +117,7 @@ select.select_line{
     font-size: 3.88vw;
     text-align: left;
     color: #666;
-    background: url('../images/findstore/select_down.png') right 2vw center no-repeat;
+    background: url('/images/findstore/select_down.png') right 2vw center no-repeat;
     background-size: 4.62vw 2.4vw;
     -webkit-appearance: none;
 }
@@ -226,28 +226,28 @@ select.select_line{
     background-size: 100%;
 }
 .store_list .icons li.reserv:before{
-    background-image: url('../images/findstore/store_ico_reserv.png');
+    background-image: url('/images/findstore/store_ico_reserv.png');
 }
 .store_list .icons li.cafe:before{
-    background-image: url('../images/findstore/store_ico_cafe.png');
+    background-image: url('/images/findstore/store_ico_cafe.png');
 }
 .store_list .icons li.chicken:before{
-    background-image: url('../images/findstore/store_ico_chicken.png');
+    background-image: url('/images/findstore/store_ico_chicken.png');
 }
 .store_list .icons li.bakery:before{
-    background-image: url('../images/findstore/store_ico_bakery.png');
+    background-image: url('/images/findstore/store_ico_bakery.png');
 }
 .store_list .icons li.lotto:before{
-    background-image: url('../images/findstore/store_ico_lotto.png');
+    background-image: url('/images/findstore/store_ico_lotto.png');
 }
 .store_list .icons li.medicine:before{
-    background-image: url('../images/findstore/store_ico_medicine.png');
+    background-image: url('/images/findstore/store_ico_medicine.png');
 }
 .store_list .icons li.delivery:before{
-    background-image: url('../images/findstore/store_ico_delivery.png');
+    background-image: url('/images/findstore/store_ico_delivery.png');
 }
 .store_list .icons li.pocket:before{
-    background-image: url('../images/findstore/store_ico_pocket.png');
+    background-image: url('/images/findstore/store_ico_pocket.png');
 }
 
 .store_list .btn_wrap{
@@ -266,17 +266,17 @@ select.select_line{
     cursor: pointer;
 }
 .store_list .btn_wrap button.pin{
-    background-image: url('../images/findstore/ico_place.png');
+    background-image: url('/images/findstore/ico_place.png');
 }
 .store_list .btn_wrap button.search{
-    background-image: url('../images/findstore/ico_search.png');
+    background-image: url('/images/findstore/ico_search.png');
     margin-left: 2.77vw;
 }
 .store_list .btn_wrap button.share{
-    background-image: url('../images/findstore/ico_share.png');
+    background-image: url('/images/findstore/ico_share.png');
 }
 .store_list .btn_wrap button.pin.on{
-    background-image: url('../images/findstore/ico_place_on.png');
+    background-image: url('/images/findstore/ico_place_on.png');
 }
 
 .layer_storelabel{
@@ -304,7 +304,7 @@ select.select_line{
     display: inline-block;
     width: 4.44vw;
     height: 4.44vw;
-    background: url('../images/findstore/layer_close.png') 0 0 no-repeat;
+    background: url('/images/findstore/layer_close.png') 0 0 no-repeat;
     background-size: 100%;
     z-index: 1;
     cursor: pointer;
@@ -389,7 +389,7 @@ select.select_line{
     display: inline-block;
     width: 3.24vw;
     height: 3.24vw;
-    background: url('../images/findstore/ico_ipt_search.png') 0 0 no-repeat;
+    background: url('/images/findstore/ico_ipt_search.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .store_search .search_wrap .search_delete{
@@ -398,7 +398,7 @@ select.select_line{
     right: 0.44vw;
     width: 6.1vw;
     height: 6.1vw;
-    background: url('../images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
+    background: url('/images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
     background-size: 100%;
     cursor: pointer;
 }

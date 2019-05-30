@@ -24,7 +24,7 @@
     display:inline-block;
     width: 1.666vw;
     height: 2.685vw;
-    background: url('../images/preorder/icon_preorder_arrow.png');
+    background: url('/images/preorder/icon_preorder_arrow.png');
     background-size: 1.666vw;
     margin-left: 2.77vw;
 }
@@ -249,13 +249,13 @@
     display: inline-block;
     width: 5vw;
     height: 4.351vw;
-    background-image: url('../images/preorder/icon_item_zzim.png');
+    background-image: url('/images/preorder/icon_item_zzim.png');
     background-size: 5vw;
     background-repeat: no-repeat;
     vertical-align: middle;
 }
 .preorder_cont .preorder_list li .btn_zzim.on:before {
-    background-image: url('../images/preorder/icon_item_zzimOn.png');
+    background-image: url('/images/preorder/icon_item_zzimOn.png');
     background-size: 5vw;
 }
 .preorder_cont .preorder_list .nodata {
@@ -278,7 +278,7 @@
     margin: 0 auto 3.612%;
     width: 17.22vw;
     height: 17.22vw;
-    background-image: url('../images/icons/icon_nodata.png');
+    background-image: url('/images/icons/icon_nodata.png');
     background-size: 17.22vw;
 }
 
@@ -503,13 +503,13 @@
 .ui-datepicker-header .ui-datepicker-prev{
     top: 0;
     left: 25.203vw;
-    background: url('../images/preorder/icon_calendar_prev.png') no-repeat 50% 50%;
+    background: url('/images/preorder/icon_calendar_prev.png') no-repeat 50% 50%;
     background-size: 1.574vw;
 }
 .ui-datepicker-header .ui-datepicker-next{
     top: 0;
     right: 25.203vw;
-    background: url('../images/preorder/icon_calendar_next.png') no-repeat 50% 50%;
+    background: url('/images/preorder/icon_calendar_next.png') no-repeat 50% 50%;
     background-size: 1.574vw;
 }
 .ui-datepicker-prev.ui-state-disabled {
@@ -607,11 +607,11 @@
     width: 6.666vw;
     height: 6.666vw;
     font-size: 0;
-    background: url('../images/preorder/icon_preorder_down.png') no-repeat 50% 50%;
+    background: url('/images/preorder/icon_preorder_down.png') no-repeat 50% 50%;
     background-size: 6.666vw auto;
 }
 .preorder_resev li .list_toggle.on{
-    background: url('../images/preorder/icon_preorder_up.png') no-repeat 50% 50%;
+    background: url('/images/preorder/icon_preorder_up.png') no-repeat 50% 50%;
     background-size: 6.666vw auto;
 }
 .preorder_resev li .list_toggle_cont{
@@ -696,22 +696,22 @@
     box-sizing: border-box;
 }
 .preorder_resev li.item_reserv.store .reserv_wrap .tit{
-    background: url('../images/preorder/icon_preorder_reserv01.png') no-repeat 0 50%;
+    background: url('/images/preorder/icon_preorder_reserv01.png') no-repeat 0 50%;
     background-size: 5.277vw auto;
 }
 .preorder_resev li.item_reserv.date .reserv_wrap .tit{
-    background: url('../images/preorder/icon_preorder_reserv02.png') no-repeat 0 50%;
+    background: url('/images/preorder/icon_preorder_reserv02.png') no-repeat 0 50%;
     background-size: 5.277vw auto;
 }
 .preorder_resev li.item_reserv.time .reserv_wrap .tit{
-    background: url('../images/preorder/icon_preorder_reserv03.png') no-repeat 0 50%;
+    background: url('/images/preorder/icon_preorder_reserv03.png') no-repeat 0 50%;
     background-size: 5.277vw auto;
 }
 .preorder_resev li.item_reserv .reserv_wrap .cont .txt_store{
     padding-right: 4.907vw;
     font-family: 'NotoSansKR-Bold-Hestia';
     font-size: 4.166vw;
-    background: url('../images/preorder/icon_preorder_store.png') no-repeat 100% 1vw;
+    background: url('/images/preorder/icon_preorder_store.png') no-repeat 100% 1vw;
     background-size: 3.611vw auto;
     color: #999;
 }

@@ -11,7 +11,7 @@
     box-sizing: border-box;
     background-size: 25.83vw 20.27vw;
     background-repeat: no-repeat;
-    background-image: url('../images/delivery/devbg1.png');
+    background-image: url('/images/delivery/devbg1.png');
     background-position: right 7.5vw bottom 0;
 }
 .dev_link + .dev_link {margin-top: 5.55%;}
@@ -43,13 +43,13 @@
     width: 1.574vw;
     height: 2.5vw;
     padding-left:1.944vw;
-    background: url('../images/icons/txt_arrow_common_w.png') 100% 100%;
+    background: url('/images/icons/txt_arrow_common_w.png') 100% 100%;
     background-size: 1.574vw 2.5vw;
     background-repeat: no-repeat;
 }
 .dev_link.confirm{
     background-color: #f56230;
-    background-image: url('../images/delivery/devbg2.png');
+    background-image: url('/images/delivery/devbg2.png');
 }
 .dev_guide{
     background-color: #f9f9f9;
@@ -110,19 +110,19 @@
     width: 24.44vw;
     height: 22.77vw;
     margin-top: 5.55vw;
-    background-image: url('../images/delivery/ico_userguide1.png');
+    background-image: url('/images/delivery/ico_userguide1.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .dev_guide .step2 .ico{
     width: 25.27vw;
     height: 24.44vw;
-    background-image: url('../images/delivery/ico_userguide2.png');
+    background-image: url('/images/delivery/ico_userguide2.png');
 }
 .dev_guide .step3 .ico{
     width: 22.5vw;
     height: 22.68vw;
-    background-image: url('../images/delivery/ico_userguide3.png');
+    background-image: url('/images/delivery/ico_userguide3.png');
 }
 /* 유의사항 포장 */
 .dev_package{
@@ -175,12 +175,12 @@
     right: 21.01vw;
     padding-left: 7.18%;
     font-size: 3.888vw;
-    background:url('../images/delivery/icon_recent_addr.png') no-repeat 0 50%;
+    background:url('/images/delivery/icon_recent_addr.png') no-repeat 0 50%;
     background-size: 5vw auto;
     color: #009c7a;
 }
 .cont_group .dev_top .btn_recentAddr.disabled{
-    background:url('../images/delivery/icon_recent_addr_dis.png') no-repeat 0 50%;
+    background:url('/images/delivery/icon_recent_addr_dis.png') no-repeat 0 50%;
     background-size: 5vw auto;
     color: #999;
 }
@@ -190,7 +190,7 @@
     right: 0;
     padding-left: 5.18%;
     font-size: 3.888vw;
-    background:url('../images/delivery/icon_addr_list.png') no-repeat 0 50%;
+    background:url('/images/delivery/icon_addr_list.png') no-repeat 0 50%;
     background-size: 3.796vw auto;
     color: #009c7a;
 }
@@ -231,7 +231,7 @@
     width: 19.16vw;
     height: 18.61vw;
     margin-bottom: 4.16%;
-    background: url('../images/delivery/icon_addr_empty.png') 0 0 no-repeat;
+    background: url('/images/delivery/icon_addr_empty.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .addr_box .addr_list{
@@ -310,7 +310,7 @@
     width: 10.9vw;
     height: 7.5vw;
     border: 1px solid #000;
-    background: url('../images/delivery/icon_barcode.png') center center no-repeat;
+    background: url('/images/delivery/icon_barcode.png') center center no-repeat;
     background-size: 5vw 3.05vw;
     box-sizing: border-box;
 }
@@ -342,7 +342,7 @@
     font-size: 3.88vw;
     line-height: 1;
     color: #595959;
-    background: url('../images/delivery/dev_status_arrow.png') right center no-repeat;
+    background: url('/images/delivery/dev_status_arrow.png') right center no-repeat;
     background-size: 1.668vw 2.5vw;
 }
 .devrsv_box .status .text{
@@ -362,7 +362,7 @@
     width: 14.72vw;
     height: 14.72vw;
     margin-right: 3.88vw;
-    background: url('../images/delivery/icon_devend.png') 0 0 no-repeat;
+    background: url('/images/delivery/icon_devend.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .devrsv_box.rsvend .tit{color: #009c7a;}
@@ -378,13 +378,13 @@
 .devrsv_box.devend .tit{color: #333;}
 .devrsv_box.devend dl *{color: #adadad;}
 
-.devrsv_box.rsvend .icon{background-image: url('../images/delivery/icon_rsvend.png');}
-.devrsv_box.packin .icon{background-image: url('../images/delivery/icon_packin.png');}
-.devrsv_box.devprsv .icon{background-image: url('../images/delivery/icon_devprsv.png');}
-.devrsv_box.devstart .icon{background-image: url('../images/delivery/icon_devstart.png');}
-.devrsv_box.devend .icon{background-image: url('../images/delivery/icon_devend.png');}
-.devrsv_box.rsvcancel .icon{background-image: url('../images/delivery/icon_rsvcancel.png');}
-.devrsv_box.paycancel .icon{background-image: url('../images/delivery/icon_paycancel.png');}
+.devrsv_box.rsvend .icon{background-image: url('/images/delivery/icon_rsvend.png');}
+.devrsv_box.packin .icon{background-image: url('/images/delivery/icon_packin.png');}
+.devrsv_box.devprsv .icon{background-image: url('/images/delivery/icon_devprsv.png');}
+.devrsv_box.devstart .icon{background-image: url('/images/delivery/icon_devstart.png');}
+.devrsv_box.devend .icon{background-image: url('/images/delivery/icon_devend.png');}
+.devrsv_box.rsvcancel .icon{background-image: url('/images/delivery/icon_rsvcancel.png');}
+.devrsv_box.paycancel .icon{background-image: url('/images/delivery/icon_paycancel.png');}
 
 /* 택배 배송 현황 */
 .delivery_history {
@@ -538,7 +538,7 @@
     width: 1.574vw;
     height: 2.5vw;
     padding-left: 1.944vw;
-    background: url('../images/icons/txt_arrow_common.png') 100% 100%;
+    background: url('/images/icons/txt_arrow_common.png') 100% 100%;
     background-size: 1.574vw 2.5vw;
     background-repeat: no-repeat;
 }
@@ -624,7 +624,7 @@
     left: -3.51vw;
     width: 1.48vw;
     height: 2.592vw;
-    background: url('../images/icons/txt_arrow_color3.png') no-repeat 50% 50%;
+    background: url('/images/icons/txt_arrow_color3.png') no-repeat 50% 50%;
     background-size: 100%;
     transform: translateY(-50%);
 }
@@ -646,13 +646,13 @@
     background-repeat: no-repeat;
 }
 .step_box li .step01:before{
-    background-image: url('../images/delivery/icon_step_barcode.png');
+    background-image: url('/images/delivery/icon_step_barcode.png');
 }
 .step_box li .step02:before{
-    background-image: url('../images/delivery/icon_step_money.png');
+    background-image: url('/images/delivery/icon_step_money.png');
 }
 .step_box li .step03:before{
-    background-image: url('../images/delivery/icon_step_box.png');
+    background-image: url('/images/delivery/icon_step_box.png');
 }
 .barcode_box{
     margin-top: 8.436%;

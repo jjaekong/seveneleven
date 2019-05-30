@@ -2,41 +2,41 @@
 @font-face {
     font-family: 'roboto-light';
     font-style: normal;    
-    src: url('../fonts/roboto-light.eot');
-    src: url('../fonts/roboto-light.woff');
-    src: url('../fonts/roboto-light.ttf');
+    src: url('/fonts/roboto-light.eot');
+    src: url('/fonts/roboto-light.woff');
+    src: url('/fonts/roboto-light.ttf');
 }
 
 @font-face {
     font-family: 'roboto-bold';
     font-style: normal;    
-    src: url('../fonts/Roboto-Bold.eot');
-    src: url('../fonts/Roboto-Bold.woff');
-    src: url('../fonts/Roboto-Bold.ttf');
+    src: url('/fonts/Roboto-Bold.eot');
+    src: url('/fonts/Roboto-Bold.woff');
+    src: url('/fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Regular-Hestia';
     font-style: normal;    
-    src: url('../fonts/NotoSansKR-Regular-Hestia.eot');
-    src: url('../fonts/NotoSansKR-Regular-Hestia.woff');
-    src: url('../fonts/NotoSansKR-Regular-Hestia.otf');
+    src: url('/fonts/NotoSansKR-Regular-Hestia.eot');
+    src: url('/fonts/NotoSansKR-Regular-Hestia.woff');
+    src: url('/fonts/NotoSansKR-Regular-Hestia.otf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Medium-Hestia';
     font-style: normal;    
-    src: url('../fonts/NotoSansKR-Medium-Hestia.eot');
-    src: url('../fonts/NotoSansKR-Medium-Hestia.woff');
-    src: url('../fonts/NotoSansKR-Medium-Hestia.otf');
+    src: url('/fonts/NotoSansKR-Medium-Hestia.eot');
+    src: url('/fonts/NotoSansKR-Medium-Hestia.woff');
+    src: url('/fonts/NotoSansKR-Medium-Hestia.otf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Thin-Hestia';
     font-style: normal;    
-    src: url('../fonts/NotoSansKR-Thin-Hestia.eot');
-    src: url('../fonts/NotoSansKR-Thin-Hestia.woff');
-    src: url('../fonts/NotoSansKR-Thin-Hestia.otf');
+    src: url('/fonts/NotoSansKR-Thin-Hestia.eot');
+    src: url('/fonts/NotoSansKR-Thin-Hestia.woff');
+    src: url('/fonts/NotoSansKR-Thin-Hestia.otf');
 }
 
 /* 앱 고도화 추가 */
@@ -44,16 +44,16 @@
 @font-face {
     font-family: 'NotoSansKR-Light-Hestia';
     font-style: normal;    
-    src: url('../fonts/NotoSansKR-Light-Hestia.eot');
-    src: url('../fonts/NotoSansKR-Light-Hestia.woff');
-    src: url('../fonts/NotoSansKR-Light-Hestia.otf');
+    src: url('/fonts/NotoSansKR-Light-Hestia.eot');
+    src: url('/fonts/NotoSansKR-Light-Hestia.woff');
+    src: url('/fonts/NotoSansKR-Light-Hestia.otf');
 }
 @font-face {
     font-family: 'NotoSansKR-Bold-Hestia';
     font-style: normal;    
-    src: url('../fonts/NotoSansKR-Bold-Hestia.eot');
-    src: url('../fonts/NotoSansKR-Bold-Hestia.woff');
-    src: url('../fonts/NotoSansKR-Bold-Hestia.otf');
+    src: url('/fonts/NotoSansKR-Bold-Hestia.eot');
+    src: url('/fonts/NotoSansKR-Bold-Hestia.woff');
+    src: url('/fonts/NotoSansKR-Bold-Hestia.otf');
 }
 
 
@@ -90,7 +90,7 @@ input[type="radio"]{
     width: 4.81vw;
     height: 4.81vw;
     margin: 0;
-    background: url('../images/common/bg_radio.png') 0 0 no-repeat;
+    background: url('/images/common/bg_radio.png') 0 0 no-repeat;
     background-size: 100%;
     outline: none;
 }
@@ -102,7 +102,7 @@ input[type="radio"] + label{
 }
 
 input[type="radio"]:checked{
-    background-image: url('../images/common/bg_radio_on.png');
+    background-image: url('/images/common/bg_radio_on.png');
 }
 
 textarea{
@@ -284,10 +284,10 @@ width 1080기준
     font-weight: normal;
 }
 .swiper-autoplay .stop {
-    background-image:url('../images/menu/btn_autostop.png');
+    background-image:url('/images/menu/btn_autostop.png');
 }
 .swiper-autoplay .play {
-    background-image:url('../images/menu/btn_autoplay.png'); 
+    background-image:url('/images/menu/btn_autoplay.png'); 
 }
 .swiper-autoplay button{
     width: 5.555vw;
@@ -332,10 +332,10 @@ width 1080기준
     background-size: 100%;
 }
 .menu_slide .member_box .member_link .btn_mypage{
-    background-image: url('../images/menu/icon_member_my.png');
+    background-image: url('/images/menu/icon_member_my.png');
 }
 .menu_slide .member_box .member_link .btn_mysetting{
-    background-image: url('../images/menu/icon_member_setting.png');
+    background-image: url('/images/menu/icon_member_setting.png');
 }
 .menu_slide .member_box .member_tit {
     padding-top: 4.378%;
@@ -403,7 +403,7 @@ width 1080기준
     width: 13.51vw;
     height: 100%;
     border-left: 1px solid rgba(255, 255, 255, .5);
-    background:url('../images/menu/icon_barcodeMore.png') no-repeat 50% 50%;
+    background:url('/images/menu/icon_barcodeMore.png') no-repeat 50% 50%;
     background-size: 4.814vw auto;
 }
 .menu_slide .member_box .member_cardInfo .detail_box{
@@ -441,7 +441,7 @@ width 1080기준
     width: 8.33vw;
     height: 8.33vw;
     border-radius: 50%;
-    background: url('../images/menu/icon_refresh_common.png') no-repeat 50% 50%;
+    background: url('/images/menu/icon_refresh_common.png') no-repeat 50% 50%;
     background-color: #fff;
     background-size: 4.537vw auto;
 }
@@ -479,7 +479,7 @@ width 1080기준
     right: 8.33%;
     width: 27.4vw;
     height: 29.25vw;
-    background: url('../images/menu/icon_member_login.png') 0 0 no-repeat;
+    background: url('/images/menu/icon_member_login.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .menu_slide .member_box .login_box .tit{
@@ -566,7 +566,7 @@ width 1080기준
 .menu_slide .member_menu .myInfo_box .btn_codeCopy{
     width: 4.055vw;
     height: 5.555vw;
-    background:url('../images/menu/icon_copy.png') 1vw 1vw;
+    background:url('/images/menu/icon_copy.png') 1vw 1vw;
     background-size: 3.055vw;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -603,22 +603,22 @@ width 1080기준
     background-position: 50% 50%;
 }
 .menu_slide .nav_menu ul li button.icon_event:before{
-    background-image: url('../images/menu/icon_nav_menu01.png');
+    background-image: url('/images/menu/icon_nav_menu01.png');
 }
 .menu_slide .nav_menu ul li button.icon_winner:before{
-    background-image: url('../images/menu/icon_nav_menu02.png');
+    background-image: url('/images/menu/icon_nav_menu02.png');
 }
 .menu_slide .nav_menu ul li button.icon_coupon:before{
-    background-image: url('../images/menu/icon_nav_menu03.png');
+    background-image: url('/images/menu/icon_nav_menu03.png');
 }
 .menu_slide .nav_menu ul li button.icon_recomm:before{
-    background-image: url('../images/menu/icon_nav_menu04.png');
+    background-image: url('/images/menu/icon_nav_menu04.png');
 }   
 .menu_slide .nav_menu ul li button.icon_delivery:before{
-    background-image: url('../images/menu/icon_nav_menu05.png');
+    background-image: url('/images/menu/icon_nav_menu05.png');
 }
 .menu_slide .nav_menu ul li button.icon_store:before{
-    background-image: url('../images/menu/icon_nav_menu06.png');
+    background-image: url('/images/menu/icon_nav_menu06.png');
 }
 .menu_slide .nav_menu ul li:nth-child(4),
 .menu_slide .nav_menu ul li:nth-child(5),
@@ -662,16 +662,16 @@ width 1080기준
 .menu_bottom .icon{position:relative;float:left;width:20%;height:13.888vw;margin:0;background-position: center 2.6851vw;background-repeat: no-repeat;font-size:3.0555vw;color:#666;box-sizing:border-box}
 .menu_bottom .icon.on > span {color:#009c7a}
 
-.menu_bottom .icon_home{background-image:url('../images/menu/bottom/icon_home.png');background-size:4.7222vw;}
-.menu_bottom .icon_home.on {background-image:url('../images/menu/bottom/icon_homeOn.png');}
-.menu_bottom .icon_reserv{background-image:url('../images/menu/bottom/icon_reserv.png');background-size:5vw;}
-.menu_bottom .icon_reserv.on{background-image:url('../images/menu/bottom/icon_reservOn.png');}
-.menu_bottom .icon_con{background-image:url('../images/menu/bottom/icon_con.png');background-size:4.537vw;}
-.menu_bottom .icon_con.on{background-image:url('../images/menu/bottom/icon_conOn.png');}
-.menu_bottom .icon_reward{background-image:url('../images/menu/bottom/icon_reward.png');background-size:5vw;}
-.menu_bottom .icon_reward.on{background-image:url('../images/menu/bottom/icon_rewardOn.png');}
-.menu_bottom .icon_allmore{background-image:url('../images/menu/bottom/icon_allmore.png');background-size:5vw;}
-.menu_bottom .icon_allmore.on{background-image:url('../images/menu/bottom/icon_allmoreOn.png');}
+.menu_bottom .icon_home{background-image:url('/images/menu/bottom/icon_home.png');background-size:4.7222vw;}
+.menu_bottom .icon_home.on {background-image:url('/images/menu/bottom/icon_homeOn.png');}
+.menu_bottom .icon_reserv{background-image:url('/images/menu/bottom/icon_reserv.png');background-size:5vw;}
+.menu_bottom .icon_reserv.on{background-image:url('/images/menu/bottom/icon_reservOn.png');}
+.menu_bottom .icon_con{background-image:url('/images/menu/bottom/icon_con.png');background-size:4.537vw;}
+.menu_bottom .icon_con.on{background-image:url('/images/menu/bottom/icon_conOn.png');}
+.menu_bottom .icon_reward{background-image:url('/images/menu/bottom/icon_reward.png');background-size:5vw;}
+.menu_bottom .icon_reward.on{background-image:url('/images/menu/bottom/icon_rewardOn.png');}
+.menu_bottom .icon_allmore{background-image:url('/images/menu/bottom/icon_allmore.png');background-size:5vw;}
+.menu_bottom .icon_allmore.on{background-image:url('/images/menu/bottom/icon_allmoreOn.png');}
 .menu_bottom .icon_name{width:100%;position:absolute;bottom:0.833vw;left:0%;}
 .menu_bottom.hide {visibility: hidden;}
 /* lpot */
@@ -704,7 +704,7 @@ width 1080기준
     right:1.9%;
     border-radius:50%;
     background-color:rgba(255, 255, 255, .8);
-    background-image: url('../images/icons/icon_top.png');
+    background-image: url('/images/icons/icon_top.png');
     background-size: 4.44vw auto;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -735,7 +735,7 @@ width 1080기준
 .top_bar_back .btn_back{
     overflow: hidden;
     width: 13.518vw;
-    background:url('../images/menu/icon_back.png') no-repeat 50% 50%;
+    background:url('/images/menu/icon_back.png') no-repeat 50% 50%;
     background-size:2.222vw;
     font-size: 0;
 }
@@ -760,14 +760,14 @@ width 1080기준
     top: 0;
     right: 0;
     width: 16.666vw;
-    background:url('../images/menu/icon_home.png') no-repeat 50% 50%;
+    background:url('/images/menu/icon_home.png') no-repeat 50% 50%;
     background-size:5.37vw;
     font-size: 0;
 }
 .btn_sns_share {
     width: 9.44vw;
     height: 9.44vw;
-    background:url('../images/icons/icon_share.png') no-repeat 1.666vw 50%;
+    background:url('/images/icons/icon_share.png') no-repeat 1.666vw 50%;
     background-color: rgba(255,255,255,.8);
     background-size:5.092vw auto;
     border: 1px solid #999;
@@ -836,11 +836,11 @@ width 1080기준
     width: 7.129vw;
     height: 6.1111vw;
     margin-top: 8.78%;
-    background: url('../images/preorder/icon_detail_zzim.png') no-repeat center center;
+    background: url('/images/preorder/icon_detail_zzim.png') no-repeat center center;
     background-size: 7.129vw;
 }
 .btn_fixed .btn_zzim.on:before{
-    background: url('../images/preorder/icon_detail_zzimOn.png') no-repeat center center;
+    background: url('/images/preorder/icon_detail_zzimOn.png') no-repeat center center;
     background-size: 7.129vw;  
 }
 .btn_fixed .btn_common{
@@ -882,7 +882,7 @@ width 1080기준
     width: 2.87vw;
     height: 2.87vw;
     margin-left: 1.666vw;
-    background-image: url('../images/icons/icon_list_more.png');
+    background-image: url('/images/icons/icon_list_more.png');
     background-size: 2.87vw;
     background-repeat: no-repeat;
 }
@@ -933,7 +933,7 @@ width 1080기준
     left: 0;
     width: 5.7407vw;
     height: 5.7407vw;
-    background-image: url('../images/common/icon_common_check.png');
+    background-image: url('/images/common/icon_common_check.png');
     background-size: 5.7407vw;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -941,7 +941,7 @@ width 1080기준
 .check_wrap .checkBox>:checked + i:before{
     content:'';
     position: absolute;
-    background-image: url('../images/common/icon_common_checkOn.png');
+    background-image: url('/images/common/icon_common_checkOn.png');
     background-size: 5.7407vw;
     box-sizing: border-box;
 }
@@ -968,7 +968,7 @@ width 1080기준
     border:1px solid #666;
     border-radius: 0.555vw;
     vertical-align: middle;
-    background: #fff url('../images/preorder/icon_amount.png') no-repeat;
+    background: #fff url('/images/preorder/icon_amount.png') no-repeat;
     background-size: 5vw auto;
 }
 .amount_box .btn_amount.minus{
@@ -993,7 +993,7 @@ width 1080기준
 }
 .check_wrap.common .checkBox>:checked + i:before{
     border: none;
-    background-image: url('../images/common/icon_common_checkOn2.png');
+    background-image: url('/images/common/icon_common_checkOn2.png');
     background-size: 100%;
 }
 
@@ -1173,7 +1173,7 @@ h5.h5_tit + .tab_nav {
     height: 4.444vw;
     margin-top: -3%;
     margin-right: 1.389vw;
-    background: url('../../images/popup/icon_cardDel.png');
+    background: url('/images//popup/icon_cardDel.png');
     background-size: 4.444vw;
     vertical-align: middle;
 }
@@ -1216,7 +1216,7 @@ h5.h5_tit + .tab_nav {
     right: 5.55vw;
     width: 10.37vw;
     height: 11.11vw;
-    background: url('../images/sevencard/icon_Tadd_logo.png') 0 0 no-repeat;
+    background: url('/images/sevencard/icon_Tadd_logo.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .modal_box .modal_inner .tcard_wrap .card_field{
@@ -1295,7 +1295,7 @@ h5.h5_tit + .tab_nav {
 .cont_area h3 .is_block {display:block;}
 .cont_area .tit_area {position: relative;padding-left:5.555%;line-height: 8.7037vw;}
 .cont_area .tit_area h3 {font-weight: normal;font-family: 'NotoSansKR-Light-Hestia';font-size: 6.944vw;}
-.cont_area .tit_area h3 .ico_slash{display:inline-block;width:1.944vw;height:3.611vw;margin: 0 1.2%;background:url('../images/icons/icon_tit_slash.png'); background-size:100%;vertical-align: 0.833vw}
+.cont_area .tit_area h3 .ico_slash{display:inline-block;width:1.944vw;height:3.611vw;margin: 0 1.2%;background:url('/images/icons/icon_tit_slash.png'); background-size:100%;vertical-align: 0.833vw}
 .cont_area .tit_area h3.long {width: 73.529%;word-break:keep-all;word-wrap: break-word}
 .cont_area .tit_area h3.wide {width: 94.45%;}
 .cont_area .tit_area h3.small {font-size: 6.11vw; line-height: 1.33;}
@@ -1306,7 +1306,7 @@ h5.h5_tit + .tab_nav {
     width: 1.574vw;
     height: 2.5vw;
     padding-left:1.944vw;
-    background: url('../images/icons/txt_arrow_common.png') 100% 100%;
+    background: url('/images/icons/txt_arrow_common.png') 100% 100%;
     background-size: 1.574vw 2.5vw;
     background-repeat: no-repeat;
 }
@@ -1329,7 +1329,7 @@ h5.h5_tit + .tab_nav {
     right: 1.11%;
     width: 1.574vw;
     height: 2.5vw;
-    background: url('../images/icons/txt_arrow_common.png') 100% 100%;
+    background: url('/images/icons/txt_arrow_common.png') 100% 100%;
     background-size: 1.574vw 2.5vw;
     background-repeat: no-repeat;
     -webkit-transform:rotate(90deg);
@@ -1423,7 +1423,7 @@ table.tbtype1.tdL td{
     width: 1.574vw;
     height: 2.5vw;
     padding-left:1.944vw;
-    background: url('../images/icons/txt_arrow_common.png') 100% 100%;
+    background: url('/images/icons/txt_arrow_common.png') 100% 100%;
     background-size: 1.574vw 2.5vw;
     background-repeat: no-repeat;
 }
@@ -1512,38 +1512,38 @@ table.tbtype1.tdL td{
     width:12.5vw;
     height: 12.5vw;
     border-radius: 50%;
-    background: url('../images/reward/stamp_lunch_off.png') center center no-repeat;
+    background: url('/images/reward/stamp_lunch_off.png') center center no-repeat;
     background-size: 100%;
 }
 
 /* lunch */
 .lunch .stp_icons li .ico{
-    background-image: url('../images/reward/stamp_lunch_off.png');
+    background-image: url('/images/reward/stamp_lunch_off.png');
 }
 .lunch .stp_icons li .ico.on{
-    background-image: url('../images/reward/stamp_lunch_on.png');
+    background-image: url('/images/reward/stamp_lunch_on.png');
 }
 .lunch .stp_icons li .ico.gift.on{
-    background-image: url('../images/reward/stamp_lunch_gift_on.png');
+    background-image: url('/images/reward/stamp_lunch_gift_on.png');
 }
 
 /* cafe */
 .cafe .stp_icons li .ico{
-    background-image: url('../images/reward/stamp_cafe_off.png');
+    background-image: url('/images/reward/stamp_cafe_off.png');
 }
 .cafe .stp_icons li .ico.on{
-    background-image: url('../images/reward/stamp_cafe_on.png');
+    background-image: url('/images/reward/stamp_cafe_on.png');
 }
 .cafe .stp_icons li .ico.gift.on{
-    background-image: url('../images/reward/stamp_cafe_gift_on.png');
+    background-image: url('/images/reward/stamp_cafe_gift_on.png');
 }
 
 /* ico 공통 */
 .stp_icons li .ico.refresh{
-    background-image: url('../images/reward/stamp_refresh.png');
+    background-image: url('/images/reward/stamp_refresh.png');
 }
 .stp_icons li .ico.gift{
-    background-image: url('../images/reward/stamp_gift_off.png');
+    background-image: url('/images/reward/stamp_gift_off.png');
 }
 .stp_icons li .ico.on{
     background-color: #fff;
@@ -1608,16 +1608,16 @@ table.tbtype1.tdL td{
     background-size: 100%;
 }
 .empty_box .ico.lunch{
-    background-image: url('../images/icons/icon_empty_lunch.png');
+    background-image: url('/images/icons/icon_empty_lunch.png');
 }
 .empty_box .ico.cafe{
-    background-image: url('../images/icons/icon_empty_cafe.png');
+    background-image: url('/images/icons/icon_empty_cafe.png');
 }
 .empty_box .ico.stamp{
-    background-image: url('../images/icons/icon_empty_stamp.png');
+    background-image: url('/images/icons/icon_empty_stamp.png');
 }
 .empty_box .ico.nodata{
-    background-image: url('../images/icons/icon_nodata.png');
+    background-image: url('/images/icons/icon_nodata.png');
 }
 .empty_box .tit{
     margin-bottom: 0.83%;

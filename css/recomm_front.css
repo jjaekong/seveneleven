@@ -34,12 +34,12 @@
 }
 .recomm_slider .swiper-button-prev{
     left: 5.55vw;
-    background: url('../images/recomm/icon_swiper_prev.png') no-repeat;
+    background: url('/images/recomm/icon_swiper_prev.png') no-repeat;
     background-size: 6.944vw;
 }
 .recomm_slider .swiper-button-next {
     right: 5.55vw;
-    background: url('../images/recomm/icon_swiper_next.png') no-repeat;
+    background: url('/images/recomm/icon_swiper_next.png') no-repeat;
     background-size: 6.944vw;
 }
 .recomm_slider .swiper-button-next.swiper-button-disabled, 
@@ -84,7 +84,7 @@
     transform: translate(-50%, -50%);
     width: 21.111vw;
     height: 21.111vw;
-    background: url('../images/recomm/icon_video_play.png') no-repeat 50% 50%;
+    background: url('/images/recomm/icon_video_play.png') no-repeat 50% 50%;
     background-size: 19.166vw;
 }
 .recomm_item_box .txt_box{

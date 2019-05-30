@@ -49,7 +49,7 @@
     display: inline-block;
     width: 2.5vw;
     height: 1.66vw;
-    background: url('../images/reward/btn_layer_arrow.png') center center no-repeat;
+    background: url('/images/reward/btn_layer_arrow.png') center center no-repeat;
     background-size: 100%;
 }
 
@@ -133,7 +133,7 @@
     width: 4.81vw;
     height: 4.81vw;
     margin-right: 2.22%;
-    background: url('../images/reward/ico_stamp.png') center center no-repeat;
+    background: url('/images/reward/ico_stamp.png') center center no-repeat;
     background-size: 100%;
 }
 
@@ -153,7 +153,7 @@
     width: 86%;
     height: 1px;
     transform: translateX(-50%);
-    background: url('../images/reward/stamp_dot.png') 0 0 repeat-x;
+    background: url('/images/reward/stamp_dot.png') 0 0 repeat-x;
     background-size: 7px;
 }
 
@@ -408,7 +408,7 @@
     display: inline-block;
     width: 3.24vw;
     height: 3.24vw;
-    background: url('../images/findstore/ico_ipt_search.png') 0 0 no-repeat;
+    background: url('/images/findstore/ico_ipt_search.png') 0 0 no-repeat;
     background-size: 100%;
 }
 .winner_search .search_wrap .search_delete{
@@ -417,7 +417,7 @@
     right: 18.01vw;
     width: 6.1vw;
     height: 6.1vw;
-    background: url('../images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
+    background: url('/images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
     background-size: 100%;
     cursor: pointer;
 }
@@ -453,7 +453,7 @@
     width: 3.425vw;
     height: 3.425vw;
     margin-left: 7px;
-    background: url('../images/reward/btn_stamp.png') no-repeat 100% 50%;
+    background: url('/images/reward/btn_stamp.png') no-repeat 100% 50%;
     background-size: 100%;
 }
 .reward_box{
@@ -551,6 +551,6 @@
     margin: 0 auto 3.612%;
     width: 17.22vw;
     height: 17.22vw;
-    background-image: url('../images/icons/icon_nodata.png');
+    background-image: url('/images/icons/icon_nodata.png');
     background-size: 17.22vw;
 }

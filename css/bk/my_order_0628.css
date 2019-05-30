@@ -76,7 +76,7 @@
 .deatil-list.myorder .payment-list > div p.amount span{font-weight:400;}
 .deatil-list.myorder .payment-list > div p.total{font-family:'notokr-medium';}
 .deatil-list.myorder .payment-list > div p.total span{font-weight:500;}
-.deatil-list.myorder .payment-list > div p.amount-p{padding-left:4.8148vw; font-family:'Roboto'; font-weight:300; background:url(../images/myorder/bg_list_point.png) no-repeat 0 48%; background-size:1.8518vw 2.037vw;}
+.deatil-list.myorder .payment-list > div p.amount-p{padding-left:4.8148vw; font-family:'Roboto'; font-weight:300; background:url(/images/myorder/bg_list_point.png) no-repeat 0 48%; background-size:1.8518vw 2.037vw;}
 .deatil-list.myorder .payment-list > div p.amount-p span{color:#000;}
 .deatil-list.myorder .payment-list > div p.lpoint{color:#17a3fb;}
 .deatil-list.myorder .payment-list > div p.okcashbag{color:#fc525b;}
