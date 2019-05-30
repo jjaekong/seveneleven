@@ -125,11 +125,23 @@
 							</div>
 						</div>
 					</div>
-					<!-- agreebox -->
+                    <!-- agreebox -->
+                    
+                    <!-- #개선2019: CO-002-01 -->
+                    <!-- 버튼 클릭 시 on 클래스 제어: click(.pay-type button): 315행 -->
+                    <div class="pay-type">
+                        <h5>결제수단</h5>
+                        <ul>
+                            <li><button type="button" class="lpay on"><p><img src="/images/logo_lpay.png" alt="엘페이"></p><span>간편 결제</span></button></li>
+                            <li><button type="button" class="card"><p><img src="/images/ico_card.png" alt="신용카드"></p><span>신용카드</span></button></li>
+                            <li><button type="button" class="mobile"><p><img src="/images/ico_mobile.png" alt="휴대폰결제"></p><span>휴대폰결제</span></button></li>
+                        </ul>
+                    </div>
+
 					<!-- btnbox -->
 					<div class="btnbox btn2 fix">
-						<a class="btn-type4" href="javascript:void(0);">신용카드 결제</a>
-						<a class="btn-type5" href="javascript:void(0);">휴대폰 결제</a>
+						<a class="btn-type4" href="javascript:void(0);" style="width:100%;">신용카드 결제</a>
+						<!-- <a class="btn-type5" href="javascript:void(0);">휴대폰 결제</a> -->
 					</div>
 					<!-- //btnbox -->
 				</div>
@@ -299,7 +311,13 @@
 		// 카드번호 유효성 체크 후 포인트 조회 클릭시 적용
 		$('.btn-next-step').on('click' , function () {
 			$(this).closest('.pay-tbl').find('.hidden-form').slideDown(200);
-		});
+        });
+        
+        // #개선2019: CO-002-01 / 결제수단 클릭 시, on 클래스 토글
+        $(document).on('click', '.pay-type button', function () {
+            $('.pay-type button').removeClass('on')
+            $(this).addClass('on')
+        });
 	</script>
 
 </body>

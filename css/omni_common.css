@@ -650,3 +650,18 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .banner-bacode .barcode-area{padding-top:3.7962vw; width:70.3703vw; margin:0 auto;}
 .banner-bacode .barcode-area a{display:block; position:relative;}
 .banner-bacode .barcode-area a .icon-big{position:absolute; top:12.8703vw; left:50%; margin-left:17.3148vw; width:2.4074vw; height:2.4074vw; background: url(/images/icon_search_plus.png) no-repeat 0 0; background-size:2.4074vw 2.4074vw;}
+
+/* 세븐앱 개선 2019 추가 */
+/* 결제하기: 결제수단 */
+.pay-type { border-top: 1px solid #c0c0c0; }
+.pay-type h5 { padding-left: 3.7037vw; padding-right: 3.7037vw; height: 13.3333333333vw; font-size: 3.7037037037vw; background-color: #ececec; display: flex; align-items: center; }
+.pay-type ul { padding-top: 4.53703703704vw; padding-left: 3.7037vw; padding-right: 3.7037vw; background: #fff; display: flex; justify-content: space-around; }
+.pay-type ul li { width: 28.5185185185vw; }
+.pay-type ul li button { width: 100%; height: 16.6666666667vw; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f8f8f8; border: 1px solid #ececec; }
+.pay-type ul li button p { display: flex; align-items: center; justify-content: center; height: 5.92592592593vw; }
+.pay-type ul li button span { margin-top: 1.48148148148vw; text-align: center; font-size: 3.33333333333vw; color: #5f5d5e; }
+.pay-type ul li button.lpay p { align-items: flex-end; }
+.pay-type ul li button.lpay p img { height: 5.18518518519vw; }
+.pay-type ul li button.card p img { height: 3.88888888889vw; }
+.pay-type ul li button.mobile p img { height: 100%; }
+.pay-type ul li button.on { background: #fff; border-color: #000; }
