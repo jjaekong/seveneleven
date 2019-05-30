@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>세븐일레븐 모바일</title>
+	<!-- 공통 css -->    
+    <link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+    <title>세븐일레븐</title>
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/ui.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap sub bg-gray1"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+		<!-- contents -->
+		<div class="contents">
+			<div class="page-top fix">
+                <a class="btn-back" href="javascript:void(0);" title="뒤로"></a>
+                <span class="title">받는 사람 선택</span>
+            </div>
+            <!-- buy-contents -->
+            <div class="buy-contents">
+                <!-- buy-itembox box-type1 -->
+                <div class="buy-itembox box-type1">
+                    <div class="box-type1-inner">
+                        <div class="item-type6">
+                            <div class="item-img">
+                                <img src="../images/@temp_424x424.jpg" alt="" />
+                            </div>
+                            <div class="item-text">
+                                <div class="item-company">나뚜르</div>
+                                <div class="item-name">자연의 딸기컵</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //buy-itembox box-type1 -->
+                <!-- phone-info -->
+                <div class="phone-info">
+                    <div class="sander fix">
+                        <div class="title fl">내 휴대전화 번호</div>
+                        <div class="my-number fr">010.9231.2835</div>
+                    </div>
+                    <div class="receiver-cont">
+                        <div class="receiver">
+                            <div class="title">받는 사람 </div>
+                            <div class="sub-text">받는사람의 휴대전화번호를 입력하세요.</div>
+                            <div class="total"><span class="current">1</span>/10</div>
+                            <div class="phone-writebox fix">
+                                <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="휴대전화번호 입력" />
+                                <a class="btn-type6 btn-enter" href="javascript:void(0);">주소록에서 선택</a>
+                            </div>
+                        </div>
+                        <div class="receiver-list">
+                            <ol>
+                                <!-- 번호입력시 li태그가 내림차순으로 하나씩 생김 -->
+                                <li>
+                                    <span class="order">1</span>
+                                    <span class="phone-num">010.1234.5678</span>
+                                    <a class="btn-del" href="javascript:void(0);"><img src="../images/btn_x.png" alt="삭제" /></a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- //phone-info -->
+                <!-- bot-fixed -->
+                <div class="bot-fixed">
+                    <div class="inner">
+                        <div class="text">
+                            이상품은 <br>
+                            발행일로부터 <span class="text-green">90일</span>내 사용가능합니다.
+                        </div>
+                        <a class="btn-type4" href="javascript:void(0);">결제금액 확인</a>
+                    </div>
+                </div>
+                <!-- //bot-fixed -->
+            </div>
+            <!-- //buy-contents -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //wrap -->
+	<div class="shadow"></div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var phoneNum = $('.phone-writebox input[type=number]');
+            if ( phoneNum.val() == "" ) {
+                phoneNum.keypress(function (e) {
+                    $('.btn-enter').addClass('btn-regist').text('등록');
+                    /* 20170612 삭제
+                    $('.btn-regist').on('click' , function(){
+                        $('.buy-contents').css({
+                            'height' : $(window).height()
+                        });
+                        var _this = $('.phone-info');
+                        var fixH = $('.page-top').outerHeight() - 1;
+                        var _thisTop = _this.offset().top;
+                        $('html, body').animate({
+                            scrollTop: _thisTop  - fixH
+                        }, 450);
+                    });*/
+
+                });
+            }
+            /* 20170612 추가 start */
+            phoneNum.on('click' ,function () {
+                $('.buy-contents').css({
+                    'height' : $(window).height()
+                });
+                var _this = $('.phone-info');
+                var fixH = $('.page-top').outerHeight() - 1;
+                var _thisTop = _this.offset().top;
+                $('html, body').animate({
+                    scrollTop: _thisTop  - fixH
+                }, 450);
+            });
+            /* 20170612 추가 end */
+        });
+    </script>
+</body>
+</html>

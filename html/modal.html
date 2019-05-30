@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>세븐일레븐 모바일</title>
+	<link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+	<script src="../js/check_touch.js"></script>
+	<script src="../js/ui.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+		<style type="text/css">
+			.wrap ul li a{display:inline-block;padding:2vw 0;}
+		</style>
+		<div style="padding:5.5555vw;">
+			<div style="font-size:3.7037vw;font-family:'notokr-medium';">모달</div>
+			<ul style="padding-top:3.7037vw;">
+				<li><a href="javascript:openModal('modalPhoneNoti');">1. 받는 사람의 휴대전화번호를...</a></li>
+				<li><a href="javascript:openModal('modalReject');">2. 수신거부 안내</a></li>
+				<li><a href="javascript:openModal('modalAgree1');">3. 개인정보 수집 및 이용 동의</a></li>
+				<li><a href="javascript:openModal('modalAgree2');">4. 주문 상품의 구매 조건 확인 및 결제 진행</a></li>
+				<li><a href="javascript:openModal('modalAgree3');">5. 개인정보 공유 미동의</a></li>
+				<li><a href="javascript:openModal('modalAgree4');">6. 유효기간 연장 규정 동의</a></li>
+				<li><a href="javascript:openModal('modalAgree5');">7. 유효 기간이 00일 연장되었습니다.</a></li>
+				<li><a href="javascript:openModal('modalAgree6');">8. 구매취소 규정 동의 01</a></li>
+				<li><a href="javascript:openModal('modalAgree7');">9. 구매취소 규정 동의 02</a></li>
+				<li><a href="javascript:openModal('modalApply');">10. 구매취소 승인</a></li>
+				<li><a href="javascript:openModal('modalPraivateAgree');">11. 개인정보 수집 및 이용동의</a></li>
+				<li><a class="btn-useLpoint" href="javascript:openModal('modalLpointUse');" >12. L-point사용( 관련 스크립트와 함께 적용해야 함)</a></li>
+				<li><a class="btn-useOKcashbag" href="javascript:openModal('modalOkcashbagUse');">13. ok캐시백 사용( 관련 스크립트와 함께 적용해야 함)</a></li>
+				<li><a href="javascript:openModal('modalProduct');">14. 제품 사용하기_쿠폰 일반상품(바코드 나옴) 01</a></li>
+				<li><a href="javascript:openModal('modalProduct2');">15. 제품 사용하기_쿠폰 할인상품(바코드 나옴) 02</a></li>
+				<li><a href="javascript:openModal('modalTel');">16. 환불신청 전화번호</a></li>
+				<li><a href="javascript:openModal('modalRefund1');">17. 환불 수단 선택</a></li>
+				<li><a href="javascript:openModal('modalRefund2');">18. 환불 금액 확인</a></li>
+				<li><a href="javascript:openModal('modalTerms');">19. 약관관련</a></li>
+                <li><a href="javascript:openModal('modalTermsAgree');">20. 세븐콘 약관동의( 관련 스크립트와 함께 적용해야 함)</a></li>
+                <li><a href="javascript:openModal('modalTerms2');">21. 세븐콘 서비스 이용약관</a></li>
+                <li><a href="javascript:openModal('modalTerms3');">22. 세븐콘 개인정보 취급 방침(세븐콘 서비스 이용약관와 스타일 똑같음.)</a></li>
+                <li><a href="javascript:openModal('modalComplete1');">23. 취소 / 환불신청을 완료. </a></li>
+                <li><a href="javascript:openModal('modalPointInfo');">24. 포인트 결제 전용 상품 안내</a></li>
+                <li><a href="javascript:openModal('modalProduct3');">25. 제품 사용하기_쿠폰 예약주문상품(바코드 나옴) 03</a></li>
+                <li><a href="javascript:openModal('modalNotice');">26. 예약주문상품 구매 시 유의사항</a></li>
+                <li><a href="javascript:openModal('modalProduct4');">27. 할인쿠폰 하나의 바코드로 모든 할인상품을...(바코드 나옴) 04</a></li>
+                <li><a href="javascript:openModal('couponUse1');">28. 종류별 쿠폰사용하기-1.도시락</a></li>
+                <li><a href="javascript:openModal('couponUse2');">29. 종류별 쿠폰사용하기-2.일반상품</a></li>
+                <li><a href="javascript:openModal('couponUse3');">30. 종류별 쿠폰사용하기-3. 금액권</a></li>
+                <li><a href="javascript:openModal('couponUse4');">31. 종류별 쿠폰사용하기-4. 핫딜쿠폰</a></li>
+                <li><a href="javascript:openModal('couponUse5');">32. 종류별 쿠폰사용하기-5. 당첨용</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //wrap -->
+	<div class="shadow"></div>
+
+	<!-- modal 받는 사람의 휴대전화번호를... -->
+	<div class="modal modal-alarm" id="modalPhoneNoti">
+		<div class="modal-inner">
+			<div class="m-contents">
+				받는 사람의 휴대전화번호를 <br>
+				정확히 입력하세요.
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 수신거부 안내 -->
+	<div class="modal modal-alarm" id="modalReject">
+		<div class="modal-inner">
+			<div class="m-title">수신거부 안내</div><br>
+			<div class="m-contents">
+				선물한 쿠폰 중 <br>
+				수신자가 거부한 상품이 <span class="text-green text-r">3</span>건 있습니다.<br><br>
+				구매내역에서 확인하세요.
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-left btn-modal-close" href="javascript:void(0);">닫기</a>
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 개인정보 수집 및 이용 동의 -->
+	<div class="modal modal-alarm" id="modalAgree1">
+		<div class="modal-inner">
+			<div class="m-contents">
+            	<span class="text-b">개인 정보 수집 및 이용 동의에 <span class="text-green"><br>
+                동의 후 구매</span>하세요.</span><br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 주문 상품의 구매 조건 확인 및 결제 진행 -->
+	<div class="modal modal-alarm" id="modalAgree2">
+		<div class="modal-inner">
+			<div class="m-contents">
+            	<span class="text-b">구매 조건 확인 및 결제 진행에<span class="text-green"><br>
+                동의하셔야 구매 가능</span>합니다.</span><br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 개인정보 공유 미동의 -->
+	<div class="modal modal-alarm" id="modalAgree3">
+		<div class="modal-inner">
+			<div class="m-contents">
+            	<span class="text-b">개인정보 수집 및 이용동의에<span class="text-green"><br>
+                동의하셔야 구매 가능</span>합니다.</span><br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 유효기간 연장 규정 동의 -->
+	<div class="modal modal-alarm" id="modalAgree4">
+		<div class="modal-inner">
+			<div class="m-contents">
+				<span class="text-b">유효기간 연장 규정에 <span class="text-green">동의</span>하십니까?</span><br><br>
+				<span class="text-r">1. 유효기간 연장  규정</span><br>
+				- 함께 주문한 상품은 일괄 연장 처리<br><br>
+                
+				<span class="text-r">2. 유효기간 만료 시</span><br>
+				- 유효기간 연장 신청 불가<br><br>    
+                  
+				<span class="text-r">3. 유효기간 연장 관련 문의</span><br>
+				- 고객센터로 문의 (1588-5639)<br>       
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-left btn-modal-close" href="javascript:void(0);">취소</a>
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">동의</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 유효 기간이 00일 연장되었습니다. -->
+	<div class="modal modal-alarm" id="modalAgree5">
+		<div class="modal-inner">
+			<div class="m-contents">
+            	<span class="text-b">유효 기간이 <span class="text-green">93</span>일 연장되었습니다.</span><br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 구매취소 규정 동의01 -->
+	<div class="modal modal-alarm" id="modalAgree6">
+		<div class="modal-inner">
+			<div class="m-contents">
+				<span class="text-b">구매취소 규정에 <span class="text-green">동의</span>하십니까?</span><br><br>
+				<span class="text-green text-r">취소 및 환불은 세븐일레븐 앱에서만 가능합니다.</span><br><br>
+				<span class="text-r">1. 구매취소 규정</span><br>
+				- 유효기간 내 미사용 쿠폰만 가능<br>
+				- 최초 결제수단 취소 처리<br><br>
+                
+				<span class="text-r">2. 유효기간 만료 시</span><br>
+				- 결제금액의 90%를 구매자에게 환불<br><br>
+                
+				<span class="text-r">3. 결제금액 환불 처리기간</span><br>
+				- 부분취소인 경우 영업일 기준 2~3일 소요<br>
+				- 전체취소인 경우 즉시 처리 <br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-left btn-modal-close" href="javascript:void(0);">취소</a>
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">동의</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 구매취소 규정 동의02 -->
+	<div class="modal modal-alarm" id="modalAgree7">
+		<div class="modal-inner">
+			<div class="m-contents">
+				<span class="text-b">구매취소 규정에 <span class="text-green">동의</span>하십니까?</span><br><br>
+				<span class="text-green text-r">취소 및 환불은 세븐일레븐 앱에서만 가능합니다.</span><br><br>
+				<span class="text-r">1. 구매취소 가능 시점</span><br>
+				- 1만원 이하 금액권: 액면가의 80% 사용 이후<br>
+				- 1만원 초과 금액권: 액면가의 60% 사용 이후<br><br>
+                
+				<span class="text-r">2. 유효기간 만료 시</span><br>
+				- 결제금액의 90%를 구매자에게 환불<br><br>
+                
+				<span class="text-r">3. 결제금액 환불 처리기간</span><br>
+				- 부분취소인 경우 영업일 기준 2~3일 소요<br>
+				- 전체취소인 경우 즉시 처리 <br><br>
+                
+				<span class="text-r">4. 결제카드 해지 시</span><br>
+				- 고객센터로 문의 (1588-5639)<br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-left btn-modal-close" href="javascript:void(0);">취소</a>
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">동의</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 구매취소 승인 -->
+	<div class="modal modal-alarm" id="modalApply">
+		<div class="modal-inner">
+			<div class="m-contents">
+            	<span class="text-b">구매취소를 <span class="text-green">승인</span>하십니까?</span><br><br>
+				<span class="text-r">1. 구매취소 이후 교환권 사용 불가</span><br><br>
+				<span class="text-r">2. 선물한 쿠폰인 경우</span><br>
+				- 수신자에게 쿠폰 취소 메시지 전송<br><br>
+                
+				<span class="text-r">3. 결제금액 환불 처리기간</span><br>
+				- 부분취소인 경우 영업일 기준 2~3일 소요<br>
+				- 전체취소인 경우 즉시 처리 <br>
+			</div>
+			<div class="m-footer fix">
+				<a class="btn-m-left btn-modal-close" href="javascript:void(0);">취소</a>
+				<a class="btn-m-right btn-modal-close" href="javascript:void(0);">승인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 개인정보 수집 및 이용동의 -->
+	<div class="modal modal-alarm type2" id="modalPraivateAgree">
+		<div class="modal-inner">
+			<div class="m-title">개인정보 수집 및 이용동의</div>
+			<div class="m-contents">
+				<div class="mt75">
+					본 서비스의 이용을 위하여 필요한 개인정보를 <br>
+					<span class="text-green">사용자의 동의를 얻어 제공</span>하고자 합니다.
+				</div>
+				<div class="mt40">
+					동의를 통해 개인정보를 제공받는 자와 제공목적은 <br>
+					아래와 같습니다.
+				</div>
+				<div class="private-detail">
+					<strong>1. 제공받는 자 : ㈜옴니텔</strong><br><br>
+					<strong>2. 제공목적</strong><br>
+					- 쿠폰 상품구매 및 사용내역관리<br>
+					- C/S 처리<br><br>
+					<strong>3. 제공항목</strong><br>
+					- 휴대전화번호<br>
+					- 롯데멤버십 가입 여부<br><br>
+					<strong>4. 보유 및 이용기간</strong><br>
+					- 쿠폰 구매 후 5년 간 보유<br>
+				</div>
+			</div>
+			<div class="btn">
+				<a class="btn-type4 btn-modal-close" href="javascript:void(0);">닫기</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	
+    <!-- modal modalLpointUse 사용 -->
+<!--     <div class="modal modal-alarm bg-blue" id="modalLpointUse">
+        <div class="modal-inner">
+            <div class="modal-h">
+                <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+                <h1 class="logo"><img src="../images/logo_Lpoint.png" alt="" /></h1>
+            </div>
+            <div class="pay-tbl">
+                <div class="pay-row">
+                    <div class="p-th">카드번호</div>
+                    <div class="p-td card-num">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호 입력" value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+                    </div>
+                </div>
+                <div class="pay-row">
+                    <div class="p-th">비밀번호</div>
+                    <div class="p-td">
+                        <input type="password"  placeholder="비밀번호 입력" value="" />
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">포인트조회</a>
+                    </div>
+                </div>
+                <div class="has-error" style="display:block;">
+                    카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
+                </div>
+                <div class="pay-row type2">
+                    <div class="p-th">
+                        L.POINT 비밀번호가 기억나지 않거나 <br>
+                        5회 이상 오류 시 재설정하세요.
+                    </div>
+                    <div class="p-td">
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">재설정</a>
+                    </div>
+                </div>
+                <div class="hidden-form">
+                    <div class="pay-row">
+                        <div class="p-th">사용가능 포인트</div>
+                        <div class="p-td">
+                            <span class="p-available">0</span>
+                        </div>
+                    </div>
+                    <div class="pay-row">
+                        <div class="p-th">사용 할 포인트</div>
+                        <div class="p-td will-use">
+                            <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
+                            <a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+                        </div>
+                    </div>
+                    <div class="has-error" style="display:block;">
+                        사용가능 포인트를 확인 후 다시 입력하세요.
+                    </div>
+                    <div class="btn2 fix">
+                        <a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+                        <a class="btn-type10" href="javascript:void(0);">사용하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- //modal --> 
+    <div class="modal modal-alarm bg-blue" id="modalLpointUse">
+        <div class="modal-inner">
+            <div class="modal-h">
+                <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+                <h1 class="logo"><img src="../images/logo_Lpoint.png" alt="" /></h1>
+            </div>
+            <!-- pay-tbl -->
+            <div class="new-pay-tbl">
+                <div class="pay-row">
+                    <div class="p-th">카드번호</div>
+                    <div class="p-td">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호를 입력하세요." value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+                    </div>
+                </div>
+                <div class="pay-row">
+                    <div class="p-th">비밀번호</div>
+                    <div class="p-td int-btn fix">
+                        <input type="password"  placeholder="비밀번호를 입력하세요." value="" />
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">포인트조회</a>
+                    </div>
+                </div>
+                <div class="has-error" style="display:block;"> <!-- 에러 발생시 display: block; -->
+                    카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
+                </div>
+                <div class="pay-row type2">
+                    <div class="p-th">
+                        L.POINT 비밀번호가 기억나지 않거나<br>
+                        5회 이상 오류 시 재설정하세요.
+                    </div>
+                    <div class="p-td">
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">재설정</a>
+                    </div>
+                </div>
+                <div class="hidden-form">
+                    <div class="pay-row">
+                        <div class="p-th">사용가능 포인트</div>
+                        <div class="p-td">
+                            <span class="p-available">1,234,567<em>P</em></span>
+                        </div>
+                    </div>
+                    <div class="pay-row">
+                        <div class="p-th">사용 할 포인트</div>
+                        <div class="p-td int-btn">
+                            <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="포인트를 입력하세요." value="" />
+                            <a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+                        </div>
+                    </div>
+                    <div class="has-error" style="display:block;">
+                        사용가능 포인트를 확인 후 다시 입력하세요.
+                    </div>
+                    <div class="btn2 fix">
+                        <a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+                        <a class="btn-type10" href="javascript:void(0);">사용하기</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //pay-tbl -->
+        </div>
+    </div>
+    <!-- //modal -->
+	<!-- modal OK-cashbag 사용 -->
+	<!-- <div class="modal modal-alarm bg-red" id="modalOkcashbagUse">
+		<div class="modal-inner">
+			<div class="modal-h">
+				<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+				<h1 class="logo"><img src="../images/logo_okcashbag2.png" alt="" /></h1>
+			</div>
+			<div class="pay-tbl">
+				<div class="pay-row">
+					<div class="p-th">카드번호</div>
+					<div class="p-td card-num">
+						<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호 입력" value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+					</div>
+				</div>
+				<div class="pay-row">
+					<div class="p-th">비밀번호</div>
+					<div class="p-td">
+						<input type="password"  placeholder="비밀번호 입력" value="" />
+						<a class="btn-next-step btn-type8" href="javascript:void(0);">포인트조회</a>
+					</div>
+				</div>
+                <div class="pay-row type2">
+                    <div class="p-th">
+                        OK캐시백 비밀번호가 기억나지 않거나 <br>
+                        5회 이상 오류 시 재설정하세요.
+                    </div>
+                    <div class="p-td">
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">재설정</a>
+                    </div>
+                </div>
+				<div class="has-error" style="display:block;">
+					카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
+				</div>
+				<div class="hidden-form">
+					<div class="pay-row">
+						<div class="p-th">사용가능 포인트</div>
+						<div class="p-td">
+							<span class="p-available">0</span>
+						</div>
+					</div>
+					<div class="pay-row">
+						<div class="p-th">사용 할 포인트</div>
+						<div class="p-td will-use">
+							<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
+							<a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+						</div>
+					</div>
+					<div class="has-error" style="display:block;">
+						사용가능 포인트를 확인 후 다시 입력하세요.
+					</div>
+					<div class="btn2 fix">
+						<a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+						<a class="btn-type10" href="javascript:void(0);">사용하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- //modal -->
+    <div class="modal modal-alarm bg-red" id="modalOkcashbagUse">
+        <div class="modal-inner">
+            <div class="modal-h">
+                <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+                <h1 class="logo"><img src="../images/logo_okcashbag2.png" alt="" /></h1>
+            </div>
+            <div class="new-pay-tbl">
+                <div class="pay-row">
+                    <div class="p-th">카드번호</div>
+                    <div class="p-td">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호를 입력하세요." value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+                    </div>
+                </div>
+                <div class="pay-row">
+                    <div class="p-th">비밀번호</div>
+                    <div class="p-td int-btn fix">
+                        <input type="password"  placeholder="비밀번호를 입력하세요." value="" />
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">포인트조회</a>
+                    </div>
+                </div>
+                <div class="pay-row type2">
+                    <div class="p-th">
+                        OK캐시백 온라인 비밀번호가<br>
+                        기억나지 않는다면 재설정하세요.
+                    </div>
+                    <div class="p-td">
+                        <a class="btn-next-step btn-type8" href="javascript:void(0);">재설정</a>
+                    </div>
+                </div>
+                <div class="has-error" style="display:block;">
+                    카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
+                </div>
+                <div class="hidden-form">
+                    <div class="pay-row">
+                        <div class="p-th">사용가능 포인트</div>
+                        <div class="p-td">
+                            <span class="p-available">1,234,567<em>P</em></span>
+                        </div>
+                    </div>
+                    <div class="pay-row">
+                        <div class="p-th">사용 할 포인트</div>
+                        <div class="p-td int-btn">
+                            <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="포인트를 입력하세요." value="" />
+                            <a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+                        </div>
+                    </div>
+                    <div class="has-error" style="display:block;">
+                        사용가능 포인트를 확인 후 다시 입력하세요.
+                    </div>
+                    <div class="btn2 fix">
+                        <a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+                        <a class="btn-type10" href="javascript:void(0);">사용하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+	<!-- L포인트 / OK캐시백 포인트 모달창 관련 스크립트 -->
+	<script type="text/javascript">
+		//L포인트 사용 모달창 열었을 때 카드번호에 포커스
+		modalFocus('btn-useLpoint' , 'modalLpointUse');
+		//OK캐시백 포인트 사용 모달창 열었을 때 카드번호에 포커스
+		modalFocus('btn-useOKcashbag' , 'modalOkcashbagUse');
+		// 카드번호 유효성 체크 후 포인트 조회 클릭시 적용
+		$('.btn-next-step').on('click' , function () {
+			$(this).closest('.new-pay-tbl').find('.hidden-form').slideDown(200); //20170725 .pay-tbl를 .new-pay-tbl로 수정
+		});
+	</script>
+	<!-- modal 제품 -->
+	<div class="modal modal-product" id="modalProduct">
+		<div class="modal-inner">
+			<div class="barcode">
+				<img src="../images/myorder/@temp_barcode.jpg" alt="">
+			</div>
+			<div class="product-image">
+				<div class="image"><img src="../images/@temp_600x600.jpg" alt=""></div>
+				<div class="title">
+					<p class="company">롯데</p>
+					빼빼로 누드 그린티 39g
+				</div>
+			</div>
+			<div class="product-view">
+				<a href="#none">상세정보 보기</a>
+			</div>
+			<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 제품 02 -->
+	<div class="modal modal-product type2" id="modalProduct2">
+		<div class="modal-inner">
+			<div class="barcode">
+				<img src="../images/myorder/@temp_barcode.jpg" alt="">
+			</div>
+			<div class="product-image">
+				<div class="image"><img src="../images/@temp_600x600.jpg" alt=""></div>
+				<div class="title">
+					<p class="company">롯데</p>
+					빼빼로 누드 그린티 39g
+				</div>
+			</div>
+			<div class="product-notice">
+				<div class="title fix">
+					<em class="fl">할인기간</em>
+					<span class="due fr">2017.03.01~2017.03.31</span>    
+				</div>
+				<em>[유의사항]</em>
+				<ul class="fix">
+					<li>해당 할인쿠폰은 각 상품별 조기 소진될 수 있습니다.</li>
+				</ul>
+				<em>[할인쿠폰 POS 결제 방법]</em>
+				<ul class="fix">
+					<li>판매상품 등록 → 할인쿠폰 바코드 스캔 → 엘포인트 적립<br>
+					 → 결제 진행</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 제품 03 -->
+	<div class="modal modal-product" id="modalProduct3">
+		<div class="modal-inner">
+			<div class="barcode">
+				<img src="../images/myorder/@temp_barcode.jpg" alt="">
+				<div class="use-date-place">
+					<p>2017.03.30 14:00 ~ 15:00</p>
+					<span>대방역점</span>에서 교환 하세요.
+				</div>
+			</div>
+			<div class="product-image">
+				<div class="image"><img src="../images/@temp_600x600.jpg" alt=""></div>
+				<div class="title">
+					<p class="company">롯데</p>
+					빼빼로 누드 그린티 39g
+				</div>
+			</div>
+			<div class="product-view">
+				<a href="#none">상세정보 보기</a>
+			</div>
+			<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal 환불신청 전화번호 -->
+	<div class="modal modal-alarm type2" id="modalTel">
+		<div class="modal-inner">
+			<div class="m-title">환불신청</div>
+			<div class="m-contents">
+				<div class="contact-num">
+					<div class="tel-img">
+						<img src="../images/icon_tel.png" alt="" />
+					</div>
+					취소 / 환불신청을 위해 <span class="text-green">고객센터로 전화주세요.</span>
+					<div class="tel">1588-5639</div>
+					<span>( 평일 오전 9시 30분 ~ 오후 6시 )</span>
+				</div>
+			</div>
+			<div class="btn2 fix">
+				<a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소하기</a>
+				<a class="btn-type4" href="tel:1588-5639">통화하기</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+
+	<!-- modal 환불수단선택 -->
+	<div class="modal modal-refund" id="modalRefund1">
+		<div class="modal-inner">
+			<div class="modal-title">
+				환불 수단 선택
+			</div>
+			<div class="m-contents">
+				<div class="amount-list">
+					<div class="refund-plan">
+						환불 예정 금액
+						<p class="amount">7,500</p>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<input type="checkbox" id="pu-check01" checked="checked">
+							<label for="pu-check01"><img src="../images/myorder/text_Lpoint1.png" alt="L.POINT"></label>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">500</p>
+						</div>
+						<div class="section3">
+							<p class="text1">500</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<input type="checkbox" id="pu-check02">
+							<label for="pu-check02"><img src="../images/myorder/text_okcashbag1.png" alt="OK CASHBAG"></label>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">4,500</p>
+						</div>
+						<div class="section3">
+							<p class="text1">14,500</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<input type="checkbox" id="pu-check03">
+							<label for="pu-check03">신용카드</label>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">4,500</p>
+						</div>
+						<div class="section3">
+							<p class="text1">14,500</p>
+						</div>
+					</div>
+					<div class="refund-total">
+						선택 금액 합계
+						<p class="amount">
+							7,500
+						</p>
+					</div>
+				</div>
+				<p class="text-point1">
+					포인트는 결제금액 기준으로 전액 환불만 신청 가능합니다.
+				</p>
+				<dl class="dl-list1">
+					<dt>환불규정</dt>
+					<dt>1. 환불 신청은 구매자만 가능</dt><br>
+                    
+					<dt>2. 유효기간 만료 시</dt>
+					<dd>- 결제금액의 90%를 구매자에게 환불</dd><br>
+                    
+					<dt>3. 결제금액 환불 처리기간</dt>
+					<dd>- 부분취소인 경우 영업일 기준 2~3일 소요</dd>
+					<dd>- 전체취소인 경우 즉시 처리 </dd><br>
+                    
+					<dt>4. 결제카드 해지 시</dt>
+					<dd>- 고객센터로 문의 (1588-5639)</dd>
+				</dl>
+				<div class="m-btn-type1 btn2">
+					<a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소하기</a>
+					<a class="btn-type4" href="javascript:void(0);">환불신청</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+
+	<!-- modal 환불금액확인 -->
+	<div class="modal modal-refund" id="modalRefund2">
+		<div class="modal-inner">
+			<div class="modal-title">
+				환불 금액 확인
+			</div>
+			<div class="m-contents">
+				<div class="amount-list">
+					<div class="refund-plan">
+						결제한 금액
+						<p class="amount">
+							7,500
+						</p>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<span><img src="../images/myorder/text_Lpoint1.png" alt="L.POINT"></span>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">500</p>
+						</div>
+						<div class="section3">
+							<p>500</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<span><img src="../images/myorder/text_okcashbag1.png" alt="OK CASHBAG"></span>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">4,500</p>
+						</div>
+						<div class="section3">
+							<p>14,500</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="section1">
+							<span>신용카드</span>
+						</div>
+						<div class="section2">
+							<p class="text1">결제금액 :</p>
+							<p class="text2">4,500</p>
+						</div>
+						<div class="section3">
+							<p>14,500</p>
+						</div>
+					</div>
+					<div class="refund-total">
+						환불 예정 금액 합계
+						<p class="amount">
+							7,500
+						</p>
+					</div>
+				</div>
+				<dl class="dl-list1">
+					<dt>환불규정</dt>
+					<dd>- 구매자만 가능</dd>
+					<dd>- 유효기간 만료 시 10%를 차감한  취소 처리</dd>
+					<dd>- 영업일 기준으로 2~5일 소요</dd>
+				</dl>
+				<p class="text-type1">결제카드를 해지한 경우 고객센터에 연락주세요.</p>
+				<div class="m-btn-type1 btn2">
+					<a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소하기</a>
+					<a class="btn-type4" href="javascript:void(0);">환불신청</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+
+	<!-- modal 약관관련 -->
+	<div class="modal modal-alarm type2" id="modalTerms">
+		<div class="modal-inner">
+			<div class="m-title">약관관련</div>
+			<div class="m-contents">
+				<div class="terms">
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+					약관안내<br>
+				</div>
+			</div>
+			<div class="btn">
+				<a class="btn-type4 btn-modal-close" href="javascript:void(0);">닫기</a>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+    <!-- modal 세븐콘 약관동의 -->
+    <div class="modal modal-type3 modal-terms-agree" id="modalTermsAgree">
+        <div class="modal-inner">
+            <div class="m-title">
+                세븐콘 약관 동의
+            </div>
+            <div class="m-contents">
+                <div class="text01 mt40">
+                    세븐일레븐 모바일 쿠폰 몰인<br>
+                    세븐콘의 상품을 확이하거나 구매하려면<br>
+                    아래 약관을 읽고 <span class="text-green">동의</span>하여 주세요.
+                </div>
+                <div class="agree-list">
+                    <div class="agree-title">세븐콘 이용을 위한 필수 동의 항목</div>
+                    <ul>
+                        <li>
+                            <div class="common-check">
+                                <input type="checkbox" id="term-check01" name="chk">
+                                <label for="term-check01"><span>세븐콘 서비스 이용약관</span></label>
+                            </div>
+                            <a href="javascript:openModal('modalTerms2');">자세히</a>
+                        </li>
+                        <li>
+                            <div class="common-check">
+                                <input type="checkbox" id="term-check02" name="chk">
+                                <label for="term-check02"><span>세븐콘 개인정보 취급 방침</span></label>
+                            </div>
+                            <a href="javascript:openModal('modalTerms3');">자세히</a>
+                        </li>
+                    </ul>
+                    <div class="all">
+                        <div class="common-check">
+                            <input type="checkbox" id="allCheck">
+                            <label for="allCheck"><span>전체 동의 합니다.</span></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- '전체동의합니다'가 선택될 시 btn이 addClass : on 됩니다. -->
+                <div class="btn">
+                    <span class="btn-type4-off">쇼핑시작하기</span>
+                    <a class="btn-type4" href="javascript:void(0);">쇼핑시작하기</a>
+                </div>
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 체크박스 모두 동의
+            $('#allCheck').on ('change',function(e){
+                if($('#allCheck').prop('checked')){
+                    $('input[name=chk]').prop('checked',true);
+                    $(this).closest('.agree-list').next().addClass('on');
+                }else{
+                    $('input[name=chk]').prop('checked',false);
+                    $(this).closest('.agree-list').next().removeClass('on');
+                }
+                e.stopImmediatePropagation();
+            });
+            $('input[name=chk]').on('change' , function (e) {
+                if( $('#term-check01').prop('checked') && $('#term-check02').prop('checked') ) {
+                    $('#allCheck').prop('checked',true);
+                    $(this).closest('.agree-list').next().addClass('on');
+                } else {
+                    $('#allCheck').prop('checked',false);
+                    $(this).closest('.agree-list').next().removeClass('on');
+                }
+                e.stopImmediatePropagation();
+            });
+        })
+    </script>
+    <!-- modal 세븐콘 서비스 이용약관 -->
+    <div class="modal modal-type3 modal-terms2" id="modalTerms2">
+        <div class="modal-inner">
+            <div class="m-title">
+                세븐콘 서비스 이용약관
+            </div>
+            <div class="m-contents">
+                <div class="terms2">
+                
+                    <b>제 1 장 총 칙</b><br>
+                    <br>
+                    제1조 (목적)
+                    이 서비스 약관은 주식회사 옴니텔(이하 "회사")이 제공하는 세븐일레븐 
+                    쿠폰몰 서비스(이하 "세븐콘")를 이용하는 데 필요한 이용자와 회사 간의 
+                    권리와 의무, 기타 제반 사항을 규정함을 목적으로 합니다.<br>
+                    <br>
+                    
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. "세븐콘 서비스"(이하 "서비스")란 이용자가 유무선 인터넷(모바일 애플리케이션 포함)을 통해 
+                    "세븐콘"을 구매하여 모바일 단말기로 전송할 수 있도록 하고 "세븐콘"의 수신자가 이를 상품별로 
+                    명시된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바일 애플리케이션과 유무선 
+                    인터넷 서비스를 말합니다.<br>
+                    2. 세븐콘"이란 교환처에서 판매하는 일정한 상품을 이용자가 휴대전화 등으로 교환권 형태로 
+                    수신자에게 선물하고, 이 교환권을 수신자가 해당 교환처에서 연계된 상품으로 교환할 수 있는 
+                    교환권을 말하며, 그 종류는 다음 각 목과 같습니다.<br>
+                    가. "상품형 모바일쿠폰"은 특정 실물상품과 교환할 수 있는 권리가 기록된 바코드 형태의 모바일 교환권을 말합니다.<br>
+                    나. "금액형 모바일쿠폰"은 수신자의 선택에 따라 표시된 금액 상당의 실물상품과 교환할 수 있는 권리가 기록된 바코드 
+                    형태의 모바일 교환권을 말하며, 표시된 금액에 도달할 때까지 횟수 제한 없이 교환처에서 판매하는 일정 상품과 교환할 
+                    수 있는 모바일쿠폰을 말합니다.<br>
+                    3. "이용자"란 회사가 제휴한 모바일 애플리케이션 및 유무선 인터넷의 고객으로서 이 약관에 동의하고 서비스를 이용하는 
+                    자를 말합니다.<br>
+                    4. "수신자"란 세븐콘을 이용자로부터 전송 받은 자를 말합니다.<br>
+                    5. "교환처"란 세븐콘으로 실제 상품을 교환할 수 있는 매장을 말합니다.<br>
+                    ② 이 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계 법령, 상관례 및 서비스 별 안내에서 정하는 
+                    바에 따릅니다.<br>
+                    <br>
+                    
+                    제3조 (약관의 효력 및 변경)<br>
+                    ① 이 약관은 서비스를 이용하고자 하는 모든 이용자에 대하여 그 효력을 발생합니다. 다만, 제8조, 제11조 제1항, 제12조, 
+                    제14조, 제15조 제2항, 제16조, 제17조는 수신자에게도 적용됩니다.<br>
+                    ② 이 약관의 내용은 서비스 화면에 게시하여 이용자에게 공지하고, 이에 동의한 이용자가 서비스를 이용할 때 그 효력이 발생합니다.<br>
+                    ③ 회사는 필요하다고 인정되면 이 약관을 변경할 수 있습니다. 회사가 이 약관을 변경할 때에는 적용일자와 변경사유를 밝혀 그 적용일자
+                     7일 전부터 제2항과 같은 방법으로 공지합니다. 다만, 이용자의 권리 또는 의무에 관한 중요한 규정을 변경하거나 이용자에게 불리한 
+                     약관을 변경할 때에는 최소한 그 적용일자 30일 전에 공지하며, 문자메시지(SMS)로 이용자에게 개별 통지합니다(이용자가 연락처를 
+                     기재하지 않거나 변경 후 수정하지 않아 개별 통지가 어려울 때 본 "서비스" 내 공지사항 등에 해당 내용을 공지하는 것으로 개별 
+                     통지를 대신합니다).<br>
+                    ④ 변경된 약관에 동의하지 않는 이용자는 "서비스" 이용이 불가하며 회사가 제3항에 따라 변경된 약관을 공지 또는 통지하면서 
+                    이용자에게 약관 변경 적용일까지 거부 의사를 표시하지 않으면 약관의 변경에 동의한 것으로 간주한다는 내용을 공지 또는 
+                    통지하였음에도 이용자가 명시적으로 약관 변경에 대한 거부 의사를 표시하지 않으면 이용자가 변경 약관에 동의한 것으로 간주합니다.<br>
+                    <br>
+                    
+                    제4조 (약관 외 준칙)<br>
+                    이 약관에 밝히지 않은 사항은 전기통신기본법, 전기통신사업법, 전자상거래 등에 관한 소비자 보호에 관한 법률 등 관계 법령과 
+                    회사가 정한 서비스 세부이용지침 등의 규정을 따릅니다.<br>
+                    <br>
+                    
+                    <b>제2장 서비스 이용 계약</b><br>
+                    
+                    <br>
+                    제5조 (이용계약의 성립)<br>
+                    ① 서비스 이용을 신청할 때 "위의 이용약관에 동의하십니까?"라는 물음에 이용자가 "동의" 버튼을 누르면 
+                    약관에 동의하는 것으로 간주합니다.<br>
+                    ② 이용 계약은 이용자의 이용신청을 회사가 승낙함으로써 성립합니다.<br>
+                    <br>
+                    
+                    제6조 (이용 제한)<br>
+                    ① 회사는 다음 각 호에 해당하는 경우 이용자에게 세븐콘의 전송을 제한하거나 중단할 수 있습니다.<br>
+                    1. 서비스용 설비의 장애 및 보수, 정전, 이용 량의 폭주 등 기술상 서비스를 제공할 수 없는 경우<br>
+                    2. 이용자가 타인 명의로 서비스를 이용하는 경우<br>
+                    3. 회사의 서비스 정책 또는 본 이용약관을 위반하여 서비스를 이용하고자 하는 경우<br>
+                    4. 서비스의 시스템을 무단으로 침범한 경우<br>
+                    5. 외국인 이용자의 경우<br>
+                    6. 이동전화 서비스 가입자의 자격 또는 성격에 따라 이동전화 서비스의 해지, 일시 정지, 정보이용료 한도 초과 등의 
+                    사유가 발생한 경우<br>
+                    7. 기타 회사가 정한 요건을 충족하지 않은 경우<br>
+                    ② 본 조에 따라 서비스 제한이나 중단이 있을 때에는 회사가 제9조에 정한 방법으로 이용자에게 해당 내용을 통지합니다. 
+                    다만, 회사가 통제할 수 없는 사유로 서비스가 중단(회사의 고의, 과실이 없는 디스크 장애, 시스템 다운 등)되는 등 미리 
+                    통지할 수 없는 상황이 발생했을 때에는 그러하지 않습니다.<br>
+                    <br>
+                    
+                    <b>제3장 서비스 이용</b><br>
+                    <br>
+                    
+                    제7조 (서비스의 이용시간)<br>
+                    ① 서비스의 이용은 연중무휴 1일 24시간을 원칙으로 합니다. 다만, 회사의 업무나 기술상의 이유로 서비스가 일시 
+                    중지될 수 있고, 운영상의 목적으로 회사가 정한 기간에는 서비스가 일시 중지될 수 있습니다. 이때 회사는 미리 
+                    해당 내용을 공지하며, 부득이하면 사후에 통보할 수 있습니다.<br>
+                    ② 회사는 서비스를 일정 범위로 나누어 범위별로 이용할 수 있는 시간을 정할 수 있으며, 이 경우 그 내용을 공지합니다.<br>
+                    <br>
+
+                    제8조 (서비스 이용에 대한 이용자의 의무와 책임)<br>
+					회사가 정상적으로 서비스를 제공한 경우 이로 인하여 발생하는 개인 간의 모든 민∙형사상 책임은 이용자에게 있습니다.<br>
+                    <br>
+                    제9조 (연계 서비스)<br>
+                    ① 서비스 이용을 위해 필요한 유선 인터넷 사이트 및 무선 인터넷 사이트의 서비스는 해당 서비스의 약관과 서비스 정책에 따릅니다.<br>
+                    ② 제1항의 연계 서비스의 서비스 정책, 회원정책, 서비스 장애 통지 등은 각각의 서비스 운영 주체에서 책임을 지며 회사에서는
+                    세븐콘의 제공에 대한 부분만 책임을 집니다.<br>
+                    <br>
+                    제10조 (결제수단)<br>
+                    ① 세븐콘의 결제수단으로 신용카드 결제, 휴대폰 결제, Lpoint 결제, 오캐이캐쉬백 포인트 결제를 제공 합니다.<br>
+                    ② 신용카드 및 휴대폰 결제 청구서 등에 결제대행사(NHN한국사이버결제㈜)의 명의가 사용되며 결제대행사를 통해 결제대금 예치서비스가 
+                    이루어 지지만, 물품 또는 서비스의 판매자는 회사입니다.<br>
+                    <br>
+                    
+                    제11조 (세븐콘 전송 및 수신 내역 관리)<br>
+                    ① 세븐콘 전송내역은 세븐콘 모바일 애플리케이션의 구매 내역과 고객센터를 통해 확인할 수 있습니다.<br>
+                    ② 세븐콘 수신내역은 세븐콘 모바일 애플리케이션의 구매 내역과 고객센터를 통해 확인할 수 있습니다.<br>
+                    ③ 이용자의 고의 또는 과실로 세븐콘 전송내역이나 수신내역이 노출되어 발생하는 손해에 대해 회사는 책임을 지지 않습니다.<br>
+                    <br>
+                    
+                    제12조 (세븐콘의 사용)<br>
+                    ① 정책 변경(판매 종료, 매가 변경) 등으로 기간을 연장할 수 없거나 지정상품이 품절되어 수신자의 요청이 있을 때에는 전액 환불 처리 됩니다.<br>
+                    ② 세븐콘을 수신하였다가 삭제하였다면 이용자는 모바일 애플리케이션 또는 고객센터에서 3번까지 무상으로 재전송할 수 있습니다.<br>
+                    ③ 이용자가 수신자의 전화번호를 잘못 입력하여 세븐콘이 잘못 발송된 후 해당 수신자에 의해 세븐콘이 교환되었다면 회사에서는 
+                    이용자의 잘못된 발송에 대해 책임을 지지 않습니다. 단, 세븐콘이 교환되기 전에 이용자가 고객센터를 통해 오발송 정정 신청을 한다면 
+                    수신자를 정정하여 발송할 수 있습니다.<br>
+                    ④ 세븐콘은 발행일로부터 세븐콘에 명시된 상품의 유효기간에 동안 교환처에서 상품으로 교환할 수 있습니다. 다만, (i) 상품형 모바일 
+                    쿠폰의 유효기간은 세븐콘 구매일로부터 3개월을 원칙으로 하며, (ii) 금액형 모바일 쿠폰의 유효기간은 세븐콘 구매일로부터 1년을 원칙으로 합니다.<br>
+                    ⑤ "금액형 모바일 쿠폰"은 표시된 금액의 60% 이상(1만원 이하의 경우 80%) 이상이 사용된 경우 수신자가 잔액에 대하여 유효기간이 
+                    경과하기 전까지 회사에 환불을 요청하여 환불 받을 수 있습니다. 본 항에 의한 환불에 관하여는 제18조가 준용됩니다.<br>
+                    ⑥ 세븐콘은 유효기간에 해당 교환처에서 사용하지 않으면 그 이후에는 사용할 수 없습니다. 이 경우 환불 요건에 따라 환불 받을 수 
+                    있습니다. 다만, 수신자는 회사에게 유효기간 내에는 유효기간의 연장을 요청할 수 있고, 연장 요청 가능 기간은 세븐콘 구매일로부터 
+                    5년 이내 입니다. 유효기간 연장 요청이 가능한 조건은 유효기간 내에 세븐콘을 사용하지 않았을 경우에 한하며, 다만 잔액 관리가 
+                    가능하여 유효기간 내 잔액을 나누어 쓸 수 있는 금액형 모바일 쿠폰의 경우에는 유효기간 내에 사용했더라도 잔액이 남아있다면 
+                    유효기간 연장 요청이 가능합니다.<br>
+                    ⑦ 프로모션 상품, 시즌성 상품 등 특정한 목적의 세븐콘의 경우에는 본 조 제 3항 및 6항이 적용되지 않습니다.<br>
+                    ⑧ 회사는 유효기간이 도래하기 7일전 통지를 포함하여 3회 이상 수신자에게 유효기간의 도래, 유효기간의 연장 가능여부와 
+                    방법 등을 문자메시지로 통지합니다.<br>
+                    ⑨ 수신자는 회사가 정한 방법과 절차에 따라 세븐콘을 양도할 수 있습니다. 회사는 위 방법과 절차에 의하여 양도되지 않은 
+                    세븐콘의 사용 등을 제한할 수 있습니다. 세븐콘을 양도받은 자는 본 약관 상의 수신자로 간주됩니다.<br>
+                    <br>
+                    
+                    제13조 (발행 및 지급보증)<br>
+                    ① 회사는 세븐콘 발행 시 다음의 사항을 표시합니다.<br>
+                    1. 발행자<br>
+                    2. 구매가격(할인된 경우 할인율 및 할인금액)<br>
+                    3. 유효기간(유효기간이 설정된 경우에 한함)<br>
+                    4. 사용조건(사용가능금액, 제공 물품, 수량 등)<br>
+                    5. 사용가능 가맹점<br>
+                    6. 환불 조건 및 방법<br>
+                    7. 지급보증 또는 피해보상보험 계약 체결에 관한 사항<br>
+                    8. 소비자피해 발생 시 연락할 관련 전화번호<br>
+					② 세븐콘은 지급보증 또는 피해보상보험계약이 되어 있지 않습니다.<br>
+                    <br>
+                    
+                    제14조 (세븐콘의 사용 제한)<br>
+                    ① 회사는 다음 각 호에 해당하면 수신자가 받은 세븐콘의 전부 또는 일부의 교환을 제한하거나 사용을 중지할 수 있습니다.<br>
+                    1. 교환처와의 계약 종료 등과 같은 회사의 제반 사정으로 서비스를 유지할 수 없는 경우<br>
+                    2. 회사가 제공하는 서비스가 아닌 불법 또는 부정한 방법, 다른 수신자로부터 재송신(재판매)된 
+                    세븐콘을 수신 받아 교환하고자 하는 경우<br>
+                    3. 타인의 명의를 무단으로 사용한 결제 수단을 통하여 받은 세븐콘을 교환하고자 하는 경우<br>
+                    4. 천재지변, 국가비상사태 등 불가항력의 사유가 있는 경우<br>
+                    5. 기타 이 약관에서 정한 세븐콘의 교환 제한 사유가 발생한 경우<br>
+                    ② 전산상의 문제 또는 기타 회사의 귀책사유로 세븐콘을 교환할 수 없는 경우가 발생하면 회사는 교환할 수 없었던 
+                    기간만큼 세븐콘의 기간을 연장하거나 환불규정에 따라 세븐콘을 환불합니다.<br>
+                    <br>
+                    
+                    <b>제4장 손해배상 등</b><br>
+                    <br>
+                    
+                    제15조 (주문취소 및 환불)<br>
+                    ① 이용자는 세븐콘의 상품 유효기간 내에서 세븐콘의 수신자가 해당 세븐콘을 교환하기 전까지는 
+                    주문을 취소할 수 있습니다.<br>
+                    ② 유효기간이 지난 세븐콘이 다음 각 호의 조건을 모두 충족하는 경우 수신자는 이용자가 현금성 
+                    결제수단으로 결제한 금액의 90%를 환불 받을 수 있습니다. 단, 세븐콘이 기업용 프로모션이나 회사와 
+                    특정 기업 간에 약정을 통해 발행된 경우와 할인쿠폰만을 이용하여 구매된 경우 등에는 환불이 제한될 수 있습니다.<br>
+                    1. 유효기간이 지났으나 상품이 교환처에서 교환되지 않은 경우<br>
+                    2. 발행일로부터 5년이 지나지 않은 경우<br>
+                    ③ 수신자의 환불 신청이 있으면 회사는 휴대전화 문자메시지(SMS) 인증 등의 방법으로 수신자 본인확인 절차 후 
+                    수신자에게 환불해 주는 것을 원칙으로 합니다. 다만, 이용자가 수신자로부터 환불에 관한 동의서 또는 세븐콘 
+                    양도증을 받아 회사에 제시할 경우 이용자에게도 환불이 가능합니다.<br>
+                    ④ 회원의 주문 취소 등 환불 사유 발생 시 결제수단 환불을 원칙으로 하나, 해당 결제수단의 특성상 동일한 
+                    프로세스로 환불이 어려울 경우 회사는 현금을 환불수단으로 사용할 수 있습니다.<br>
+                    ⑤ 미성년자인 회원이 법정 대리인(부모 등)의 동의 없이 상품을 구매하거나 계약 체결 후 법정 대리인이 
+                    추인하지 않으면 민법상 취소권을 행사할 수 있습니다. 다만, 민법상 취소권이 제한될 때
+                    (미성년자가 성년자의 주민등록번호, 결제 정보 등을 회사에 제공하여 성년으로 믿게 한 경우, 회사가 통신 과금 
+                    서비스 이용 동의를 이미 얻는 경우 등)에는 취소할 수 없습니다.<br>
+                    <br>
+                    
+                    제16조 (손해배상)<br>
+                    ① 이용자가 본 약관의 규정을 위반함으로 인하여 회사에 손해가 발생하게 되는 경우, 이용자는 회사에 
+                    발생하는 손해를 배상해야 합니다.<br>
+                    ② 서비스를 이용하면서 불법행위나 이 약관을 위반하는 행위를 한 이용자로 말미암아 회사가 해당 이용자 
+                    이외의 제3자로부터 손해배상 청구 또는 소송을 비롯한 각종 이의제기를 받는다면 해당 이용자는 자신의 
+                    책임과 비용으로 회사를 면책시켜야 하며, 회사가 면책되지 못한 경우 당해 이용자는 그로 인하여 회사에 
+                    발생한 손해를 배상해야 합니다.<br>
+                    <br>
+                    
+                    제17조 (면책사항)<br>
+                    ① 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 
+                    제공에 관한 책임이 면제됩니다.<br>
+                    ② 회사는 이용자의 귀책사유로 인한 서비스의 이용장애에 대하여 책임을 지지 않습니다.<br>
+                    ③ 회사는 다음 각 호에서 예시하는 바와 같이 이용자가 불법 또는 부정한 방법으로 서비스를 이용하거나 
+                    과실에 해당하는 행위를 하여 이용자 상호 간 또는 이용자와 제3자 상호 간에 분쟁이 발생하였을 때 이에 
+                    개입할 의무가 없으며 분쟁으로 발생하는 손해를 배상할 책임도 없습니다.<br>
+                    1. 타인의 휴대전화(분실된 전화 포함)를 이용하거나 번호를 무단으로 사용하여 세븐콘을 구매한 경우<br>
+                    2. 이용자가 수신자의 번호를 잘못 입력하여 세븐콘을 잘못 전송하였는데, 수신자가 세븐콘을 이미
+                     사용하였거나 반환을 거절하는 경우<br>
+                    3. 이용자가 세븐콘을 불법 할인의 목적으로 구매하여 제3자 또는 수신자에게 전송(판매)하는 경우<br>
+                    4. 이용자가 계좌 정보 등 환불 관련 정보를 잘못 입력하여 오 환불이 발생한 경우<br>
+                    <br>
+                    
+                    <b>제5장 계약당사자의 의무</b><br>
+                    <br>
+                    
+                    제18조 (회사의 의무)<br>
+                    ① 회사는 서비스와 관련한 이용자의 불만사항이 접수되면 이를 신속히 처리해야 하며, 신속한 처리가 
+                    어려우면 그 사유와 처리 일정을 서비스 화면에 게재하거나 휴대전화, 문자메시지(SMS) 등을 통하여 해당 
+                    이용자에게 통지합니다.<br>
+                    ② 회사가 제공하는 서비스로 인하여 이용자에게 손해가 발생하였을 때 그러한 손해가 회사의 고의나 과실 
+                    때문에 발생하였다면 회사에서 그 책임을 부담하며, 책임의 범위는 통상 손해에 한합니다.<br>
+                    ③ 회사는 정보통신망 이용촉진 및 정보보호에 관한 법률, 통신비밀보호법, 전기통신사업법 등 서비스의 운영, 
+                    유지와 관련된 법규를 준수합니다.<br>
+                    <br>
+                    
+                    제19조 (이용자의 의무)<br>
+                     이용자는 서비스를 이용할 때 다음 각 호의 행위를 해서는 안 됩니다.<br>
+                    1. 부정하게 서비스에 접속하여 사용하는 행위<br>
+                    2. 서비스 정보를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복제 또는 유통하거나 상업적으로 
+                    이용하는 행위<br>
+                    3. 타인의 명예를 손상하거나 타인에게 불이익을 주는 행위<br>
+                    4. 회사의 저작권, 제3자의 저작권 등 기타 권리를 침해하는 행위<br>
+                    5. 공공질서와 미풍양속에 위반되는 내용 등을 타인에게 유포하는 행위<br>
+                    6. 서비스 운영을 고의로 방해하거나 서비스의 안정적 운영을 방해할 수 있는 정보와 수신자의 명시적 
+                    수신거부 의사에 반하여 광고성 정보를 전송하는 행위<br>
+                    7. 서비스에 게시된 정보를 변경하는 행위<br>
+                    8. 관련 법령에 따라 그 전송 또는 게시가 금지되는 정보(컴퓨터 프로그램 포함)를 전송하거나 게시하는 
+                    행위<br>
+                    9. 회사의 직원이나 서비스 운영자로 가장하거나 사칭하여 문자메시지(SMS)를 발송하거나 연락을 
+                    취하는 행위<br>
+                    10. 스토킹 등 다른 이용자를 괴롭히는 행위<br>
+                    11. 재판매의 목적으로 세븐콘을 구매하는 행위<br>
+                    12. 기타 불법적이거나 부당한 행위<br>
+                    ② 이용자는 관계 법령, 이 약관의 규정, 이용안내 및 서비스상에 공지한 주의사항, 회사가 통지하는 
+                    사항 등을 지켜야 하며, 기타 회사의 업무에 방해되는 행위를 해서는 안 됩니다.<br>
+                    <br>
+                    
+                    제20조 (이용자에 대한 통지)<br>
+                    ① 이용자에 대한 통지를 하는 경우 회사는 이용자가 제공한 이동전화번호를 통해 통화 혹은 SMS로 할 수 있습니다.<br>
+                    ② 회사가 불특정 다수 이용자에게 통지할 때는 서비스 게시판 등에 게시하는 것으로 개별 통지를 대신할 수 있습니다.<br>
+                    <br>
+                    
+                    <b>제6장 기타</b><br>
+                    <br>
+                    
+                    제 21 조 (이용자의 개인정보보호)<br>
+                    회사는 관련법령이 정하는 바에 따라서 이용자의 개인정보를 보호하기 위하여 노력합니다. 
+                    이용자의 개인정보보호에 관해서는 관련법령 및 회사가 정하는 『개인정보보호정책』에 정한 바에 의합니다.<br>
+                    <br>
+                    
+                    제 22 조 (개인정보의 수집ㆍ이용)<br>
+                    ① 회사는 서비스의 원활한 제공을 위한 목적으로 이용자가 서비스와 관련하여 회사에 제공하는 개인정보를 
+                       수집ㆍ이용하며, 이용자는 이에 동의합니다.<br>
+                    ② 회사는 이용자가 제공한 개인정보를 당해 이용자의 동의 없이 서비스 제공 이외의 목적으로 이용하지 아니합니다.<br>
+                    ③ 회사가 수집하는 이용자의 개인정보 및 개인정보의 이용목적은 다음 각 호와 같습니다.<br>
+                    1. 이동전화번호: 서비스의 제공<br>
+                    2. 이동전화번호: 서비스 이용에 따른 본인(또는 실사용자) 식별 절차 등에 이용<br>
+                    3. 이동전화번호: 고지사항 전달, 본인 의사 확인, 불만 처리 등 원활한 의사소통 경로의 확보, 새로운 
+                    서비스/신상품이나 이벤트 정보 안내<br>
+                    ④ 회사는 이용자에게 최적화된 서비스를 제공하고, 신상품이나 이벤트 정보 안내, 설문조사 등 이용자 지향적인 
+                    마케팅을 수행하기 위하여 이용자가 제공한 정보 및 서비스 이용과 관련한 정보를 활용할 수 있습니다.<br>
+                    <br>
+                    
+                    
+                    제23조 (양도금지)<br>
+                    이용자 및 회사는 본 약관상의 지위 또는 권리ㆍ의무의 전부 또는 일부를 제3자에게 양도, 
+                    위임하거나 담보제공 등의 목적으로 처분할 수 없습니다.<br>
+                    <br>
+                    
+                    제24조 (관할법원)<br>
+                    ① 서비스 이용과 관련하여 회사와 이용자 사이에 분쟁이 발생한 경우 회사와 이용자는 분쟁의 해결을 위해 성실히 협의합니다.<br>
+                    ② 본 조 제1항의 협의에서도 분쟁이 해결되지 않으면 회사와 이용자 양 당사자는 민사소송법상의 관할법원에 소를 제기할 수 있습니다.<br>
+                    ③ 서비스 이용 및 이 약관과 관련하여 발생하는 분쟁에는 대한민국의 법률을 적용합니다.<br>
+                    <br>
+                    
+                    부칙<br>
+                    [시행일] 본 이용약관은 2017년 7월 9일부터 적용됩니다. <br>
+                    <br>
+                    
+                    공고일자 : 2017년 7월 9일<br>
+                    시행일자 : 2017년 7월 9일<br>
+                    
+                </div>
+            </div>
+            <a class="btn-modal-close" href="javascript:openModal('modalTermsAgree');">닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 세븐콘 개인정보 취급 방침 -->
+    <div class="modal modal-type3 modal-terms2" id="modalTerms3">
+        <div class="modal-inner">
+            <div class="m-title">
+                세븐콘 개인정보 취급 방침
+            </div>
+            <div class="m-contents">
+                <div class="terms2">
+                
+                    주식회사 옴니텔(이하 "회사"라 함)가 제공하는 세븐콘 서비스(이하 '서비스'라 합니다)
+                    는 고객님의 개인정보를 소중하게 생각하고 있습니다.<br>
+                    <br>
+                    회사는 고객님의 개인정보를 보호하기 위하여 관련법("정보통신망 이용촉진 및 정보보호 
+                    등에 관한 법률", "개인정보보호법" 등)을 준수하는 것 외에 아래와 같이 처리하는 개인정보에 
+                    대한 관리방침을 정하여 항상 최선을 다하고 있습니다.<br>
+                    <br>
+
+                    <b>1. 개인정보의 수집/이용목적•항목 및 보유기간</b><br>
+                    <br>
+                    개인정보 수집/이용<br>
+                    <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" bgcolor="#CCCCCC">이용목적</td>
+                        <td align="center" bgcolor="#CCCCCC">수집항목</td>
+                        <td align="center" bgcolor="#CCCCCC">보유기간</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            서비스 관련 정보 제공<br>
+                            (고지사항 전달, 본인의사 확인, 서비스관련상담, 불만처리, 서비스이용 관련 혜택, 유의사항, 편의사항 등 정보제공)
+                        </td>
+                        <td>
+                            연락처(휴대전화번호 또는 전화번호), 세븐콘 서비스 이용과정에서 발생한 상품 또는 
+                            서비스 구매 내역, 접속기록, 매장방문정보 등
+                        </td>
+                        <td rowspan="2">
+                        	세븐일레븐 앱  서비스를 해지(회원 탈퇴)하거나 일정기간 서비스를 이용하지 않아 개인정보의
+                            유효기간(5년)이 도래하는 경우 수집된 개인의 정보를 열람하거나 이용할 수 없도록 지체 없이 파기함. 
+                            단, 관계 법령의 규정*(아래 참조)에 따라 보존할 의무가 있으면 해당 기간 동안 보존
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            세븐일레븐 스마트폰 애플리케이션을 통한 회원서비스 제공, 본인확인 또는 인증, 부정사용 방지 및 보안강화
+                        </td>
+                        <td>
+                        	세븐콘 채널에서 구매한 결제 수단별, 결제 대행업체의 TID 혹은 UID 값
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>세븐콘 상품 구매 또는 선물하기 서비스 제공</td>
+                        <td>휴대폰전화번호, 수신자 휴대전화번호, 주문 상품 정보</td>
+                        <td>상품 유효기간 만료 시까지</td>
+                      </tr>
+                      <tr>
+                        <td>세븐콘 유효기간 만료 혹은 고객보상 처리를 위한 연락 목적</td>
+                        <td>휴대폰번호, 등 연락처, 은행명, 계좌번호</td>
+                        <td>환불 처리 시 까지</td>
+                      </tr>
+                    </table>
+                    <br>
+					※ 본 서비스를 고객님께 제공하는 기간에 고객님의 개인정보를 보유, 이용하고, 세븐일레븐 앱 서비스 회원에서 
+                    탈퇴하거나 개인정보 이용목적을 달성한 경우 또는 일정기간 서비스를 이용하지 않아 개인정보의 유효기간이 도래하는 
+                    경우 수집된 개인정보를 열람하거나 이용 할 수 없도록 파기처리 합니다. 다만, 보유기간과 관련하여 관계법령의 규정에 
+                    따라 보존할 의무가 있으면 법령이 정한 기간 동안 고객님의 개인정보를 보유할 수 있으며, 다음에 해당하는 경우를 말합니다.<br>
+                    <br>
+                    
+                    가. 계약 철회 등에 관한 기록: 5년(전자상거래법)<br>
+                    나. 대금 결제 및 재화 등의 공급에 관한 기록: 5년(전자상거래법)<br>
+                    다. 이용자의 불만 또는 분쟁 처리에 관한 기록: 3년(전자상거래법)<br>
+                    라. 거래에 관한 장부 및 증빙서류: 5년(국세기본법, 법인세법, 부가가치세법 등)<br>
+                    <br>
+                    
+					※ 개인정보의 유효기간이라 함은 고객님께서 최근 본 서비스를 이용하신 이래 일정기간(전자상거래법 제6조 제3항 및 동 법 
+                    시행령 제6조 제1항에 따라 유효기간을 5년으로 적용)동안 주문 이력이 없으신 경우, 고객님 개인정보의 안전한 보호와 이로 
+                    인한 피해발생을 방지하기 위해 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 정해진 바에 따라 개인정보 파기 등 
+                    안전한 별도의 조치를 적용하는 것을 말합니다.<br>
+                    <br>
+                    
+                    <b>2. 개인정보 수집방법</b><br>
+                    <br>
+                    
+                    회사는 홈페이지, 휴대전화, 디지털 기기, 본 서비스의 애플리케이션에서의 가입절차, 상담절차, 이벤트나 경품 행사를 
+                    비롯하여 개인정보 처리업무 수탁사 또는 제휴사 등, 휴대전화 및 유•무선 인터넷 서비스를 사용할 때 생성정보를 수집하는 
+                    도구를 통한 방법 등으로 개인정보를 수집합니다.<br>
+                    <br>
+                    
+                    <b>3. 수집한 개인정보의 이용 및 제 3자 제공</b><br>
+                    <br>
+                    
+                    회사는 고객님의 개인정보를 동의받은 범위 내에서 사용하며, 해당 범위를 초과하여 이용하거나 타인 또는 다른 기업과 
+                    기관에 제공하지 않습니다. 단, 다음의 경우에는 주의를 기울여 개인정보를 이용•제공 할 수 있습니다.<br>
+                    가. 법령에 정해진 의무 또는 수사목적으로 법령에서 정해진 절차와 방법에 따라 수사기관의 정당한 요청이 있는 경우<br>
+                    나. 회사는 통계작성, 학술연구 또는 시장조사를 위하여 필요하다면 이용자가 제공한 개인정보를 식별할 수 없는 형태로 
+                    가공하여 제3자에게 제공할 수 있습니다.<br>
+                    <br>
+                    
+                    <b>4. 개인정보의 처리위탁</b><br>
+                    <br>
+                    
+                    회사는 기본적인 서비스의 제공, 고객 편의 제공 등 원활한 업무 수행을 위하여 다음과 같이 개인정보 처리업무를 외부 
+                    전문업체(또는 회사의 다른 서비스)에 위탁하여 운영하고 있으며, 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 
+                    관리될 수 있도록 필요한 사항을 규정하고 있습니다.<br>
+                    <br>
+                    회사의 개인정보 위탁처리 기관 및 위탁업무 내용은 아래와 같습니다.<br>
+                    
+                    <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" bgcolor="#CCCCCC">위탁업체</td>
+                        <td align="center" bgcolor="#CCCCCC">위탁업무 내용</td>
+                      </tr>
+                      <tr>
+                        <td align="center">주식회사 NHN 한국사이버결제</td>
+                        <td align="center">카드결제 및  휴대폰 소액결제 대행</td>
+                      </tr>
+                      <tr>
+                        <td align="center">&nbsp;</td>
+                        <td align="center">문자메시지 발송  대행, 폰정보 조회</td>
+                      </tr>
+                      <tr>
+                        <td align="center">금융결제원</td>
+                        <td align="center">기프티콘 환불  처리</td>
+                      </tr>
+                    </table>
+                    <br>
+                    
+                    <b>5. 개인정보 파기 절차 및 방법</b><br>
+                    <br>
+                    
+                    회사는 수집한 개인정보의 이용 목적이 달성된 후에는 보관기간 및 이용기간에 따라 
+                    해당 정보를 바로 파기합니다. 파기 절차와 방법은 다음과 같습니다.<br>
+                    <br>
+                    가. 파기 절차<br>
+                    고객님이 상품 구매를 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져
+                    (종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유
+                    ("1. 개인정보의 수집/이용목적•항목 및 보유기간" 참조)에 따른 보유기간이 지난 후에 삭제되거나 파기됩니다.<br>
+                    나. 파기 방법<br>
+                    • 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하거나 화학약품으로 용해하여 파기합니다.<br>
+                    • 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+                    <br>
+                    
+                    <b>6. 이용자 및 법정 대리인의 권리와 그 행사방법</b><br>
+                    <br>
+                    
+                    1) 상품 구매 시 제공되는 고객님의 개인정보(휴대전화번호)의 오류에 대한 정정을 요청하신 경우에는 정정을 
+                    완료하기 전까지 해당 개인정보를 이용 또는 제공하지 않으며 잘못된 개인정보를 제3 자에게 이미 제공한 경우에는 
+                    정정 처리결과를 제3자에게 바로 알려 정정이 이루어지도록 조치합니다.<br>
+                    3) 회사는 고객님 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 관련 법과 정해진 규정에 따라 안전하게 처리하고 
+                    그 외의 용도로 열람하거나 이용할 수 없도록 처리하고 있습니다.<br>
+                    <br>
+                    
+                    <b>7. 개인정보의 기술적/관리적 보호 대책</b><br>
+                    
+                    본 서비스에서는 고객님의 개인정보를 보호하기 위해 기술적 대책과 관리적 대책을 마련하여 적용하고 있습니다.<br>
+                    <br>
+                    1) 기술적 대책<br>
+                    가. 고객님의 개인정보는 암호알고리즘을 이용하여 안전하게 보호•저장되고 있으며 중요한 데이터는 네트워크상의 
+                    전송 데이터를 암호화하거나 파일 잠금기능(Lock)을 사용하여 별도의 보안기능을 통해 보호되고 있습니다.<br>
+                    나. 회사는 컴퓨터 바이러스에 의한 피해를 방지하고자 백신 프로그램을 이용하고 있습니다. 백신프로그램은 
+                    주기적으로 업데이트되며 최신화를 유지함으로써 바이러스에 의해 개인정보가 침해되는 것을 방지하고 있습니다.<br>
+                    다. 회사는 암호알고리즘을 이용하여 네트워크 상의 개인정보를 안전하게 전송할 수 있는 보안장치(SSL 또는 SET)를 채택하고 있습니다.<br>
+                    라. 회사는 해킹 등 외부침입에 대비하여 각 서버마다 침입 차단 시스템과 취약점 분석 시스템을 이용하는 등 보안에 최선을 다하고 있습니다.<br>
+					2) 관리적 대책<br>
+                    가. 회사는 개인정보의 안전한 보호를 위하여 외부 전문기관으로부터 주요 시스템과 설비에 대한 정보보호관리체계 
+                    인증을 받아 본 서비스를 운영하고 있습니다.<br>
+                    나. 회사는 고객님의 개인정보에 대한 접근 및 관리에 필요한 절차 등을 마련하여 소속 직원으로 하여금 이를 숙지하고 
+                    준수하도록 하고 있으며, 개인정보를 처리하는 직원을 대상으로 새로운 보안 기술 습득 및 개인정보보호 의무 등에 관해 
+                    정기적인 사내 교육과 외부 위탁교육을 시행하고 있습니다.<br>
+                    다. 회사는 고객님의 개인정보에 대한 접근권한을 최소한의 인원으로 제한하고 있습니다.<br>
+                    라. 회사는 개인정보 처리자의 업무 인수인계를 보안이 유지된 상태에서 철저하게 하고 있으며 개인정보 처리자의 입사 및 
+                    퇴사 후 개인정보 사고에 대한 책임을 명확히 하고 있습니다.<br>
+                    마. 회사는 고객님 개인의 실수나 기본적인 인터넷의 위험성 때문에 일어나는 일들에 대해 책임을 지지 않습니다. <br>
+                    바. 그 외 내부 관리자의 실수나 기술 관리 상의 사고로 개인정보가 상실•유출•변조•훼손되었을 때에는 회사는 곧바로 해당 
+                    사실을 고객님께 알리고 그에 대한 적절한 대책과 보상을 마련할 것입니다.<br>
+                    <br>
+                    
+                    <b>8. 광고성 정보 전송</b><br>
+                    <br>
+                    
+                    1) 회사는 고객의 사전 동의 없이 영리 목적의 광고성 정보를 전송하지 않습니다.<br>
+                    2) 신규 컨텐츠 알림이나 이벤트 정보안내 등 고객 지향적인 마케팅을 수행하기 위하여 광고성 정보를 App. PUSH로 전송할 
+                    때 회사는 광고성 정보 전송에 대한 고객의 사전 동의를 얻고 App. PUSH의 본문란에 아래와 같이 고객이 광고성 정보임을 
+                    쉽게 알아볼 수 있도록 조치합니다.<br>
+                    - App. PUSH 본문란 : '(광고)' 라는 문구를 본문 맨 처음에 빈칸 없이 한글로 표시합니다.<br>
+                    3) 광고 수신에 동의한 고객에게 이메일, 문자메시지 전송 등 App. PUSH 이외의 방법으로 영리 목적의 광고성 정보를 전송할 
+                    때에도 전송자의 명칭을 표기하는 등 필요한 조치를 합니다.<br>
+                    <br>
+                    
+                    <b>9. 개인정보 관련 불편처리</b><br>
+                    <br>
+                    1) 회사는 고객님과의 원활한 의사소통을 위하여 고객센터 등 고객상담창구를 운영하고 있으니 문의사항이 있으면 언제든지 
+                    아래의 연락처로 문의해 주세요 성실하게 답변해 드리겠습니다.<br>
+                    [고객센터]<br>
+                    - 연락처 : 1588-5639<br>
+                    - 이메일 상담 : cs3@omnitel.co.kr<br>
+                    2) 또한 개인정보 침해에 대한 신고, 상담이 필요하신 경우에는 한국인터넷진흥원(KISA) 개인정보 침해신고센터로 문의하시기 바랍니다. <br>
+                    회원님이 개인정보침해를 통한 금전적, 정신적 피해를 입으신 경우에는 개인정보분쟁조정위원회에 피해구제를 신청하실 수 있습니다.<br>
+                    - 개인정보침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)<br>
+                    - 대검찰청 사이버범죄수사단 : 02-3480-3571 (cybercid@spo.go.kr)<br>
+                    - 경찰청 사이버테러대응센터 : 1566-0112 (www.netan.go.kr)<br>
+                    <br>
+                    
+                    <b>10. 개인정보보호책임자 및 담당자의 연락처</b><br>
+                    <br>
+                    
+                    1) 회사는 고객님의 개인정보보호를 매우 소중하게 생각하며, 고객님의 개인정보가 훼손, 침해 또는 유출되지 않도록 
+                    최선을 다하고 있습니다. 그러나 기술적인 보완조치를 했음에도 불구하고, 해킹 등 기본적인 네트워크상의 위험성에 
+                    의해 발생하는 예기치 못한 사고로 인한 정보의 훼손 및 방문자가 작성한 게시물에 의한 각종 분쟁에 관해서는 책임이 없습니다.<br>
+                    2) 고객님의 개인정보보호 관련 문의 시 고객센터에서 신속하고 성실하게 답변을 드리도록 하고 있습니다. 또한 고객님이 본 서비스의 
+                    개인정보보호 담당자와 연락을 원하실 경우 아래의 E-mail로 연락을 주시면 개인정보 관련 문의사항에 대하여 신속하고 성실하게 답변해 드리겠습니다.<br>
+                    <br>
+                     개인정보보호책임자<br>
+                    성명 및 직책 : <br>
+                    이메일 : <br>
+                    연락처 : 02-856-7900(유료)<br>
+                    <br>
+                    
+                    <b>11. 알릴 의무</b><br>
+                    <br>
+                    현 개인정보처리방침은 2009년 6월 9일에 제정되었으며 정부의 정책이나 보안기술이 변경에 되어 내용이 추가•삭제•수정될 
+                    때에는 개정 최소 7일 전부터 홈페이지 또는 모바일 앱의 '공지'란을 통해 알릴 것입니다.<br>
+                    <br>
+
+                </div>
+            </div>
+            <a class="btn-modal-close" href="javascript:openModal('modalTermsAgree');">닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 취소 / 환불신청을 완료 -->
+    <div class="modal modal-alarm" id="modalComplete1">
+        <div class="modal-inner">
+            <div class="m-contents">
+            	<span class="text-b">취소/환불신청이 <span class="text-green">완료</span>되었습니다.</span><br><br>
+                <span class="text-r">취소/ 환불규정</span><br>
+                <span class="text-r">1. 환불 신청은 구매자만 가능</span><br><br>
+                
+                <span class="text-r">2. 유효기간 만료 시</span><br>
+                - 결제금액의 90%를 구매자에게 환불<br><br>
+                
+                <span class="text-r">3. 결제금액 환불 처리기간</span><br>
+                - 부분취소인 경우 영업일 기준 2~3일 소요<br>
+                - 전체취소인 경우 즉시 처리<br><br>
+                
+                <span class="text-r">4. 취소/환불 관련 문의</span><br>
+                - 고객센터로 문의 (1588-5639)<br>
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 포인트 결제 전용 상품 안내 -->
+    <div class="modal modal-alarm" id="modalPointInfo">
+        <div class="modal-inner">
+            <div class="m-contents">
+            	<span class="text-b">해당 포인트로만 <br><span class="text-green">결제</span>할 수 있는 상품입니다.</span><br><br>
+                <ul class="point-img fix">
+                    <li><img class="logo-lok" src="../images/modal_logo.jpg" alt="LPoint, OKcashbag" /></li>
+                </ul>
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->    
+    <!-- modal 예약주문상품 구매 시 유의사항 -->
+    <div class="modal modal-alarm type2" id="modalNotice">
+        <div class="modal-inner">
+            <div class="m-title">예약주문상품 구매 시 유의사항</div>
+            <div class="m-contents">
+                <p class="mt75 text-r m-cont-title">유의사항</p>
+                <ul class="m-cont-list mt40">    
+                    <li>1. 예약주문 상품의 유통기한 경과시<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-r">식품위생법 상 상품을 수령할 수 없습니다.</span></li>
+                    <li>2. 수령하지 않은 상품은 자동 폐기되며<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-r">환불되지 않습니다.</span></li>
+                </ul>
+                <p class="mt40">결제하시겠습니까?</p><br>
+            </div>
+            <div class="btn2 fix">
+                <a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소</a>
+                <a class="btn-type4" href="javascript:void(0)">결제하기</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal 제품 04 -->
+    <div class="modal modal-product type2" id="modalProduct4">
+        <div class="modal-inner">
+            <div class="top-text">
+                <span class="text-green">7월의 할인쿠폰</span><br>
+                하나의 바코드로 모든 할인상품을<br>
+                할인받으세요.
+            </div>
+            <p>
+                <img src="../images/logo_seven_01.png" alt="7-ELEVEN" />
+            </p>
+            <div class="barcode">
+                <img src="../images/myorder/@temp_barcode.jpg" alt="">
+            </div>
+            <div class="product-notice">
+                <div class="title fix">
+                    <em class="fl">할인기간</em>
+                    <span class="due fr">2017.03.01~2017.03.31</span>    
+                </div>
+                <em>[유의사항]</em>
+                <ul class="fix">
+                    <li>해당 할인쿠폰은 각 상품별 조기 소진될 수 있습니다.</li>
+                </ul>
+                <em>[할인쿠폰 POS 결제 방법]</em>
+                <ul class="fix">
+                    <li>판매상품 등록 → 할인쿠폰 바코드 스캔 → 엘포인트 적립<br>
+                     → 결제 진행</li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 쿠폰사용  1. 도시락 -->
+    <div class="modal modal-type3 modal-couponUse" id="couponUse1">
+        <div class="modal-inner">
+            <div class="cuopon-item">
+                <div class="item-img">
+                    <img src="../images/@temp_600x600.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <div class="item-company ellipsis">롯데푸드</div>
+                    <div class="item-name">혜리) NEW11찬 도시락 500g</div><!-- 최대 2줄까지 나옴 -->
+                    <a class="btn-item" href="javascript:void(0);">상세정보보기</a>
+                </div>
+            </div>
+            <div class="coupon-use-cont">
+                <div class="how-to-use">
+                    <p>사용방법</p>
+                    <ol>
+                       <li>1. 고객휴대폰 바코드 스캔</li> 
+                       <li class="text-orange">2. 도시락 상품 바코드 스캔</li> 
+                       <li>3. 현금 합계 클릭</li> 
+                    </ol>
+                </div>
+                <div class="coupon-use-bot">
+                    <div>
+                        <div class="text01">
+                            <p>교환일자<span class="date">2017.06.11 22:00~00:00</span></p>
+                            <p>교환지점<span>김포걸포공원점</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="barcode-area">
+                    <img src="../images/myorder/@temp_barcode.jpg" alt="" />
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 쿠폰사용 2. 일반상품 -->
+    <div class="modal modal-type3 modal-couponUse" id="couponUse2">
+        <div class="modal-inner">
+            <div class="cuopon-item">
+                <div class="item-img">
+                    <img src="../images/@temp_600x600.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <div class="item-company ellipsis">롯데푸드</div>
+                    <div class="item-name">혜리) NEW11찬 도시락 500g</div><!-- 최대 2줄까지 나옴 -->
+                    <a class="btn-item" href="javascript:void(0);">상세정보보기</a>
+                </div>
+            </div>
+            <div class="coupon-use-cont">
+                <div class="how-to-use">
+                    <p>사용방법</p>
+                    <ol>
+                       <li class="text-orange">1. 고객 휴대폰 바코드 스캔</li>
+                       <li>2. 현금 합계 클릭</li> 
+                    </ol>
+                </div>
+                <div class="coupon-use-bot">
+                    <div>
+                        <div class="text02 text-center">
+                            판매상품은 스캔하지 마세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="barcode-area">
+                    <img src="../images/myorder/@temp_barcode.jpg" alt="" />
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 쿠폰사용 3. 금액권 -->
+    <div class="modal modal-type3 modal-couponUse" id="couponUse3">
+        <div class="modal-inner">
+            <div class="cuopon-item">
+                <div class="item-img">
+                    <img src="../images/@temp_600x600.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <div class="item-company ellipsis">롯데푸드</div>
+                    <div class="item-name">혜리) NEW11찬 도시락 500g</div><!-- 최대 2줄까지 나옴 -->
+                    <a class="btn-item" href="javascript:void(0);">상세정보보기</a>
+                </div>
+            </div>
+            <div class="coupon-use-cont">
+                <div class="how-to-use">
+                    <p>사용방법</p>
+                    <ol>
+                        <li class="text-orange">1. 판매상품 바코드 스캔 </li>
+                        <li>2. 기타결제 선택</li>
+                        <li>3. 모바일 결제 선택</li>
+                        <li>4. 고객 휴대폰 바코드 스캔</li>
+                    </ol>
+                </div>
+                <div class="coupon-use-bot">
+                    <div>
+                        <div class="text02 text-center">
+                           판매상품을 먼저 스캔 하세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="barcode-area">
+                    <img src="../images/myorder/@temp_barcode.jpg" alt="" />
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 쿠폰사용 4. 핫딜쿠폰 -->
+    <div class="modal modal-type3 modal-couponUse" id="couponUse4">
+        <div class="modal-inner">
+            <div class="cuopon-item">
+                <div class="title-text01">
+                    <img src="../images/text_coupon_hot_deal.png" alt="핵이득! 바코드 하나로 한방에 할인받자" />
+                </div>
+            </div>
+            <div class="coupon-use-cont">
+                <div class="how-to-use">
+                    <p>사용방법</p>
+                    <ol>
+                        <li class="text-orange">1. 판매상품 바코드 스캔</li>
+                        <li>2. 고객 휴대폰 바코드 스캔</li>
+                        <li>3. 엘포인트 바코드 스캔</li>
+                        <li>4. 결제진행</li>
+                    </ol>
+                </div>
+                <div class="coupon-use-bot">
+                    <div>
+                        <!-- 2017.10.11 문구 및 스타일수정 -->
+                        <div class="text03 text-center">
+                            상품 별 조기 소진될 수 있습니다.
+                            <p class="text04">
+                                본 상품은 세븐일레븐 매장 내 행사(1+1, 2+1)<br>
+                                또는 증정상품 적용이 불가합니다.
+                            </p>
+                        </div>
+                        <!-- //2017.10.11 문구 및 스타일수정 -->
+                    </div>
+                </div>
+                <div class="barcode-area">
+                    <img src="../images/myorder/@temp_barcode.jpg" alt="" />
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 쿠폰사용 5. 당첨용 -->
+    <div class="modal modal-type3 modal-couponUse" id="couponUse5">
+        <div class="modal-inner">
+            <div class="cuopon-item">
+                <div class="item-img">
+                    <img src="../images/@temp_600x600.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <div class="item-company ellipsis">롯데푸드</div>
+                    <div class="item-name">혜리) NEW11찬 도시락 500g</div><!-- 최대 2줄까지 나옴 -->
+                    <a class="btn-item" href="javascript:void(0);">상세정보보기</a>
+                </div>
+            </div>
+            <div class="coupon-use-cont">
+                <div class="how-to-use">
+                    <p>사용방법</p>
+                    <ol>
+                        <li>1. 상단에 있는 자세히보기 버튼 클릭</li>
+                        <li class="text-orange">2. 상품 상세 정보에서 사용방법 확인</li>
+                        <li>3.   해당 사용처에서 쿠폰 사용</li>
+                    </ol>
+                </div>
+                <div class="coupon-use-bot">
+                    <div>
+                        <div class="text02 text-center">
+                           사용방법을 확인하세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="barcode-area">
+                    <div class="win-number text-center">ASASDSA1258330SD</div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- 로딩 -->
+    <!-- <div class="loading2" style="display:block;">
+        <img src="../images/rolling02.svg" alt="로딩바" />
+    </div> -->
+</body>
+</html>

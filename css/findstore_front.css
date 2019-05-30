@@ -1,0 +1,404 @@
+/* findstore */
+
+.sc_group{
+    background-color: #fff;
+}
+.sc_group + .sc_group{
+    margin-top: 2.5vw;
+}
+
+.sc_group .top_info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 3% 5.55%;
+    min-height: 11.94vw;
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
+.sc_group .top_info .top_txt{
+    flex: auto;
+    padding-right: 2vw;
+    box-sizing: border-box;
+    font-size: 3.88vw;
+    line-height: 4.81vw;
+    font-weight: normal;
+    word-break: keep-all;
+}
+
+.sc_group .top_info .top_txt .txt_point{
+    font-family: 'Roboto';
+}
+
+.store_tabwrap{
+    background-color: #eee;
+    margin-bottom: 2.5vw;
+}
+.type_border{
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+}
+.store_tab{
+    padding: 4.166% 5.55%;
+    background-color:white;
+    width: 100%;
+    box-sizing: border-box;
+}
+.store_tab:after{
+    clear: both;
+    display: block;
+    content:'';
+}
+.store_tab .tab{
+    float: left;
+    width: 33.333%;
+    height: 11.11vw; 
+    font-size: 3.88vw;
+    cursor: pointer;
+    color: #009c7a;
+    border:1px solid #009c7a;
+}
+.store_tab .tab + .tab{
+    border-left: #fff;
+}
+.store_tab .tab.on{
+    background-color:#009c7a;
+    color: #fff;
+}
+
+.myplace{
+    position: relative;
+    padding-left: 5.74vw;
+    color: #666;  
+    font-size: 3.88vw;
+    line-height: 3.88vw;
+    cursor: pointer;
+    word-break: keep-all;
+}
+
+.myplace:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5.74vw;
+    height: 5.74vw;
+    background: url('../images/findstore/ico_myplace.png') 0 center no-repeat;
+    background-size: 3.88vw 3.88vw;
+
+}
+.map{
+    height: 67.5vw;
+    background-color: #bbb;
+}
+
+.result_empty{
+    padding: 8.1% 0;
+    font-size: 4.44vw;
+    color: #666;
+    font-weight: 300;
+    font-family: 'NotoSansKR-Light-Hestia';
+}
+
+select.select_line{
+    width: 31.66vw;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 0 0 0 2vw;
+    line-height: 7.22vw;
+    background: transparent;
+    font-family: 'NotoSansKR-Regular-Hestia';
+    font-size: 3.88vw;
+    text-align: left;
+    color: #666;
+    background: url('../images/findstore/select_down.png') right 2vw center no-repeat;
+    background-size: 4.62vw 2.4vw;
+    -webkit-appearance: none;
+}
+
+.select_group{
+    display: flex;
+    padding: 4.166% 3.61%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.select_group select {
+    flex: 1;
+    margin: 0 0.97%;
+    line-height: 9.22vw;
+}
+
+.store_list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 3.33vw 5.55%;
+    border-bottom: 1px solid #eee;
+}
+.store_list:last-child{
+    border-bottom: none;
+}
+
+.store_list.on{
+    background-color: #f2fdfb;
+}
+.store_list input[type="radio"]{
+    margin-right:3.33%;
+}
+
+.store_list .list_cont{
+    flex: 1;
+}
+.store_list .list_cont .info .store{
+    position: relative;
+    display: flex;
+    align-content: center;
+    font-size: 3.88vw;
+    color: #333;
+}
+.store_list .list_cont .info .store .store_type {
+    display: flex;
+    margin-left: 2.77vw;
+    cursor: pointer;
+}
+.store_list .list_cont .info .store .store_type span {
+    display: inline-block;
+    border-radius: 2.31vw;
+    height: 4.53vw;
+    margin-right: 1.11vw;
+    padding: 0 1.6vw;
+    font-size: 2.59vw;
+    line-height: 4.53vw;
+    color: #009c7a;
+    border: 1px solid #009c7a;
+}
+.store_list .list_cont .info .store .store_type span:last-child{
+    margin-right: 0;
+} 
+.store_list .list_cont .info .address,
+.store_list .list_cont .info .phone{
+    font-size: 3.33vw;
+    font-family: 'NotoSansKR-Light-Hestia';
+    color: #666;
+}
+.store_list .list_cont .info .address{
+    word-break: keep-all;
+    max-width: calc(100% - 19vw);
+}
+
+.store_list .icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+.store_list .icons li{
+    display: flex;
+    margin-right: 1.94vw;
+}
+
+.store_list .icons li:last-child{
+    margin-right: 0;
+}
+.store_list .icons li span{
+    line-height: 3.05vw;
+    margin-left: 0.027vw;
+    margin-bottom: 1.94vw;
+    color: #333;
+    font-size: 2.4vw;
+    font-family: 'NotoSansKR-Light-Hestia';
+}
+.store_list .icons li:before{
+    content: '';
+    display: inline-block;
+    width: 4.16vw;
+    height: 3.05vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.store_list .icons li.reserv:before{
+    background-image: url('../images/findstore/store_ico_reserv.png');
+}
+.store_list .icons li.cafe:before{
+    background-image: url('../images/findstore/store_ico_cafe.png');
+}
+.store_list .icons li.chicken:before{
+    background-image: url('../images/findstore/store_ico_chicken.png');
+}
+.store_list .icons li.bakery:before{
+    background-image: url('../images/findstore/store_ico_bakery.png');
+}
+.store_list .icons li.lotto:before{
+    background-image: url('../images/findstore/store_ico_lotto.png');
+}
+.store_list .icons li.medicine:before{
+    background-image: url('../images/findstore/store_ico_medicine.png');
+}
+.store_list .icons li.delivery:before{
+    background-image: url('../images/findstore/store_ico_delivery.png');
+}
+.store_list .icons li.pocket:before{
+    background-image: url('../images/findstore/store_ico_pocket.png');
+}
+
+.store_list .btn_wrap{
+    display: flex;
+    position: absolute;
+    top: 3.33vw;
+    right: 5.55%;
+    /* transform: translateY(-50%); */
+}
+.store_list .btn_wrap button{
+    display: inline-block;
+    width: 7.5vw;
+    height: 7.5vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.store_list .btn_wrap button.pin{
+    background-image: url('../images/findstore/ico_place.png');
+}
+.store_list .btn_wrap button.search{
+    background-image: url('../images/findstore/ico_search.png');
+    margin-left: 2.77vw;
+}
+.store_list .btn_wrap button.share{
+    background-image: url('../images/findstore/ico_share.png');
+}
+.store_list .btn_wrap button.pin.on{
+    background-image: url('../images/findstore/ico_place_on.png');
+}
+
+.layer_storelabel{
+    position: absolute;
+    /* top: -26.1vw; 큰버전 */
+    top: 9.9vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 11.1%);
+    background-color: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #fff;
+    z-index: 4;
+}
+.layer_storelabel ul {
+    /* padding: 4.16vw; 큰버전 */
+    padding: 2.16vw 4.16vw;
+}
+
+.layer_storelabel .close{
+    position: absolute;
+    top: 3.05vw;
+    right: 3.05vw;
+    display: inline-block;
+    width: 4.44vw;
+    height: 4.44vw;
+    background: url('../images/findstore/layer_close.png') 0 0 no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.layer_storelabel li{
+    color: rgba(255,255,255,.7);
+    /* margin-bottom: 2.77%; 큰버전 */
+    margin-bottom: 0.77%;
+    font-size: 3.05vw;
+}
+.layer_storelabel li:last-child{
+    margin-bottom: 0;
+}
+.layer_storelabel li strong{
+    position: relative;
+    color: #fff;
+    padding-right: 1.88vw;
+    margin-right: 1.85vw;
+    box-sizing: border-box;
+}
+.layer_storelabel li strong:after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content:'';
+    display: inline-block;
+    width: 1px;
+    height: 60%;
+    background-color: #909090;
+}
+
+/* 점포찾기 상세화면 */
+.search_info{
+    padding-bottom: 0;
+}
+.search_info .map{
+    padding-bottom: 0;
+    height: 55.55vw;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+#storeLayer{
+    display: none;
+}
+
+/* 점포검색 */
+.maptype .map{
+    display: none;
+}
+
+/* 점포검색 - 검색영역 */
+.store_search{
+    padding: 0 5.5%;
+    height: 15.55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.store_search .search_wrap{
+    position: relative;
+    width: 100%;
+}
+.store_search .search_wrap input{
+    width: 100%;
+    border: none;
+    border-radius:0;
+    border-bottom: 1px solid #009c7a;
+    font-size: 3.88vw;
+    padding: 0 0 2.5vw 6.11vw;
+    outline: none;
+    box-sizing: border-box;
+}
+.store_search .search_wrap input[type="text"]::placeholder{
+    color: #999;
+}
+.store_search .search_wrap label{
+    position: absolute;
+    bottom: 3.9vw;
+    left: 0;
+    display: inline-block;
+    width: 3.24vw;
+    height: 3.24vw;
+    background: url('../images/findstore/ico_ipt_search.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.store_search .search_wrap .search_delete{
+    position: absolute;
+    bottom: 2vw;
+    right: 0.44vw;
+    width: 6.1vw;
+    height: 6.1vw;
+    background: url('../images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}

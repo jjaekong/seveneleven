@@ -1,0 +1,670 @@
+/* 메인 */
+.dev_linkwrap{
+    margin: 6.38% 0 13%;
+}
+.dev_link{
+    position: relative;
+    display: block;
+    height: 35.83vw;
+    padding: 7.5vw;
+    background-color: #009c7a;
+    box-sizing: border-box;
+    background-size: 25.83vw 20.27vw;
+    background-repeat: no-repeat;
+    background-image: url('../images/delivery/devbg1.png');
+    background-position: right 7.5vw bottom 0;
+}
+.dev_link + .dev_link {margin-top: 5.55%;}
+.dev_link *{
+    color: #fff;
+    text-align: left;
+}
+.dev_link h4.tit{
+    font-size: 5.27vw;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    margin-bottom: 3.61%;
+    line-height: 1;
+}
+.dev_link .desc{
+    font-size: 3.61vw;
+    opacity: 0.7;
+}
+.dev_link .arrow{
+    position: absolute;
+    top: 7.5vw;
+    right: 7.5vw;
+    font-size: 3.88vw;
+    line-height: 1;
+}
+.dev_link .arrow:after {
+    content:'';
+    display:inline-block;
+    width: 1.574vw;
+    height: 2.5vw;
+    padding-left:1.944vw;
+    background: url('../images/icons/txt_arrow_common_w.png') 100% 100%;
+    background-size: 1.574vw 2.5vw;
+    background-repeat: no-repeat;
+}
+.dev_link.confirm{
+    background-color: #f56230;
+    background-image: url('../images/delivery/devbg2.png');
+}
+.dev_guide{
+    background-color: #f9f9f9;
+    margin-top: 5.55%;
+    padding-bottom: 5.55vw;
+}
+.dev_guide li{
+    position: relative;
+    padding: 8.05% 0 8.33%;
+    overflow: hidden;
+}
+.dev_guide li:before,
+.dev_guide li:after{
+    content: '';
+    display: inline-block;   
+    position: absolute;
+}
+.dev_guide li:before{
+    top:0;
+    left:0;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+.dev_guide li:after{
+    top: -2vw;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 2.5vw;
+    height:2.5vw;
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+}
+.dev_guide li:first-child:before{
+    display:none;
+}
+.dev_guide li:first-child:after{
+    display: none;
+}
+.dev_guide .tit {
+    margin-bottom: 2.5%;
+    font-size: 5.83vw;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    color: #333;
+    line-height: 1;
+}
+.dev_guide .tit .num{
+    display: block;
+    margin-bottom: 3.88%;
+    font-family: 'roboto-bold';
+}
+.dev_guide .desc {
+    color: #666;
+    font-size: 3.61vw;
+}
+.dev_guide .ico{
+    display: inline-block;
+    width: 24.44vw;
+    height: 22.77vw;
+    margin-top: 5.55vw;
+    background-image: url('../images/delivery/ico_userguide1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.dev_guide .step2 .ico{
+    width: 25.27vw;
+    height: 24.44vw;
+    background-image: url('../images/delivery/ico_userguide2.png');
+}
+.dev_guide .step3 .ico{
+    width: 22.5vw;
+    height: 22.68vw;
+    background-image: url('../images/delivery/ico_userguide3.png');
+}
+/* 유의사항 포장 */
+.dev_package{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dev_package li{
+    width: calc(50% - 1.11vw);
+    box-sizing: border-box;
+    margin-bottom: 3.05%;
+}
+.dev_package li:nth-child(odd){
+    margin-right: 1.11vw;
+}
+.dev_package li:nth-child(even){
+    margin-left: 1.11vw;
+}
+.dev_package li .img{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 38.88vw;
+    overflow: hidden;
+}
+.dev_package li .img img{
+    width: 100%;
+    max-width: 100%;
+}
+.dev_package li .pkg_name{
+    text-align: center;
+    margin-right: 1.66%;
+    color: #333;
+    font-size: 4.16vw;
+}
+
+/* delivery 정보입력 */
+.cont_group .dev_top{
+    position: relative;
+}
+.cont_group .dev_top .btn_direct{
+    width: 17.87vw;
+    line-height: 6.018vw;
+    font-size: 3.6111vw;
+    border: 1px solid #666;
+    color: #333;
+    box-sizing: border-box;
+}
+.cont_group .dev_top .btn_recentAddr{
+    position: absolute;
+    top: 0.648vw;
+    right: 21.01vw;
+    padding-left: 7.18%;
+    font-size: 3.888vw;
+    background:url('../images/delivery/icon_recent_addr.png') no-repeat 0 50%;
+    background-size: 5vw auto;
+    color: #009c7a;
+}
+.cont_group .dev_top .btn_recentAddr.disabled{
+    background:url('../images/delivery/icon_recent_addr_dis.png') no-repeat 0 50%;
+    background-size: 5vw auto;
+    color: #999;
+}
+.cont_group .dev_top .btn_addr_list{
+    position: absolute;
+    top: 0.648vw;
+    right: 0;
+    padding-left: 5.18%;
+    font-size: 3.888vw;
+    background:url('../images/delivery/icon_addr_list.png') no-repeat 0 50%;
+    background-size: 3.796vw auto;
+    color: #009c7a;
+}
+.cont_group .dev_top + .dev_cont{
+    margin-top: 4.37%;
+}
+/* 약관동의 */
+.delivery_policy{
+    border: 1px solid #e1e1e1;
+    height: 52vh;
+    width: calc(100% - 7.76vw);
+    padding: 3.88vw;
+    margin: 3.88vw auto;
+    font-size: 3.88vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: left;
+}
+/* 주소록 */
+.addr_topdesc{
+    border-bottom: 1px solid #eee;
+    padding: 5.55%;
+    font-size: 3.88vw;
+    text-align: center;
+}
+.addr_empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 0 5.55%;
+    transform: translate(-50%, -50%);
+    font-size: 4.44vw;
+    box-sizing: border-box;
+}
+.addr_empty .icon{
+    display: inline-block;
+    width: 19.16vw;
+    height: 18.61vw;
+    margin-bottom: 4.16%;
+    background: url('../images/delivery/icon_addr_empty.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.addr_box .addr_list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 5.55vw 3.88vw;
+    border-bottom: 1px solid #eee;
+}
+.addr_box .addr_list:last-child{
+    border-bottom: none;
+}
+.addr_box .addr_list input[type="radio"]{
+    margin-right:3.88vw;
+}
+.addr_box .addr_list .list_cont{
+    flex: 1;
+    font-size: 3.61vw;
+    color: #333;
+    word-break: keep-all;
+}
+.addr_box .addr_list .list_cont .phone,
+.addr_box .addr_list .list_cont .user_name{
+    margin-bottom: 1.11%;
+}
+.addr_box .addr_list .list_cont .first{
+    margin-bottom: 0.8%;
+    font-size: 3.88vw;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    color: #333;
+}
+.addr_box .addr_list .addr_delete{
+    position: absolute;
+    top: 5.55vw;
+    right: 3.88vw;
+    font-size: 3.88vw;
+    line-height: 1;
+    color: #666;
+}
+.addr_box .addr_list.on{
+    background-color: #f2fdfb;
+}
+.addr_box .addr_list.on .list_cont p.first,
+.addr_box .addr_list.on .addr_delete{
+    color: #009c7a;
+}
+/* 택배예약내역 */
+.detail_col{
+    display: table;
+    width: 100%;
+}
+.detail_col + .detail_col{
+    margin-top: 3.61%;
+}
+.detail_col dt,
+.detail_col dd{
+    display: table-cell;
+    font-size: 3.88vw;
+    line-height: 5.74vw;
+}
+.detail_col dt{
+    width: 14.9vw;
+    color: #999;
+}
+.detail_col dd{
+    width: calc(100% - 23.23vw);
+    padding-left: 8.33vw;
+    color: #666;
+}
+.btn_barcode{
+    position: absolute;
+    top: 5.55vw;
+    right: 5.55vw;
+    width: 10.9vw;
+    height: 7.5vw;
+    border: 1px solid #000;
+    background: url('../images/delivery/icon_barcode.png') center center no-repeat;
+    background-size: 5vw 3.05vw;
+    box-sizing: border-box;
+}
+.devrsv_box{
+    margin: 5.55vw 0;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+}
+.devrsv_box .cont{
+    padding: 5.55%;
+}
+.devrsv_box .cont .btn_wrap{
+    margin-top: 5.55%;
+    padding-top: 5.55%;
+    border-top: 1px solid #e1e1e1;
+}
+.devrsv_box .status{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5.55%;
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+}
+.devrsv_box .status .btn_devmore{
+    padding-right: 3vw;
+    margin-top: 2.77vw;
+    font-size: 3.88vw;
+    line-height: 1;
+    color: #595959;
+    background: url('../images/delivery/dev_status_arrow.png') right center no-repeat;
+    background-size: 1.668vw 2.5vw;
+}
+.devrsv_box .status .text{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.devrsv_box .status .tit{
+    font-size: 5.55vw;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    line-height: 1;
+}
+.devrsv_box .status .icon{
+    display: inline-block;
+    width: 14.72vw;
+    height: 14.72vw;
+    margin-right: 3.88vw;
+    background: url('../images/delivery/icon_devend.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.devrsv_box.rsvend .tit{color: #009c7a;}
+.devrsv_box.rsvend .cont{background: #f2fdfb;}
+
+.devrsv_box.packin .tit,
+.devrsv_box.devprsv .tit,
+.devrsv_box.devstart .tit{color: #f56230;}
+
+.devrsv_box.rsvcancel .tit,
+.devrsv_box.paycancel .tit{color: #f30e0e;}
+
+.devrsv_box.devend .tit{color: #333;}
+.devrsv_box.devend dl *{color: #adadad;}
+
+.devrsv_box.rsvend .icon{background-image: url('../images/delivery/icon_rsvend.png');}
+.devrsv_box.packin .icon{background-image: url('../images/delivery/icon_packin.png');}
+.devrsv_box.devprsv .icon{background-image: url('../images/delivery/icon_devprsv.png');}
+.devrsv_box.devstart .icon{background-image: url('../images/delivery/icon_devstart.png');}
+.devrsv_box.devend .icon{background-image: url('../images/delivery/icon_devend.png');}
+.devrsv_box.rsvcancel .icon{background-image: url('../images/delivery/icon_rsvcancel.png');}
+.devrsv_box.paycancel .icon{background-image: url('../images/delivery/icon_paycancel.png');}
+
+/* 택배 배송 현황 */
+.delivery_history {
+    padding : 8.33%;
+    text-align: left;
+}
+.delivery_history ul{
+    position: relative;
+}
+.delivery_history ul:before{
+    content:'';
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 6.666vw;
+    transform: translateY(-50%);
+    width: 2px;
+    height: calc(100% - 15vw);
+    background: #d7d7d7;
+}
+.delivery_history ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 13.88vw;
+    padding-left: 20.370vw;
+}
+.delivery_history ul li ~ li {
+    margin-top: 8.33%;
+}
+.delivery_history .tit {
+    font-family: 'NotoSansKR-Medium-Hestia';
+    font-weight: normal;       
+    font-size: 4.44vw;
+    line-height: 1;
+    color: #333;
+}
+.delivery_history .status{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13.88vw;
+    height: 13.88vw;
+    font-size: 3.88vw;
+    font-weight: normal;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    line-height: 12.88vw;
+    color: #009c7a;
+    border: 2px solid #99d7ca;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.delivery_history .status:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.delivery_history .store {
+    margin-top: 1.3vw;
+    font-size: 3.33vw;
+    color:#666;
+}
+.delivery_history .date {
+    margin-top: 2.77vw;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 3.33vw;
+    line-height: 1;
+    color: #999;
+}
+.delivery_history .date > span{
+    padding-left: 2.22vw;
+}
+.delivery_history .ing .status{
+    color: #ff6632;
+}
+.delivery_history .ing .status{
+    border: 2px solid #ffb298;
+}
+.delivery_history .end .status{
+    color: #333;
+}
+.delivery_history .end .status{
+    border: 2px solid #b7b7b7;
+}
+.delivery_history .off .tit,
+.delivery_history .off .status{
+    color: #999999;
+}
+.delivery_history .off .status{
+    border: 2px solid #b7b7b7;
+}
+.delivery_history .off .date,
+.delivery_history .off .store{
+    display: none;
+}
+
+/* delivery input */
+.cont_group .dev_cont{
+    position: relative;
+    margin-top: 3.12%;
+    border-top: 1px solid #eee;
+}
+
+.cont_group .form_box {
+    display: table;
+    width: 100%;
+    height: 12.22vw;
+    border-bottom: 1px solid #eee;
+}
+.cont_group .form_box input[type=text],
+.cont_group .form_box input[type=tel], 
+.cont_group .form_boxinput[type=email],
+.cont_group .form_box input[type=number]{
+    display: table-cell;
+    width: 100%;
+    height: 12.22vw;
+    padding: 0 2.19%;
+    border: 0;
+    font-size: 4.166vw;
+    color: #333;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.cont_group .form_box input:disabled{
+    background: #fff;
+    color: 
+}
+.cont_group .form_box > span{
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+.cont_group .form_box .btn_zipcode{
+    width: 20.833vw;
+    margin-right: 7.6%;
+    border: 1px solid #666;
+    line-height: 6.018vw;
+    font-size: 3.6111vw;
+    color: #333;
+    box-sizing: border-box;
+}
+.cont_group .form_box .btn_zipcode:after{
+    content: '';
+    display: inline-block;
+    width: 1.574vw;
+    height: 2.5vw;
+    padding-left: 1.944vw;
+    background: url('../images/icons/txt_arrow_common.png') 100% 100%;
+    background-size: 1.574vw 2.5vw;
+    background-repeat: no-repeat;
+}
+.cont_group .addr_add {
+    margin-top: 4.06%;
+}
+.cont_group .addr_add .check_wrap {
+    margin-top: 0;
+    line-height: 1;
+    text-align: right;
+}
+.cont_group .noti_input .check_wrap{
+    margin-top: 4.37%;
+}
+.cont_group .form_box .txt_tit{
+    height: 12.22vw;
+    padding-left: 2.19%;
+    font-family: 'NotoSansKR-Medium-Hestia';
+    font-size: 4.166vw;
+    color: #333;
+    text-align: left;
+}
+.cont_group .form_box .form_select,
+.cont_group .form_box .form_select select{
+    height: 100%;
+}
+.cont_group .form_box .form_select:after{
+    top: 5.092vw;
+    right: 1.944vw;
+}
+.cont_group .form_box .form_select select{
+    padding-right: 6.574vw;
+}
+.cont_group .form_box .txt_unit{
+    padding-right: 1.944vw;
+    font-size: 4.166vw;
+    color: #333;
+    text-align: right;
+}
+.cont_group #direct_form{
+    display:none;
+}
+
+/* delivery modify */
+.devrsv_list {
+    padding: 4.69% 2.18%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* delivery end */
+.cont_group .fee_box{
+    margin-top: 5.31%;
+}
+
+/* delivery barcode */
+.line_type {
+    border-bottom: 1px solid #eee;
+}
+.step_box ul {
+    display: flex; 
+}
+.step_box li {
+    display: flex; 
+    align-items: center;
+    position: relative;
+    width: 25.833vw;
+    height: 25.833vw;
+    background: #009c7a;
+    border-radius: 50%;
+    color: #fff;
+    text-align:center;
+    font-size: 3.148vw;
+}
+.step_box li + li {
+    margin-left: 5.648vw;
+}
+.step_box li + li:before {
+    content:'';
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: -3.51vw;
+    width: 1.48vw;
+    height: 2.592vw;
+    background: url('../images/icons/txt_arrow_color3.png') no-repeat 50% 50%;
+    background-size: 100%;
+    transform: translateY(-50%);
+}
+.step_box li.end{
+    background: #f56230;
+}
+.step_box li span{
+    width: 100%;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+}
+.step_box li span:before{
+    content:'';
+    display: block;
+    width: 9.44vw;
+    height: 9.44vw;
+    margin: 0 auto 5.38%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.step_box li .step01:before{
+    background-image: url('../images/delivery/icon_step_barcode.png');
+}
+.step_box li .step02:before{
+    background-image: url('../images/delivery/icon_step_money.png');
+}
+.step_box li .step03:before{
+    background-image: url('../images/delivery/icon_step_box.png');
+}
+.barcode_box{
+    margin-top: 8.436%;
+    padding: 6.25% 6.25% 5.6%; 
+    -webkit-box-shadow: 0.55vw 0.55vw 2.77vw 0.3vw rgba(0,0,0,0.08);
+    -moz-box-shadow: 0.55vw 0.55vw 2.77vw 0.3vw rgba(0,0,0,0.08);
+    box-shadow: 0.55vw 0.55vw 2.77vw 0.3vw rgba(0,0,0,0.08);
+}
+.barcode_box .barcode_num{
+    margin-top: 2.52%;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 3.611vw;
+    color: #333;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>세븐일레븐 모바일</title>
+	<link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/ui.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap sub"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+        <!-- contents -->
+        <div class="contents">
+            <div class="page-top type2 fix">
+                <a class="btn-back" href="javascript:void(0);" title="뒤로"></a>
+                <div class="icons">
+                    <a class="like" href="javascript:void(0);"></a><!-- 좋아요 클릭시 addClass : on -->
+                    <a class="share" href="javascript:void(0);"></a>
+                </div>
+            </div>
+			<!-- detail-contents -->
+			<div class="detail-contents">
+				<div class="detail-imgbox">
+					<div class="item-img">
+						<img src="../images/@temp_600x600.jpg" alt="" />
+					</div>
+					<!-- <div class="item-tag discount">
+                        20<span class="unit">%</span>
+                    </div> -->
+					<!-- <div class="item-tag plus1">1+1</div> -->
+					<!-- <div class="item-tag present">증정</div> -->
+                    <div class="item-tag schedule">예정</div>
+                    <div class="Lpoint-img"><img src="../images/text_Lpoint2.png" alt="L point" /></div>
+				</div>
+				<!-- detail-textbox -->
+				<div class="detail-textbox">
+					<div class="titlebox fix">
+						<div class="fl">
+							<div class="item-title">더블 샷 에스프레소 크림</div>
+							<div class="item-company">남양</div>
+						</div>
+						<div class="fr text-right">
+							<div class="item-price">4,500<span class="unit">원</span></div>
+							<div class="item-real-price">5,600<span class="unit">원</span></div>
+						</div>
+					</div>
+                    <div class="cont-scroll">
+    					<div class="ment-row">
+    						발행일로부터 <span class="text-green">90일</span> 내 사용 가능합니다.
+    					</div>
+    					<!-- deatil-list -->
+    					<div class="deatil-list">
+    						<ul class="accordion">
+    							<li class="a-row on">
+    								<a class="a-title" href="javascript:void(0);">
+    									<span>상품정보</span>
+    								</a>
+    								<div class="a-data">
+    									<b>상품정보</b> 상세정보 이용조건입니다.<br>
+                                        어드민에 입력된 내용<br>
+    								</div>
+    							</li>
+    							<li class="a-row">
+    								<a class="a-title" href="javascript:void(0);">
+    									<span>이용 시 유의사항</span>
+    								</a>
+    								<div class="a-data">
+    									유효기간 연장 및 경과 시 보상 기준 상세정보<br>
+    								</div>
+    							</li>
+    							<li class="a-row">
+    								<a class="a-title" href="javascript:void(0);">
+    									<span>유효기간 연장 및 경과 시 보상 기준</span>
+    								</a>
+    								<div class="a-data">
+    									유효기간 연장 및 경과 시 보상 기준 상세정보<br>
+    								</div>
+    							</li>
+    							<li class="a-row">
+    								<a class="a-title" href="javascript:void(0);">
+    									<span>환불 조건 및 방법</span>
+    								</a>
+    								<div class="a-data">
+    									환불 조건 및 방법 상세정보<br>
+    								</div>
+    							</li>
+    							<li class="a-row">
+    								<a class="a-title" href="javascript:void(0);">
+    									<span>물품제공 불가 시 정책</span>
+    								</a>
+    								<div class="a-data">
+    									물품제공 불가 시 정책 상세정보<br>
+    								</div>
+    							</li>
+    						</ul>
+    						<div class="contactbox">
+    							<div class="title">고객센터</div>
+    							<div class="row fix">
+    								<span class="fl">㈜옴니텔</span>
+    								<span><a class="tel-num" href="tel:1588-5639">1588-5639</a> (오전 9시 30분 ~ 오후 6시)</span>
+    							</div>
+    							<div class="row terms fix">
+    								<a class="fl" href="javascript:void(0);">이용약관</a>
+    								<a href="javascript:void(0);">거래조건에 관한 정보</a>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- //deatil-list -->
+                    </div>
+				</div>
+				<!-- //detail-textbox -->
+				<!-- bot-fixed -->
+				<div class="bot-fixed">
+					<!-- <div class="inner btn2 fix">
+						<a class="btn-type4" href="javascript:void(0);">구매하기</a>
+						<a class="btn-type5" href="javascript:void(0);">선물하기</a>
+					</div> -->
+                    <!-- 20170614 품절시 -->
+                    <div class="inner btn">
+                        <a class="btn-type12" href="javascript:void(0);">품절</a>
+                    </div>
+				</div>
+				<!-- //bot-fixed -->
+			</div>
+			<!-- //detail-contents -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //wrap -->
+	<div class="shadow"></div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+            tabScroll('.titlebox');
+		    accordion('.accordion', true);
+            // like 클릭시
+            $('.like').on('click' , function () {
+                $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
+            });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <!-- <link rel="stylesheet" href="/css/swiper.css"> -->
+    
+    <!-- 공통 css -->    
+    <!-- <link type="text/css" rel="stylesheet" href="http://seven.connected8.com/css/common/common.css" /> -->
+    <link type="text/css" rel="stylesheet" href="/css/omni_common.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="http://seven.connected8.com/css/common/NotoSansKR-Hestia.css" /> -->
+    
+    <!-- 공통 script -->
+    <script src="/js/com/jquery-2.2.3.js"></script>
+    <script src="/js/com/jquery-scrolltofixed-min.js"></script>
+    <script src="/js/util/teaser.timeTo.js"></script>
+    <script src="/js/front.js"></script>
+    <script src="/js/util/tranUtil.js"></script>
+    <script src="/js/util/common.js"></script>
+    <script src="/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="/js/hmacsha1.js"></script>
+    <script type="text/javascript" src="/js/gibberish-aes.js"></script>
+    
+    <!-- 거래등록 하는 kcp 서버와 통신을 위한 스크립트-->
+    <script type="text/javascript" src="/js/approval_key.js"></script>   
+     
+    <!-- 퍼블이 준 js -->
+
+    <!-- <script src="../js/jquery-1.12.1.min.js"></script> -->
+<!--    <script src="../../../js/swiper.min.js"></script> -->
+    <script src="/js/app/slick.min.js"></script>
+    <script src="../../../js/ui.js"></script>
+
+    <!-- //퍼블이 준 js -->
+    <!-- //공통 script -->    
+    
+    <!-- 앱연동 -->
+    <script src="../../../js/app/k7app.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-59443926-2', 'auto');
+      ga('send', 'pageview');
+      
+      // 로그인 체크
+      function loginCheck(prdBarcode,catId,goodsId,type){       
+          
+         sessionData.getItem("u", function(value){
+             var appUrl = 'http://124.243.14.72/user/login.do';
+             var mallUrl = 'https://tseven-eleven.coufun.kr';            
+             
+             // 로그인이 안되어 있으면 로그인 페이지로 이동
+            if(value == null || value == ""){               
+                var loginUrl = appUrl+"?f=omnitel&r="+mallUrl+'/auth/goods/'+prdBarcode + (type == 'M' ? '/couponPayment.do' : '/giftCouponPayment.do');
+                location.href = loginUrl;               
+             }else{                             
+                 var url = '/purchase/'+(type == 'M' ? 'couponPayment.do?' : 'giftCouponSelReceiver.do?' ) + 'goodsId='+goodsId+'&catId='+catId;                 
+                location.href = url;                
+             }
+         });     
+         
+      } 
+      
+      
+    //찜하기
+    function addWish(catId, goodsId){
+        sessionData.getItem("u", function(value){
+            var appUrl = 'http://124.243.14.72/user/login.do';
+            var mallUrl = 'https://tseven-eleven.coufun.kr';
+            var returnUrl = $(location).attr('href');
+            // value = {"timestamp":"1231231232131","uid":"L000001"} 형태로 리턴
+            if(value == null || value == ""){               
+            // 비로그인
+            var loginUrl = appUrl+"?f=omnitel&r="+returnUrl;
+            location.href = loginUrl;       
+             }else{                             
+            // 로그인
+                 $.ajax({
+                        type: "GET",
+                        url: '/wish/addWish.do?catId='+catId+'&goodsId='+goodsId,
+                        async: false,
+                        success: function (data) {
+                            if (data) {
+                                if(data == 'A'){
+                                    alert('이 상품은 이미 찜한 상품입니다.');
+                                    return;
+                                }else if(data == 'S'){
+                                    alert('찜 상품으로 등록');
+                                    return;
+                                }else{
+                                    alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                                    return;
+                                }
+                            }else {
+                                alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                            }
+                        },
+                        error: function(data, error) {
+                            alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                        }
+                    });
+                 } 
+         });    
+    }
+
+    //찜 삭제
+    function deleteWish(catId, goodsId){
+        sessionData.getItem("u", function(value){
+        // value = {"timestamp":"1231231232131","uid":"L000001"} 형태로 리턴
+            if(value == null || value == ""){               
+            // 비로그인
+            location.href = 'http://124.243.14.72/user/login.do';
+             }else{                             
+             // 로그인
+                 $.ajax({
+                    type: "GET",
+                    url: '/wish/deleteWish.do?catId='+catId+'&goodsId='+goodsId,
+                    async: false,
+                    success: function (data) {
+                        if (data) {
+                            if(data == 'S'){
+                                alert('찜 상품에서 해제');
+                                location.reload();
+                                return;
+                            }else{
+                                alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                                return;
+                            }
+                        }else {
+                            alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                        }
+                    },
+                    error: function(data, error) {
+                        alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                    }
+                });
+                 
+             } 
+         });
+    }
+      
+      
+    </script>
+    <title>
+        옴니텔
+    </title>
+    
+</head>
+<body>
+
+    <!-- 공통 모달 modal  -->
+    <div class="shadow"></div>
+    <div class="modal modal-alarm" id="commomMsgModal">
+        <div class="modal-inner">
+            <div class="m-contents" id="modalMsg">              
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-m-right btn-modal-close" href="javascript:void(0);">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+
+    <!-- modal 세븐콘 개인정보 취급 방침 -->
+    <div class="modal modal-type3 modal-terms2" id="modalTerms1">
+        <div class="modal-inner">
+            <div class="m-title">
+                세븐콘 개인정보 처리 방침
+            </div>
+            <div class="m-contents">
+                <div class="terms2">
+                    제 1 장 총 칙<br>
+                    <br>
+                    제1조 (목적)
+                    이 서비스 약관은 주식회사 옴니텔(이하 "회사")이 제공하는 세븐
+                    일레븐 쿠폰몰 서비스(이하 “세븐콘”)를 이용하는 데 필요한 이용
+                    자와회사 간의 권리와 의무, 기타 제반 사항을 규정함을 목적으로 
+                    합니다.<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 
+                </div>
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 세븐콘 서비스 이용약관 -->
+    <div class="modal modal-type3 modal-terms2" id="modalTerms2">
+        <div class="modal-inner">
+            <div class="m-title">
+                세븐콘 서비스 이용약관
+            </div>
+            <div class="m-contents">
+                <div class="terms2">
+                    제 1 장 총 칙<br>
+                    <br>
+                    제1조 (목적)
+                    이 서비스 약관은 주식회사 옴니텔(이하 "회사")이 제공하는 세븐
+                    일레븐 쿠폰몰 서비스(이하 “세븐콘”)를 이용하는 데 필요한 이용
+                    자와회사 간의 권리와 의무, 기타 제반 사항을 규정함을 목적으로 
+                    합니다.<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 <br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로<br>
+                    <br>
+                    제2조 (용어의 정의)<br>
+                    ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                    1. “세븐콘 서비스”(이하 “서비스”)란 이용자가 유무선 인터넷(모바
+                    일 애플리케이션 포함)을 통해 “세븐콘”을 구매하여 모바일 단말기
+                    로 전송할 수 있도록 하고 “세븐콘”의 수신자가 이를 상품별로 명시
+                    된 유효기간 내에 실물상품을 받을 수 있도록 회사가 운영하는 모바
+                    일 애플리케이션과 유무선 인터넷 서비스를 말합니다.<br>
+                    2. “세븐콘”이란 교환처에서 판매하는 일정한 상품을 이용자가 휴
+                    대전화 등으로 
+                </div>
+            </div>
+            <a class="btn-modal-close" href="javascript:void(0);">닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    
+    
+
+
+
+<script type="text/javascript">
+
+</script>        
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        tabScroll('.titlebox');
+        accordion('.accordion', true);
+
+        // like 클릭시
+        $('.like').on('click' , function () {
+            wishAddDelete();
+        });
+    });
+    
+    /* function wishAddDelete(){
+        if($('.like').hasClass('on')){
+            console.log('찜 삭제');
+            //삭제
+            $('.like').removeClass('on');
+            var searchAjax = new ComAjax("goodsDetailForm");
+            searchAjax.setUrl("/wish/deleteWish.do");
+            searchAjax.setCallback("delWishCallback");
+            searchAjax.ajax();
+        }else{
+            console.log('찜 등록');
+            
+            var appUrl = 'http://124.243.14.72/user/login.do';
+            var mallUrl = 'https://tseven-eleven.coufun.kr';             
+            var goodsId = $('#goodsId').val();
+            var catId = $('#catId').val();
+            
+            sessionData.getItem("u", function(value){
+                // value = {"timestamp":"1231231232131","uid":"L000001"} 형태로 리턴
+                if(value == null || value == ""){               
+                    // 비로그인
+                    var loginUrl = appUrl+"?f=omnitel&r="+mallUrl+"/goods/detail.do?goodsId="+goodsId+"&catId="+catId;
+                    location.href = loginUrl;
+                 }else{                             
+                    // 로그인
+                    //등록
+                    $('.like').addClass('on');
+                    var searchAjax = new ComAjax("goodsDetailForm");
+                    searchAjax.setUrl("/wish/insertWish.do");
+                    searchAjax.setCallback("delWishCallback");
+                    searchAjax.ajax();
+                 } 
+             });
+            
+        }
+    } */
+    function wishAddDelete(){
+        var goodsId = $('#goodsId').val();
+        var catId = $('#catId').val();
+        var appUrl = 'http://124.243.14.72/user/login.do';
+        var mallUrl = 'https://tseven-eleven.coufun.kr';
+        var returnUrl = $(location).attr('href');
+        
+        if($('.like').hasClass('on')){
+            console.log('찜 삭제');
+            //삭제
+            sessionData.getItem("u", function(value){
+                if(value == null || value == ""){               
+                // 비로그인
+                location.href = appUrl;
+                 }else{                             
+                 // 로그인
+                     $.ajax({
+                        type: "GET",
+                        url: '/wish/deleteWish.do?catId='+catId+'&goodsId='+goodsId,
+                        async: false,
+                        success: function (data) {
+                            if (data) {
+                                if(data == 'S'){
+                                    alert('찜 상품에서 해제');
+                                    $('.like').removeClass('on');
+                                    //location.reload();
+                                    return;
+                                }else{
+                                    alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                                    return;
+                                }
+                            }else {
+                                alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                            }
+                        },
+                        error: function(data, error) {
+                            alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                        }
+                    });
+                     
+                 } 
+            });
+        }else{
+            console.log('찜 등록');
+            sessionData.getItem("u", function(value){
+                if(value == null || value == ""){               
+                // 비로그인
+                var loginUrl = appUrl+"?f=omnitel&r="+returnUrl;
+                location.href = loginUrl;       
+                 }else{                             
+                // 로그인
+                     $.ajax({
+                            type: "GET",
+                            url: '/wish/addWish.do?catId='+catId+'&goodsId='+goodsId,
+                            async: false,
+                            success: function (data) {
+                                if (data) {
+                                    if(data == 'A'){
+                                        alert('이 상품은 이미 찜한 상품입니다.');
+                                        return;
+                                    }else if(data == 'S'){
+                                        alert('찜 상품으로 등록');
+                                        $('.like').addClass('on');
+                                        return;
+                                    }else{
+                                        alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                                        return;
+                                    }
+                                }else {
+                                    alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                                }
+                            },
+                            error: function(data, error) {
+                                alert(error);
+                                alert('잠시 오류가 났어요. 잠시 후 다시 찜 해주세요.');
+                            }
+                        });
+                     } 
+             });
+        }   
+    }
+
+    //찜 삭제 결과
+    function delWishCallback(data){
+        console.log('찜결과 : '+data);
+    }
+    
+    //SNS공유
+    function snsShare(){
+        var href = $(location).attr('href');
+        var img = $(location).attr('protocol')+'//'+$(location).attr('hostname')+':'+$(location).attr('port')+$('#imgSrc').val();
+        var goodsName = $('#goodsName').val();
+        var snsUrl = 'http://124.243.14.72/share/shareSns.do';
+        var data = snsUrl+"?p="+href+"&title="+goodsName+"&desc="+goodsName+"&caption="+goodsName+"&img="+img;
+        location.href=data; 
+    }
+    
+</script>
+<div class="wrapper">
+<!-- body -->
+<div id="body_wrapper">
+    
+<form id="goodsDetailForm">
+    <input type="hidden" id="catId" name="catId" value="CAT0000725">
+    <input type="hidden" id="goodsId" name="goodsId" value="0000004950">
+    <input type="hidden" id="goodsName" value="신라면큰사발">
+    <input type="hidden" name="" value="">
+    <!-- wrap -->
+    <div class="wrap sub"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+           <!-- contents -->
+           <div class="contents">
+               <div class="page-top type2 fix">
+                   <a class="btn-back" href="javascript:void(0);" title="뒤로"></a>
+                   <div class="icons">
+                       
+                            
+                            
+                                <a id="fh" class="like"></a>
+                                <!-- 찜 안한 상품임. 클릭시 찜 등록 -->
+                            
+                       
+                       <!-- 공유 -->
+                       <a class="share" href="javascript:snsShare();"></a>
+                       <!--//공유 -->
+                   </div>
+               </div>
+            <!-- detail-contents -->
+            <div class="detail-contents">
+                <div class="detail-imgbox">
+                    <div class="item-img">
+                        <input type="hidden" id="imgSrc" value="/upload/goods/web/0000004950_std1.jpg">
+                        <img src="/upload/goods/web/0000004950_std1.jpg" alt="" />
+                    </div>
+                    
+                    
+                    
+                        <div class="item-tag present">증정</div>
+                    
+                    
+                    
+                </div>
+                <!-- detail-textbox -->
+                <div class="detail-textbox">
+                    <div class="titlebox fix">
+                        <div class="fl">
+                            <div class="item-title">신라면큰사발</div>
+                            <div class="item-company">농심</div>
+                        </div>
+                        <div class="fr text-right">
+                            <div class="item-price">1,150
+                            <span class="unit">
+                                
+                                원
+                            </span></div>
+                                                        
+                            
+                        </div>
+                    </div>
+                    <div class="ment-row">
+                        
+                            
+                                발행일로부터 <span class="text-green">60일</span> 내 사용 가능합니다.
+                            
+                            
+                        
+                    </div>
+                    <!-- deatil-list -->
+                    <div class="deatil-list">
+                        <ul class="accordion">
+                            <li class="a-row on">
+                                <a class="a-title" href="javascript:void(0);">
+                                    <span>상품정보</span>
+                                </a>
+                                <div class="a-data">
+                                        -전국 세븐일레븐 편의점에서 유효기간 이내에 본 쿠폰을 제시하시면 실물상품과 교환 가능합니다. </br>
+                                </div>
+                            </li>
+                            <li class="a-row">
+                                <a class="a-title" href="javascript:void(0);">
+                                    <span>이용 시 유의사항</span>
+                                </a>
+                                <div class="a-data">
+                                    ★ POS 결제방법</br> 
+※ 구매하실 상품 바코드 입력 없이 진행합니다.</br> 
+1) 객층키 클릭 2) 쿠폰번호 입력 3) PLU키 클릭 4) 소계 5) 현금(합계)</br>
+★유의사항</br>  
+-본 상품은 세븐일레븐 매장 내 행사(1+1, 2+1), 증정상품 적용불가합니다.</br>  
+-해당 쿠폰은 일부 세븐일레븐 점포에서는 취급하지 않는 상품일 수 있습니다. 이점 양지바랍니다.</br>
+                                </div>
+                            </li>
+                            <li class="a-row">
+                                <a class="a-title" href="javascript:void(0);">
+                                    <span>유효기간 연장 및 경과 시 보상 기준</span>
+                                </a>
+                                <div class="a-data">
+                                    
+                                </div>
+                            </li>
+                            <li class="a-row">
+                                <a class="a-title" href="javascript:void(0);">
+                                    <span>환불 조건 및 방법</span>
+                                </a>
+                                <div class="a-data">
+                                    
+                                </div>
+                            </li>
+                            <li class="a-row">
+                                <a class="a-title" href="javascript:void(0);">
+                                    <span>물품제공 불가 시 정책</span>
+                                </a>
+                                <div class="a-data">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 공통 약관 -->
+                        
+<!-- footer -->
+        <div class="contactbox">
+            <div class="title">고객센터</div>
+            <div class="row fix">
+                <span class="fl">㈜옴니텔</span>
+                <span><a class="tel-num" href="tel:1588-5639">1588-5639</a> (오전 9시 30분 ~ 오후 6시)</span>
+            </div>
+            <div class="row terms fix">
+                <a class="text-green" href="javascript:openModal('modalTerms1');">개인정보처리방침</a>
+                <a class="fl" href="javascript:openModal('modalTerms2');">이용약관</a>
+            </div>
+        </div>
+<!-- //footer -->
+                    </div>
+                    <!-- //deatil-list -->
+                </div>
+                <!-- //detail-textbox -->
+                <!-- bot-fixed -->
+                <div class="bot-fixed">
+                    <div class="inner btn2 fix">
+                        <a class="btn-type4" href="javascript:loginCheck('8801043015981','CAT0000725','0000004950','M');">구매하기</a>                  
+                        <!--  <a class="btn-type4" href="/purchase/couponPayment.do?goodsId=0000004950&catId=CAT0000725">구매하기</a> -->
+                        <a class="btn-type5" href="javascript:loginCheck('8801043015981','CAT0000725','0000004950','G');">선물하기</a>
+
+                    </div>
+                </div>
+                <!-- //bot-fixed -->
+            </div>
+            <!-- //detail-contents -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //wrap -->
+    <div class="shadow"></div>
+</form>
+    
+    </div>  
+</div>       
+
+
+</body>
+</html>

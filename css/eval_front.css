@@ -1,0 +1,147 @@
+.eval_storeinfo{
+    background-color: #009c7a;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5.55vw 5.83vw;
+    text-align: left;
+    margin: 5.55% 0 -3.06%;
+}
+
+.eval_storeinfo .name{
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.72vw;
+    line-height: 6.11vw;
+}
+.eval_storeinfo .addr{
+    margin-top: 3.2%;
+    line-height: 4.722vw;
+    font-size: 3.611vw;
+    color:#a1f5e3;
+}
+.eval_qalist{
+    margin-top: 3.55%;
+    text-align: left;
+}
+.eval_qalist > li{
+    margin-bottom: 5.55%;
+}
+
+.eval_qalist .question{
+    margin-bottom: 4.16%;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-size: 3.88vw;
+    font-weight: normal;
+    word-break: keep-all;
+}
+.eval_qalist .answer{
+    font-size: 3.61vw;
+}
+.eval_qalist .answer > ul > li{
+    margin-bottom: 2.11%;
+}
+.eval_qalist .answer > ul > li:last-child{
+    margin-bottom: 0;
+}
+.eval_qalist .answer .starbox{
+    display: flex;
+    padding: 5.55% 9.72%;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+}
+.eval_qalist .answer .starbox li{
+    position: relative;
+    flex: 1;
+    padding-top: 8.14vw;
+    margin-bottom: 0;
+    font-size: 2.77vw;
+    text-align: center;
+}
+
+.eval_qalist .answer .starbox li input{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.66vw;
+    height: 6.29vw;
+    background: url('../images/icons/icon_star.png') center 0 no-repeat;
+    background-size: auto 100%;
+}
+
+.eval_qalist .answer .starbox li label{
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    color:#999;
+    white-space: nowrap;
+    margin: 0;
+}
+.eval_qalist .answer .starbox li input:checked,
+.eval_qalist .answer .starbox li.on input{
+    background-image: url('../images/icons/icon_star_on.png');
+}
+.eval_qalist .answer .starbox li input:checked + label,
+.eval_qalist .answer .starbox li.on input + label{
+    color:#009c7a;
+}
+
+
+.eval_box {
+    margin-top: 3.612%;
+}
+.eval_box li {
+    position: relative;
+    padding: 5.62% 6.25% 6.25%;
+    border: 1px solid #dfdfdf;
+    text-align: left;
+}
+.eval_box li .store_info{
+    width: 52.222vw;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.eval_box li .store_info .tit_store {
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.72vw;
+    line-height: 6.11vw;
+}
+.eval_box li .store_info .txt_addr{
+    margin-top: 3.2%;
+    line-height: 4.722vw;
+    font-size: 3.611vw;
+    color: #666;
+}
+.eval_box li .btn_location{
+    position: absolute;
+    top: 5.55vw;
+    right: 5.55vw;
+    padding-right: 4.44vw;
+    font-size: 3.888vw;
+    color: #009c7a;
+    background-image: url('../images/icons/store_pin.png');
+    background-repeat: no-repeat;
+    background-size: 3.055vw auto;
+    background-position: 100% 50%;
+}
+.eval_box li {
+    margin-top: 6.25%;
+}
+.eval_box li:first-child {
+    margin-top: 0;
+}
+.eval_box li .btn_wrap{
+    margin-top: 5.76%;
+}
+.eval_box li.disabled{
+    background:#eee;
+    border: 1px solid #eee;
+}
+.eval_box li.disabled .tit_store,
+.eval_box li.disabled .btn_location{
+    color:#666;
+}
+.eval_box li.disabled .btn_location{
+    background-image: url('../images/icons/store_pinOff.png');
+}

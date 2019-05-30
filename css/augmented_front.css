@@ -1,0 +1,48 @@
+/* augmented */
+.layer_wrap{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.layer_wrap .dim{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+}
+.layer_wrap .layerbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 40vw;
+    padding: 11.11vw;
+    background-color: #fff;
+    width: 90%;
+    box-sizing: border-box;
+}
+.layer_wrap .layerbox.fix{
+    padding-bottom: 23.61vw;
+}
+
+.layer_wrap .layerbox img{ width:auto; max-height: 30vw; }
+
+.layer_wrap .layerbox .message{
+    margin-bottom: 3.88%;
+    font-size: 6.11vw;
+    font-family: 'NotoSansKR-Light-Hestia';
+}
+
+.layer_wrap .layerbox .giftinfo .tit{
+    margin: 2.77% 0 2.22%;
+    font-size: 4.72vw;
+    font-weight: bold;
+}
+
+.layer_wrap .layerbox .giftinfo .desc{
+    font-size: 3.88vw;
+    color: #999
+}

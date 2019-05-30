@@ -1,0 +1,22 @@
+/* 이용 가이드 */
+.guide_slider {
+    position: relative;
+}
+.guide_slider .swiper-pagination{
+    position: absolute;
+    top: 42.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.guide_slider .swiper-pagination-bullet{
+    width: 1.944vw;
+    height: 1.944vw;
+    background:#fff;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+.guide_slider .swiper-pagination-bullet-active{
+    width: 2.5vw;
+    height: 2.5vw;
+    opacity: 1;
+}

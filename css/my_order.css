@@ -1,0 +1,109 @@
+/* 나의 주문 */
+
+/* 리스트 페이지 */
+.list-contents.myorder-list{background:#ececec;}
+.list-contents.myorder-list .list-top-title,
+.list-contents.myorder-list .list-sort{background:#fff;}
+.list-contents.myorder-list .list-sort.fixed .inner{background:none;}
+
+/* list-tab-type1 */
+.list-tab-type1{border-bottom:0.1rem solid #dedede; background:#fff; overflow:hidden;}
+.list-tab-type1 li{float:left; width:50%; text-align:center;}
+.list-tab-type1 li a{display:block; height:11.1111vw; padding-top:3.3333vw; color:#7a7a7a; font-family:'notokr-light'; font-size:3.7037vw; border-bottom:0.7407vw solid transparent; box-sizing:border-box;}
+.list-tab-type1 li a span{font-family:'Roboto'; font-weight:300;}
+.list-tab-type1 li.on a{color:#252525; font-family:'notokr-medium'; border-color:#ff8600;}
+.list-tab-type1 li.on a span{font-weight:400;}
+/* item-type5 _ 추가 */
+.item-type5 .item-amount{position:absolute; bottom:11.1111vw; left:0; color:#ff0000; font-family:'notokr-regular'; font-size:3.3333vw;}
+.item-type5 .item-amount span{font-family:'Roboto'; font-weight:400;}
+.item-type5 .item-date{position:absolute; left:0; bottom:4.2592vw; font-size:3.3333vw; color:#252525; font-family:'Roboto'; font-weight:300; line-height:1.2;}
+.item-type5 .item-gift-gray{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#25c092; box-sizing:border-box;}
+.item-type5 .item-tag.date{padding:0; text-align:center;}
+.item-type5 .item-tag.date .txt1{height:6.4814vw; padding-top:2.1vw; margin:0 1.6666vw; font-family:'Roboto'; font-size:3.8888vw; font-weight:500; border-bottom:0.1rem solid #fff; box-sizing:border-box; line-height:1.1;}
+.item-type5 .item-tag.date .txt2{padding-top:0.4vw; font-family:'notokr-medium'; font-size:2.4074vw; letter-spacing:-0.075rem;}
+.item-type5 .item-tag.date.remain{background-color:#24c091;}
+.item-type5 .item-tag.date.today{background-color:#ff9724;}
+.item-type5 .item-tag.date.today .txt1{font-family:'notokr-medium'; font-size:3.5185vw;}
+.item-type5 .item-tag.date.refusal{background-color:#f9040c;}
+.item-type5 .item-reserve{height:13.8888vw; padding-top:3.3333vw; border-top:0.1rem solid #ccc;}
+.item-type5 .item-reserve-date{font-size:3.3333vw; color:#252525; font-family:'Roboto'; font-weight:300; line-height:1.2;}
+.item-type5 .item-reserve-date span{font-size:3.3333vw; color:#252525; font-family:'notokr-light'; line-height:1.2;}
+.item-type5 .item-reserve-branch{padding-top:0.9259vw; font-size:3.3333vw; color:#000; font-family:'notokr-regular'; line-height:1.2;}
+
+/* 상세페이지 _ 추가 */
+.detail-imgbox .item-tag.date{text-align:center; padding:0 2.1296vw; box-sizing:border-box;}
+.detail-imgbox .item-tag.date .txt1{height:9.074vw; padding-top:1.6vw; font-family:'Roboto'; font-size:5.9259vw; font-weight:500; border-bottom:0.1rem solid rgba(255,255,255,0.8); box-sizing:border-box;}
+.detail-imgbox .item-tag.date .txt2{padding-top:0.7407vw; font-family:'notokr-medium'; font-size:3.3333vw; letter-spacing:-0.05rem;}
+.detail-imgbox .item-tag.date.remain{background:#25c092;}
+.detail-imgbox .item-tag.date.today{background-color:#ff9724;}
+.detail-imgbox .item-tag.date.today .txt1{font-family:'notokr-medium'; font-size:5.0925vw;}
+.detail-imgbox .item-tag.date.end{padding:0.6481vw 0 0 0; background-color:#000; color:#fff; font-family:'notokr-bold'; font-size:3.7037vw; letter-spacing:-0.025rem; line-height:16.6666vw;}
+.detail-textbox .titlebox .item-price .unit2{display:inline-block; color:#252525; font-size:4.2592vw; font-family:'notokr-regular';}
+.detail-textbox .ment-row strong{font-family:'notokr-medium'; font-weight:normal;}
+.detail-textbox .ment-row strong span{font-family:'Roboto'; font-weight:500;}
+.deatil-list.myorder{margin-top:4.1666vw;}
+.deatil-list.myorder .accordion li .a-title {font-family:'notokr-medium';}
+.deatil-list.myorder .accordion li .a-title span > span{display:inline; background:none; font-family:'Roboto'; font-weight:500;}
+.deatil-list.myorder .accordion li.on .a-title span > span{background:none;}
+.deatil-list.myorder .accordion li .a-title .a-amount{position:relative; padding:3.7037vw 0 0 0; color:#000; font-family:'notokr-regular'; font-size:3.7037vw;}
+.deatil-list.myorder .accordion li .a-title .a-amount .sum{position:absolute; top:3.7037vw; right:0; color:#000; font-family:'Roboto'; font-size:3.7037vw; font-weight:300;}
+.deatil-list.myorder .buy-list{padding:0 3.7037vw; box-sizing:border-box;}
+.deatil-list.myorder .buy-list > div{padding:4.6296vw 0; border-top:1px solid #ececec;}
+.deatil-list.myorder .buy-list > div:first-child {padding-top:0; border-top:1px solid transparent;}
+.deatil-list.myorder .buy-list .tit{position:relative; color:#fa030c; font-family:'notokr-medium'; font-size:3.7037vw; line-height:1.2;}
+.deatil-list.myorder .buy-list .tit .gift{position:absolute; top:0; right:0; color:#959595; font-family:'Roboto'; font-size:3.7037vw; font-weight:300; line-height:1.2;}
+.deatil-list.myorder .buy-list .tit .gift span{display:inline-block; width:5.1851vw;height:2.5925vw; line-height:3.0555vw; margin:-0.4629vw 0.9259vw 0 0; color:#fa030c; font-family:'Roboto'; font-size:1.8518vw; font-weight:500; border:0.1rem solid #fa030c; border-radius:0.4629vw; text-align:center; vertical-align:middle;}
+.deatil-list.myorder .buy-list .coupon{padding-top:3.7037vw; color:#000; font-family:'notokr-regular'; font-size:3.7037vw; line-height:1.2;}
+.deatil-list.myorder .buy-list .coupon span{display:inline-block;font-family:'Roboto'; font-weight:400;}
+.deatil-list.myorder .buy-list .coupon span.del{position:relative;}
+.deatil-list.myorder .buy-list .coupon span.del:after{content:''; border-bottom:1px solid #000; position:absolute; top:2.1296vw; left:0; width:100%;}
+.deatil-list.myorder .buy-list .date{padding-top:1.8518vw; color:#959595; font-family:'Roboto'; font-size:3.7037vw; line-height:1.2;}
+.deatil-list.myorder .buy-list .btn{position:relative; padding-top:3.7037vw; text-align:right;}
+.deatil-list.myorder .buy-list .btn.remain {margin-top:6.4814vw;}
+.deatil-list.myorder .buy-list .btn a{display:inline-block; height:7.037vw;  margin-left:1.1111vw; padding:1.574vw 3.5185vw 0 3.5185vw; color:#898989; font-family:'notokr-regular'; font-size:3.3333vw; border:0.1rem solid #898989; box-sizing:border-box;}
+.deatil-list.myorder .buy-list .btn a.use{border-color:#179b3e; color:#179b3e;}
+.deatil-list.myorder .buy-list .btn .total{position:absolute; top:4.6296vw; left:0; color:#000; font-family:'notokr-regular'; font-size:3.7037vw; line-height:1.2;}
+.deatil-list.myorder .buy-list .btn .total span{font-family:'Roboto'; font-weight:400;}
+.deatil-list.myorder .buy-list .more{padding-bottom:5.5555vw; border-bottom:none; text-align:center;}
+.deatil-list.myorder .buy-list .more a{display:inline-block; height:9.8148vw; padding:3.0555vw 4.4444vw 0 4.4444vw; color:#000; font-family:'notokr-regular'; font-size:3.3333vw; border:0.1rem solid #000; box-sizing:border-box;}
+.deatil-list.myorder .payment-list{margin-bottom:2.7777vw; padding:0 3.7037vw;}
+.deatil-list.myorder .payment-list > div{}
+.deatil-list.myorder .payment-list > div:first-child{margin-top:-1.2037vw;}
+.deatil-list.myorder .payment-list > div p{position:relative; padding:2.2222vw 0; color:#000; font-size:3.7037vw; font-family:'notokr-light';}
+.deatil-list.myorder .payment-list > div p span{position:absolute; top:2.5925vw; right:0; font-family:'Roboto'; font-weight:300;}
+.deatil-list.myorder .payment-list > div p.amount{font-family:'notokr-regular';}
+.deatil-list.myorder .payment-list > div p.amount span{font-weight:400;}
+.deatil-list.myorder .payment-list > div p.total{font-family:'notokr-medium';}
+.deatil-list.myorder .payment-list > div p.total span{font-weight:500;}
+.deatil-list.myorder .payment-list > div p.amount-p{padding-left:4.8148vw; font-family:'Roboto'; font-weight:300; background:url(../images/myorder/bg_list_point.png) no-repeat 0 48%; background-size:1.8518vw 2.037vw;}
+.deatil-list.myorder .payment-list > div p.amount-p span{color:#000;}
+.deatil-list.myorder .payment-list > div p.lpoint{color:#17a3fb;}
+.deatil-list.myorder .payment-list > div p.okcashbag{color:#fc525b;}
+.deatil-list.myorder .refund-list{margin-bottom:2.7777vw; padding:0 3.7037vw;}
+.deatil-list.myorder .refund-list > div:first-child{margin-top:-1.2037vw;}
+.deatil-list.myorder .refund-list > div div{display:table; width:100%; padding:2.2222vw 0;}
+.deatil-list.myorder .refund-list > div div p{display:table-cell; width:21.9387755102%; color:#000; font-family:'notokr-light'; font-size:3.7037vw;}
+.deatil-list.myorder .refund-list > div div p.date{width:44.28571428571%; font-family:'Roboto'; font-weight:300;}
+.deatil-list.myorder .refund-list > div div p.amount{text-align:right; font-family:'Roboto'; font-weight:300;}
+.deatil-list.myorder .refund-list > div div.total{display:block; position:relative; color:#000; font-family:'notokr-medium'; font-size:3.7037vw;}
+.deatil-list.myorder .refund-list > div div.total span{position:absolute; top:2.5925vw; right:0; color:#000; font-family:'Roboto'; font-weight:500;}
+/* 빈쿠폰함  */
+.list-none{padding:19.9629vw 0 0 0;}
+.list-none .item-img{}
+.list-none .item-img a{display:block; width:50.9259vw; height:50.9259vw; margin:0 auto; background:#fff; border-radius:50.9259vw; text-align:center;}
+.list-none .item-img a img{width:46.2962vw; height:46.2962vw; border-radius:46.2962vw; margin-top:2.3148vw;}
+.list-none p{color:#252525; letter-spacing:-0.025rem;}
+.list-none .ment{margin-left:22.2222vw;}
+.list-none .text01{display:inline-block; padding-top:5.1851vw; font-size:6.4814vw; border-bottom:1px solid #000; line-height:1; letter-spacing:-0.05rem;}
+.list-none .text02{padding:3.7037vw 0 0 0; font-size:3.3333vw; font-family:'notokr-regular';}
+.list-none .text03{padding:1.6666vw 0 6.0185vw 0; font-family:'notokr-light'; font-size:3.3333vw; line-height:1.25;}
+.list-none .text03 span{font-family:'Roboto'; font-weight:300;}
+.list-none .btn{padding:0 22.2222vw;}
+/* btn-type */
+.btn-myorder-type1{padding:1.1111vw 0 0 0; text-align:center;}
+.btn-myorder-type1 a{display:inline-block; height:9.8148vw; padding:3.0555vw 4.3518vw 0  4.3518vw; color:#000; font-family:'notokr-regular'; font-size:3.3333vw; border:0.1rem solid #000; box-sizing:border-box;}
+.btn-myorder-type1 a + a{margin-left:1.6666vw;}
+
+/* 20170529 개발추가 */
+.deatil-list.myorder .buy-list span > div{padding:4.6296vw 0; border-top:1px solid #ececec;}
+.deatil-list.myorder .buy-list span > div:first-child {padding-top:0; border-top:1px solid transparent;}

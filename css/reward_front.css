@@ -1,0 +1,556 @@
+.layer_reward{
+    position: absolute;
+    bottom: -25vw;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: -2;
+    transition: .3s;
+    display: none;
+}
+
+.layer_reward.open{
+    bottom: 16.203vw;
+    z-index: -1;
+}
+.layer_reward .reward_cont{
+    position: relative;
+    padding: 5.55%;
+    max-height: 21vw;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f9f9f9;
+}
+.layer_reward.gift .reward_cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer_reward .tit{
+    font-size: 4.166vw;
+}
+
+.layer_reward .reward_close{
+    position: relative;
+    width: 100%;
+    height: 5.55vw;
+    background-color: #fff;
+    border-radius: 4vw 4vw 0 0;
+    box-shadow: 0 -0.2vw 3vw 1.5vw rgba(0,0,0,.04);
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.layer_reward .reward_close .arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 2.5vw;
+    height: 1.66vw;
+    background: url('../images/reward/btn_layer_arrow.png') center center no-repeat;
+    background-size: 100%;
+}
+
+.layer_reward .reward_list{
+    text-align: left;
+}
+
+.layer_reward .reward_list li{
+    margin-bottom: 2.77vw;
+}
+.layer_reward .reward_list li input{
+    vertical-align: top;
+}
+.layer_reward .reward_list li label{
+    font-size: 4.166vw;
+    line-height: 1;
+    vertical-align: top;
+    color:#333;
+}
+
+.layer_reward .reward_list li:last-child{
+    margin-bottom: 0;
+}
+
+.reward_top_banner{
+    padding-top: 5.55%;
+    margin-bottom: 5.55%;
+}
+
+.reward_stampbox{
+    position: relative;
+    padding: 5.55%;
+    margin-bottom: 5.55%;
+    box-sizing: border-box;
+}
+
+.reward_stampbox.lunch,
+.reward_stamp_coupon.lunch{
+    background-color: #ff540f;
+}
+
+.reward_stampbox.cafe,
+.reward_stamp_coupon.cafe{
+    background-color: #009c7a;
+}
+
+.reward_stampbox * {
+    color: #fff;
+}
+
+.reward_stampbox .stp_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5.55%;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.reward_stampbox .stp_top .tit,
+.reward_stampbox .stp_top .num{
+    line-height: 1;
+}
+.reward_stampbox .stp_top .tit{
+    display: flex;
+    flex: auto;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.72vw;
+}
+.reward_stampbox .stp_top .num{
+    font-family: 'Roboto';
+    font-size: 6.11vw;
+    font-weight: 400;
+}
+.reward_stampbox .stp_top .num .current{
+    font-family: 'roboto-bold';
+    font-style: normal;
+}
+.reward_stampbox .stp_top .tit i.stamp{
+    display: inline-block;
+    width: 4.81vw;
+    height: 4.81vw;
+    margin-right: 2.22%;
+    background: url('../images/reward/ico_stamp.png') center center no-repeat;
+    background-size: 100%;
+}
+
+/* 스탬프 모아보기 */
+.reward_stamp_coupon{
+    position: relative;
+    padding: 5.55% 5.55% 4.16% 5.55%;
+    box-sizing: border-box;
+}
+
+.reward_stamp_coupon + .reward_stamp_coupon:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 86%;
+    height: 1px;
+    transform: translateX(-50%);
+    background: url('../images/reward/stamp_dot.png') 0 0 repeat-x;
+    background-size: 7px;
+}
+
+.reward_stamp_coupon .stp_icons{
+    padding: 2.77% 7.75% 0 7.75%;
+}
+
+.reward_stamp_coupon .side_round span{
+    background-color: #fff;
+    position: absolute;
+    width: 5.55vw;
+    height: 5.55vw;
+    border-radius: 50%;
+}
+
+.reward_stamp_coupon .side_round span.crc1{
+    top: -2.77vw;
+    left: -2.77vw;
+}
+
+.reward_stamp_coupon .side_round span.crc2{
+    top: -2.77vw;
+    right: -2.77vw;
+}
+
+.reward_stamp_coupon .side_round span.crc3{
+    bottom: -2.77vw;
+    left: -2.77vw;
+}
+
+.reward_stamp_coupon .side_round span.crc4{
+    bottom: -2.77vw;
+    right: -2.77vw;
+}
+
+/* 약관 미동의시 */
+.stp_terms{
+    padding: 21.666vw 0 17.291vw;
+    text-align: center;
+}
+.stp_terms .desc{
+    font-family: 'NotoSansKR-Light-Hestia';
+    font-size: 5.55vw;
+    line-height: 7.59vw;
+}
+
+.reward_banner_slider .swiper-control {
+    right:5.555vw;
+    bottom:5.555vw;
+    text-align: right;
+}
+
+/* 도시락 스탬프 적립내역 layer */
+.duration_box {
+    padding: 2.92% 5.55%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 3.611vw;
+    color: #666;
+    text-align: left;
+}
+.duration_box dt,
+.duration_box dd{
+    display:inline-block;
+}
+.duration_box dt{
+    color: #333;
+}
+.duration_box dd{   
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.duration_box dd:before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 2.77vw;
+    padding-left: 1.944vw;
+    margin-left: 1.944vw;
+    border-left:1px solid #ccc;
+}
+.duration_box dd > span{ 
+    font-family: 'NotoSansKR-Regular-Hestia';
+}
+
+.stamp_history {
+    padding : 3.89% 5.55% 8.33%;
+    text-align: left;
+}
+.stamp_history ul{
+    position: relative;
+}
+.stamp_history ul:before{
+    content:'';
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 6.666vw;
+    transform: translateY(-50%);
+    width: 2px;
+    /* height: 88%; */
+    height: calc(100% - 15vw);
+    background: #99d7ca;
+}
+.stamp_history ul li {
+    position: relative;
+    padding-left: 20.370vw;
+}
+.stamp_history ul li ~ li {
+    margin-top: 9.064%;
+}
+.stamp_history .txt_tit {
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.44vw;
+    color: #009c7a;
+}
+.stamp_history .txt_count{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13.88vw;
+    height: 13.88vw;
+    font-family: 'roboto-bold';
+    font-size: 4.722vw;
+    color: #009c7a;
+    border: 2px solid #99d7ca;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.stamp_history .txt_count:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.stamp_history .txt_store {
+    font-size: 3.611vw;
+    color:#333;
+}
+.stamp_history .txt_date {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 3.611vw;
+    color: #666;
+}
+.stamp_history .txt_date > span{
+    padding-left: 2.22vw;
+}
+.stamp_history .used_stamp .txt_tit,
+.stamp_history .used_stamp .txt_count{
+    color: #ff6632;
+}
+.stamp_history .used_stamp .txt_count{
+    border: 2px solid #ffb298;
+}
+.stamp_history .txt_count + .txt_store{
+    margin-top: 0.812%;
+}
+.stamp_history .txt_store + .txt_date{
+    margin-top: 3.65%;
+}
+.stamp_history .txt_count + .txt_date{
+    margin-top: 3.245%;
+}
+
+/* 당첨자발표 */
+.winner_list{
+    text-align: left;
+}
+.winner_list ul li {
+    border-bottom: 1px solid #eceded;
+}
+.winner_list li a {
+    padding: 4.066% 5.55% 4.17%;
+    display: block;
+}
+.winner_list li .txt_tit{
+    display:block;
+    width: 100%;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.722vw;
+    color: #333;
+    word-break: keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.winner_list li .date_box{
+    margin-top: 1.567%;
+    font-size: 3.611vw;
+    color: #666;
+}
+.winner_list li .txt_date{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.winner_list li .txt_release {    
+    font-family: 'NotoSansKR-Regular-Hestia';
+}
+.winner_list li .txt_release:before{
+    content: '';
+    display: inline-block;
+    margin-left: 1.66vw;
+    padding-left: 1.66vw;
+    width: 1px;
+    height: 2.77vw;
+    border-left: 1px solid #b7b7b7;
+}
+
+/* 당첨자발표 - 검색영역 */
+.winner_search{
+    position: fixed;
+    width: 100%;
+    height: 15.277vw;
+    padding: 0 5.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+.winner_search .search_wrap{
+    position: relative;
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+.winner_search .search_wrap input{
+    width: 71.296vw;
+    border: none;
+    border-radius:0;
+    border-bottom: 1px solid #009c7a;
+    font-size: 3.88vw;
+    padding: 0 0 0.833vw 6.11vw;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+.winner_search .search_wrap input[type="text"]::placeholder{
+    color: #999;
+}
+.winner_search .search_wrap label{
+    position: absolute;
+    bottom: 1.85vw;
+    left: 0;
+    display: inline-block;
+    width: 3.24vw;
+    height: 3.24vw;
+    background: url('../images/findstore/ico_ipt_search.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.winner_search .search_wrap .search_delete{
+    position: absolute;
+    bottom: 0.462vw;
+    right: 18.01vw;
+    width: 6.1vw;
+    height: 6.1vw;
+    background: url('../images/findstore/ico_ipt_delete.png') 0 0 no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.winner_search .search_wrap .btn_search{
+    width: 13.42vw;
+    height: 7.5vw;
+    margin-left: 4.16vw;
+    font-size: 3.33vw;
+    background: #009c7a;
+    color:#fff;
+    line-height: 7.5vw;
+}
+.winner_detail{
+    padding-top: 15.277vw;
+}
+.winner_cont .highlight {
+    background: #ff7c47;
+}
+
+/* 리워드/이벤트 list */
+.btn_box {
+    padding: 4.17% 0 2.224%;
+    text-align: right;
+}
+.btn_stamp {    
+    padding-right: 5.557%;
+    font-size: 4.166vw;
+    color: #009c7a;
+}
+.btn_stamp:after{
+    content: '';
+    display: inline-block;
+    width: 3.425vw;
+    height: 3.425vw;
+    margin-left: 7px;
+    background: url('../images/reward/btn_stamp.png') no-repeat 100% 50%;
+    background-size: 100%;
+}
+.reward_box{
+    position: relative;
+    text-align: left;
+}
+.reward_box li{
+    position: relative;
+}
+.reward_box li > a{
+    display: block;
+}
+.reward_box li .img_thumb{
+    width: 100%;
+}
+.reward_box li .list_box{
+    height: 39.166vw;
+    padding: 5.55%;
+    box-sizing: border-box;
+}
+.reward_box li .list_box .list_badge{
+    font-family: 'NotoSansKR-Medium-Hestia';
+    font-size:0;
+}
+.reward_box li .list_box .list_badge span{
+    display:inline-block;
+    height: 5.092vw;
+    padding: 0 1.388vw;
+    font-size: 3.055vw;
+    line-height: 4.537vw;
+    color: #009c7a;
+    border: 1px solid #009c7a;
+    border-radius: 0.277vw;
+    box-sizing: border-box;
+}
+.reward_box li .list_box .list_cont{
+    margin-top: 1.25%;
+}
+.reward_box li .list_box .list_cont .tit{
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    width: 100%;
+    max-height: 13vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-weight: normal;
+    font-size: 4.722vw;
+    line-height: 6.481vw;
+}
+.reward_box li .list_box .list_cont .txt_duration{
+    padding-top: 0.629%;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 3.611vw;
+    color:#666;        
+}
+.reward_box li .list_box .list_cont .txt_duration .txt_dday{
+    font-family: 'NotoSansKR-Bold-Hestia';
+    font-size: 3.888vw;
+    color:#009c7a;
+}
+.reward_box li .list_box .list_cont .txt_duration .txt_dday:before{
+    content:'';
+    display:inline-block;
+    width: 1px;
+    height: 2.777vw;
+    margin-left: 1.25%;
+    padding-left: 1.878%;
+    border-left:1px solid #b7b7b7;
+}
+.reward_box li .list_box .list_cont .txt_duration .num{
+    font-family: 'roboto-bold';    
+}
+
+/* 데이터가 없을 때 */
+.reward_box .nodata {
+    padding: 8.612% 0 8.89%;
+    margin-bottom: 8.333vw;
+    background: #f5f5f5;
+    text-align: center;
+}
+.reward_box .nodata .txt_tit{
+    font-size: 4.722vw;
+    color:#333;
+}
+.reward_box .nodata .txt_cont{
+    font-size: 3.611vw;
+    color:#666;
+}
+.reward_box .nodata:before{
+    content:'';
+    display: block;
+    margin: 0 auto 3.612%;
+    width: 17.22vw;
+    height: 17.22vw;
+    background-image: url('../images/icons/icon_nodata.png');
+    background-size: 17.22vw;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>세븐일레븐 모바일</title>
+    <link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+<body>
+    <!-- wrap -->
+    <div class="wrap sub"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+        <!-- contents -->
+        <div class="contents">
+            <div class="page-top fix">
+                <a class="btn-back" href="javascript:void(o);" title="뒤로"></a>
+                <span class="title">쿠폰함</span>
+            </div>
+            <!-- list-contents -->
+            <div class="list-contents coupon-list">
+                <!-- list-tab-type1 -->
+                <div class="list-tab-type1 m3">
+                    <ul>
+                        <li class="on">
+                            <a href="javascript:void(0);">일반상품<span>(10)</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">예약주문 상품<span>(5)</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">할인쿠폰<span>(5)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //list-tab-type1 -->
+                <!-- list-top-title -->
+                <div class="list-top-title">
+                    <div class="title">
+                        사용한 쿠폰은<br>
+                        쿠폰함에서<br>
+                        자동으로 삭제합니다
+                    </div>
+                </div>
+                <!-- //list-top-title -->
+                <!-- list-sort -->
+                <div class="list-sort">
+                    <div class="inner">
+                        <ul class="sort-menu fix">
+                            <li class="on"><a class="btn-sort" href="javascript:void(0);">남은기간  순</a></li>
+                            <li><a class="sort" href="javascript:void(0);">구매일자 순</a></li>
+                            <li><a class="sort" href="javascript:void(0);">상품 명 순</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //list-sort -->
+                <!-- box-check -->
+                <div class="box-check box-type1">
+                    <div class="box-type1-inner">
+                        <div class="common-check">
+                            <input id="ch-1" type="checkbox" name="" checked="checked">
+                            <label for="ch-1"><span>사용 가능한 쿠폰만 보기</span></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- //box-check -->
+                <!-- list-view -->
+                <div class="list-view fix">
+                    <div class="item-type5">
+                        <div class="item-type5-inner">
+                            <a href="javascript:void(0);">
+                                <div class="item-img">
+                                    <img src="../images/@temp_424x424.jpg" alt="" />
+                                    <div class="item-tag date remain" href="javascript:void(0);">
+                                        <p class="txt1">2</p>
+                                        <p class="txt2">남은기간</p>
+                                    </div>
+                                    <!-- 오늘 교환 가능 
+                                    <div class="item-tag date today">
+                                        <p class="txt1">오늘</p>
+                                        <p class="txt2">교환가능</p>
+                                    </div>
+                                     -->
+                                    <!-- 기간만료
+                                    <div class="item-tag date end">기간만료</div>
+                                     -->
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-gift-red">당첨</div>
+                                    <div class="item-company ellipsis">나뚜르</div>
+                                    <div class="item-name ellipsis">딸기컵</div>
+                                    <div class="item-amount"><span>3</span>개</div>
+                                </div>
+                            </a>
+                            <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                            <div class="layer-menu">
+                                <div class="layer-inner">
+                                    <a href="javascript:openModal('modalProduct');">사용하기</a>
+                                    <a href="javascript:void(0);">상세정보확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-type5">
+                        <div class="item-type5-inner">
+                            <a href="javascript:void(0);">
+                                <div class="item-img">
+                                    <img src="../images/@temp_424x424.jpg" alt="" />
+                                    <div class="item-tag date end">기간만료</div>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div>
+                                    <div class="item-name ellipsis">델몬트180ml</div>
+                                    <div class="item-amount"><span>3</span>개</div>
+                                </div>
+                            </a>
+                            <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                            <div class="layer-menu">
+                                <div class="layer-inner">
+                                    <a href="javascript:openModal('modalProduct');">사용하기</a>
+                                    <a href="javascript:void(0);">상세정보확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-type5">
+                        <div class="item-type5-inner">
+                            <a href="javascript:void(0);">
+                                <div class="item-img">
+                                    <img src="../images/@temp_424x424.jpg" alt="" />
+                                    <div class="item-tag date today">
+                                        <p class="txt1">오늘</p>
+                                        <p class="txt2">교환가능</p>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-gift-red">당첨</div>
+                                    <div class="item-company ellipsis">나뚜르</div>
+                                    <div class="item-name ellipsis">딸기컵</div>
+                                    <div class="item-amount"><span>3</span>개</div>
+                                </div>
+                            </a>
+                            <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                            <div class="layer-menu">
+                                <div class="layer-inner">
+                                    <a href="javascript:openModal('modalProduct');">사용하기</a>
+                                    <a href="javascript:void(0);">상세정보확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-type5">
+                        <div class="item-type5-inner">
+                            <a href="javascript:void(0);">
+                                <div class="item-img">
+                                    <img src="../images/@temp_424x424.jpg" alt="" />
+                                    <div class="item-tag date today">
+                                        <p class="txt1">오늘</p>
+                                        <p class="txt2">교환가능</p>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div>
+                                    <div class="item-name ellipsis">델몬트180ml</div>
+                                    <div class="item-amount"><span>3</span>개</div>
+                                </div>
+                            </a>
+                            <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                            <div class="layer-menu">
+                                <div class="layer-inner">
+                                    <a href="javascript:openModal('modalProduct');">사용하기</a>
+                                    <a href="javascript:void(0);">상세정보확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //list-view -->
+            </div>
+            <!-- //list-contents -->
+        </div>
+        <!-- //contents -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-menu">
+                <a class="text-green" href="javascript:void(0);">개인정보처리방침</a>
+                <span class="bar">ㅣ</span>
+                <a href="javascript:void(0);">개인정보취급방침</a>
+                <span class="bar">ㅣ</span>
+                <a href="javascript:void(0);">이용약관</a>
+            </div>
+            <div class="footer-info">
+                <span class="company">㈜옴니텔</span>
+                사업자등록번호 : 202-81-45602<br>
+                대표이사 : 김경선<br>
+                주소 : 서울시 구로구 디지털로 288 대륭포스트타워1차 3층<br>
+                통신판매업신고번호 : 제2009-서울구로-4149호<br>
+                고객센터 : 1588-5639 (평일9:30~18:00)<br><br>
+                ©OMNITEL CO., LTD. All rights reserved.<br>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <!-- 맨 위로 -->
+    <a class="back-top" href="javascript:void(0);"><img src="../images/btn_top.png" alt="맨 위로"></a>
+    <div class="shadow"></div>
+    <div class="shadow2"></div><!-- 투명레이어 배경 -->
+    <!-- modal 제품 -->
+    <div class="modal modal-product" id="modalProduct">
+        <div class="modal-inner">
+            <div class="barcode">
+                <img src="../images/myorder/@temp_barcode.jpg" alt="">
+            </div>
+            <div class="product-image">
+                <div class="image"><img src="../images/@temp_600x600.jpg" alt=""></div>
+                <div class="title">
+                    빼빼로 누드 그린티 39g
+                    <p class="company">롯데</p>
+                </div>
+            </div>
+            <div class="product-view">
+                <a href="javascript:void(0);">상세정보 보기</a>
+            </div>
+            <a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+        </div>
+    </div>
+    <!-- //modal -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //스크롤시 탑 고정
+            tabScroll('.list-sort');
+            //정렬순 클릭시
+            $('.sort-menu li a').on('click' , function () {
+                var $this = $(this);
+                $this.parent().addClass('on').siblings().removeClass('on');
+            });
+            // 레이어 노출
+            $('.btn-item-menu').on('click',function () {
+                var $this = $(this);
+                $this.next('.layer-menu').show();
+                $('.shadow2').addClass('on');
+            });
+            // 레이어 숨김
+            $('.layer-menu .layer-inner a, .shadow2').on('click' , function () {
+                $('.layer-menu').hide();
+                $('.shadow2').removeClass('on');
+            });
+
+            // 스크롤시 자동로드
+            var win = $(window),
+                list = $('.list-view'),
+                state = false;
+
+            win.on('load scroll', function(){
+                var maxH = $(document).height(),
+                    footH = $('footer').height(),
+                    curScroll = $(this).scrollTop()+$(this).height()+footH,
+                    con = $('<div class="item-type5"><div class="item-type5-inner"><a href="javascript:void(0);"><div class="item-img"><img src="../images/@temp_424x424.jpg" alt="" /><div class="item-tag date end">기간만료</div></div><div class="item-text"><div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div><div class="item-name ellipsis">델몬트180ml</div><div class="item-amount"><span>3</span>개</div></div></a><a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a><div class="layer-menu"><div class="layer-inner"><a href="javascript:openModal("modalProduct");">사용하기</a><a href="javascript:void(0);">상세정보확인</a></div></div></div></div><div class="item-type5"><div class="item-type5-inner"><a href="javascript:void(0);"><div class="item-img"><img src="../images/@temp_424x424.jpg" alt="" /><div class="item-tag date end">기간만료</div></div><div class="item-text"><div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div><div class="item-name ellipsis">델몬트180ml</div><div class="item-amount"><span>3</span>개</div></div></a><a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a><div class="layer-menu"><div class="layer-inner"><a href="javascript:openModal("modalProduct");">사용하기</a><a href="javascript:void(0);">상세정보확인</a></div></div></div></div>');
+
+                if(!state){
+                    if( maxH <= curScroll ){
+
+                        list.append('<div class="loading"><div></div></div>');
+                        state = true;
+                        setTimeout(function(){
+                            list.append(con);
+                            $('.loading').remove();
+                            state = false;
+                        }, 500);
+
+                    }
+
+                }
+            });
+        });
+    </script>
+</body>
+</html>

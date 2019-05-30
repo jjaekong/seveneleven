@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>세븐일레븐 모바일</title>
+	<link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/ui.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap sub bg-gray1"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+		<!-- contents -->
+		<div class="contents">
+			<div class="page-top fix">
+				<a class="btn-back" href="javascript:void(0);" title="뒤로"></a>
+				<span class="title">결제하기</span>
+			</div>
+			<!-- pay-contents -->
+			<div class="pay-contents">
+				<!-- buy-itembox box-type1 -->
+				<div class="buy-itembox box-type1">
+					<div class="box-type1-inner">
+						<div class="item-type6">
+							<div class="item-img">
+								<img src="../images/@temp_424x424.jpg" alt="" />
+							</div>
+							<div class="item-text">
+								<div class="item-company">나뚜르</div>
+								<div class="item-name">자연의 딸기컵</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //buy-itembox box-type1 -->
+				
+				<!-- pay-pointbox box-type1 -->
+				<div class="pay-pointbox box-type1">
+					<div class="box-type1-inner fix">
+						<div class="title">포인트 사용</div>
+						<div class="sub-text">보유하신 포인트로 결제하세요.</div>
+						<div class="tbl-row l-point">
+							<div class="logo">
+								<img src="../images/text_Lpoint2.png" alt="L-point" />
+							</div>
+							<div class="use"><!-- 모달창에서 포인트 사용 금액을 받아 올 경우 use에 addClass :on -->
+								<a class="btn-useLpoint text-blue" href="javascript:openModal('modalLpointUse');">
+									<span class="text">사용하기</span>
+									<span class="view-point">20,000,000P</span>
+								</a>
+								<a class="btn-cancel" href="javascript:void(0);">취소</a>
+							</div>
+						</div>
+						<div class="tbl-row okcashbag">
+							<div class="logo">
+								<img src="../images/logo_okcashbag.png" alt="OKCHACHBAG" />
+							</div>
+							<div class="use on"><!-- 모달창에서 포인트 사용 금액을 받아 올 경우 use에 addClass :on -->
+								<a class="btn-useOKcashbag text-red" href="javascript:openModal('modalOkcashbagUse');">
+									<span class="text">사용하기</span>
+									<span class="view-point">40,000,000P</span>
+								</a>
+								<a class="btn-cancel" href="javascript:void(0);">취소</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //pay-pointbox box-type1 -->
+				<!-- bot-payfixed -->
+				<div class="bot-payfixed">
+					<div class="bg-yellow type2">
+						<div class="tbl-row">
+							<div class="tbl-th">받는사람</div>
+							<div class="tbl-td">
+								<span class="phone-num">010.0000.0000</span>
+								<span class="people">외 <span>2</span>명</span>
+							</div>
+						</div>
+					</div>
+					<!-- order-total -->
+					<div class="order-total">
+						<div class="tbl-row">
+							<div class="tbl-th">판매가</div>
+							<div class="tbl-td">4,510</div>
+						</div>
+						<div class="tbl-row bot-line">
+							<div class="tbl-th">수량</div>
+							<div class="tbl-td">3</div>
+						</div>
+						<div class="tbl-row">
+							<div class="tbl-th f-type1">총 상품 금액</div>
+							<div class="tbl-td n-type1">3</div>
+						</div>
+						<div class="tbl-row bot-line">
+							<div class="tbl-th">포인트 사용 금액</div>
+							<div class="tbl-td">-5,000</div>
+						</div>
+						<div class="tbl-row">
+							<div class="tbl-th f-type2">최종 결제 금액</div>
+							<div class="tbl-td n-type2">8,500</div>
+						</div>
+					</div>
+					<!-- //order-total -->
+					<!-- agreebox -->
+					<div class="agreebox">
+						<div class="agree-row fix">
+							<div class="common-check fl">
+								<input id="ch-1" type="checkbox" name="" checked="checked">
+								<label for="ch-1"><span>개인정보 수집 및 이용동의</span></label>
+							</div>
+							<a class="btn-type7 fr" href="javascript:openModal('modalPraivateAgree');"><span>상세보기</span></a>
+						</div>
+						<div class="agree-row">
+							<div class="common-check">
+								<input id="ch-2" type="checkbox" name="" >
+								<label for="ch-2"><strong>구매조건을 확인했으며 결제 진행에 동의합니다.</strong></label>
+							</div>
+						</div>
+					</div>
+					<!-- agreebox -->
+					<div class="btnbox btn2 fix">
+						<a class="btn-type4" href="javascript:void(0);">신용카드 결제</a>
+						<a class="btn-type5" href="javascript:void(0);">휴대폰 결제</a>
+					</div>
+				</div>
+				<!-- //bot-payfixed -->
+			</div>
+			<!-- //pay-contents -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //wrap -->
+	<div class="shadow"></div>
+	<!-- modal L-point 사용 -->
+	<div class="modal modal-alarm bg-blue" id="modalLpointUse">
+		<div class="modal-inner">
+			<div class="modal-h">
+				<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+				<h1 class="logo"><img src="../images/logo_Lpoint.png" alt="" /></h1>
+			</div>
+			<!-- pay-tbl -->
+			<div class="pay-tbl">
+				<div class="pay-row">
+					<div class="p-th">카드번호</div>
+					<div class="p-td card-num">
+						<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호 입력" value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+					</div>
+				</div>
+				<div class="has-error" style="display:block;">
+					카드번호를 확인 후 다시 입력하세요.
+				</div>
+				<div class="pay-row no-line">
+					<a class="btn-next-step btn-type11" href="javascript:void(0);">포인트 조회</a>
+				</div>
+				<div class="hidden-form">
+					<div class="pay-row">
+						<div class="p-th">사용가능 포인트</div>
+						<div class="p-td">
+							<span class="p-available">0</span>
+						</div>
+					</div>
+					<div class="pay-row">
+						<div class="p-th">사용 할 포인트</div>
+						<div class="p-td will-use">
+							<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
+							<a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+						</div>
+					</div>
+					<div class="has-error" style="display:block;">
+						사용가능 포인트를 확인 후 다시 입력하세요.
+					</div>
+					<div class="pay-row">
+						<div class="p-th">비밀번호</div>
+						<div class="p-td">
+							<input type="password"  placeholder="비밀번호 입력" value="" />
+						</div>
+					</div>
+					<div class="btn2 fix">
+						<a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+						<a class="btn-type10" href="javascript:void(0);">사용하기</a>
+					</div>
+				</div>
+			</div>
+			<!-- //pay-tbl -->
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal OK-cashbag 사용 -->
+	<div class="modal modal-alarm bg-red" id="modalOkcashbagUse">
+		<div class="modal-inner">
+			<div class="modal-h">
+				<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+				<h1 class="logo"><img src="../images/logo_okcashbag2.png" alt="" /></h1>
+			</div>
+			<!-- pay-tbl -->
+			<div class="pay-tbl">
+				<div class="pay-row">
+					<div class="p-th">카드번호</div>
+					<div class="p-td card-num">
+						<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호 입력" value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
+					</div>
+				</div>
+				<div class="pay-row">
+					<div class="p-th">비밀번호</div>
+					<div class="p-td">
+						<input type="password"  placeholder="비밀번호 입력" value="" />
+						<a class="btn-next-step btn-type8" href="javascript:void(0);">포인트조회</a>
+					</div>
+				</div>
+				<div class="has-error" style="display:block;"> <!-- 에러 발생시 display: block; -->
+					카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
+				</div>
+				<div class="hidden-form">
+					<div class="pay-row">
+						<div class="p-th">사용가능 포인트</div>
+						<div class="p-td">
+							<span class="p-available">0</span>
+						</div>
+					</div>
+					<div class="pay-row">
+						<div class="p-th">사용 할 포인트</div>
+						<div class="p-td will-use">
+							<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
+							<a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+						</div>
+					</div>
+					<div class="has-error" style="display:block;">
+						사용가능 포인트를 확인 후 다시 입력하세요.
+					</div>
+					<div class="btn2 fix">
+						<a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+						<a class="btn-type10" href="javascript:void(0);">사용하기</a>
+					</div>
+				</div>
+			</div>
+			<!-- //pay-tbl -->
+		</div>
+	</div>
+	<!-- //modal -->
+		<!-- modal 개인정보 수집 및 이용동의 -->
+	<div class="modal modal-alarm type2" id="modalPraivateAgree">
+		<div class="modal-inner">
+			<div class="m-title">개인정보 수집 및 이용동의</div>
+			<div class="m-contents">
+				<div class="mt75">
+					본 서비스의 이용을 위하여 필요한 개인정보를 <br>
+					<span class="text-green">사용자의 동의를 얻어 제공</span>하고자 합니다.
+				</div>
+				<div class="mt40">
+					동의를 통해 개인정보를 제공받는 자와 제공목적은 <br>
+					아래와 같습니다.
+				</div>
+				<div class="private-detail">
+					<strong>1. 제공받는 자 : ㈜옴니텔</strong><br><br>
+					<strong>2. 제공목적</strong><br>
+					- 쿠폰 상품구매 및 사용내역관리<br>
+					- C/S 처리<br><br>
+					<strong>3. 제공항목</strong><br>
+					- 휴대전화번호<br>
+					- 롯데멤버십 가입 여부<br><br>
+					<strong>4. 보유 및 이용기간</strong><br>
+					- 쿠폰 구매 후 5년 간 보유<br>
+				</div>
+			</div>
+			<div class="btn">
+				<a class="btn-type4 btn-modal-close" href="javascript:void(0);">닫기</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	   $(window).load(function () {
+			setTimeout(function(){
+				var _this = $('.pay-pointbox');
+				var fixH = $('.page-top').outerHeight() - 1;
+				var _thisTop = _this.offset().top;
+				$('.pay-contents').css({
+					'height' : $(window).height()
+				});
+				$('html, body').animate({
+					scrollTop: _thisTop - fixH
+				}, 450);
+			}, 1000);
+		});
+		//L포인트 사용 모달창 열었을 때 카드번호에 포커스
+		modalFocus('btn-useLpoint' , 'modalLpointUse');
+		//OK캐시백 포인트 사용 모달창 열었을 때 카드번호에 포커스
+		modalFocus('btn-useOKcashbag' , 'modalOkcashbagUse');
+		// 카드번호 유효성 체크 후 포인트 조회 클릭시 적용
+		$('.btn-next-step').on('click' , function () {
+			$(this).closest('.pay-tbl').find('.hidden-form').slideDown(200);
+		});
+	</script>
+</body>
+</html>

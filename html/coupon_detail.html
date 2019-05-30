@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>세븐일레븐 모바일</title>
+	<link type="text/css" rel="stylesheet" href="../css/omni_common.css" />
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/ui.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap sub"><!-- 서브페이지일 경우 main클래스가 sub로 변경 -->
+        <!-- contents -->
+        <div class="contents">
+            <div class="page-top type2 fix">
+                <a class="btn-back" href="javascript:void(0);" title="뒤로"></a>
+            </div>
+			<!-- detail-contents -->
+			<div class="detail-contents"><!-- 금액권일 경우 addClass : coupon-detail-cash -->
+				<div class="detail-imgbox">
+					<div class="item-img">
+						<img src="../images/@temp_600x600.jpg" alt="" />
+					</div>
+					<div class="item-tag date remain">
+						<p class="txt1">80</p>
+						<p class="txt2">남은기간</p>
+					</div>
+					<!-- <div class="item-tag date today">
+						<p class="txt1">오늘</p>
+						<p class="txt2">교환가능</p>
+					</div> -->
+					<!-- <div class="item-tag date end">
+						기간만료
+					</div> -->
+				</div>
+				<!-- detail-textbox -->
+				<div class="detail-textbox">
+					<div class="titlebox fix">
+						<div class="fl">
+							<div class="item-title">더블 샷 에스프레소 크림</div>
+							<div class="item-company">남양</div>
+						</div>
+						<div class="fr text-right">
+							<div class="item-price">10<span class="unit2">개</span></div>
+						</div>
+					</div>
+                    <div class="cont-scroll">
+    					<div class="ment-row">
+    						<span>2017-08-13 23:59</span>까지 사용 가능합니다.
+    					</div>
+						<div class="btn-myorder-type1">
+							<a href="javascript:openModal('modalAgree5');">전체 유효기간 연장</a>
+							<a href="javascript:openModal('modalAgree6');">전체 구매취소</a>
+                            <!-- 환불신청 일 경우
+                            <a href="javascript:openModal('modalRefund1');">환불신청</a>
+                             -->
+						</div>
+    					<!-- deatil-list -->
+                        <div class="deatil-list">
+                            <ul class="accordion">
+                                <li class="a-row on">
+                                    <a class="a-title" href="javascript:void(0);">
+                                        <span>상품정보</span>
+                                    </a>
+                                    <div class="a-data">
+                                        이용조건
+                                        이용조건입니다 상세정보 이용조건입니다.<br>
+                                    </div>
+                                </li>
+                                <li class="a-row">
+                                    <a class="a-title" href="javascript:void(0);">
+                                        <span>이용 시 유의사항</span>
+                                    </a>
+                                    <div class="a-data">
+                                        이용 시 유의사항 상세정보<br>
+                                    </div>
+                                </li>
+                                <li class="a-row">
+                                    <a class="a-title" href="javascript:void(0);">
+                                        <span>유효기간 연장 및 경과 시 보상 기준</span>
+                                    </a>
+                                    <div class="a-data">
+                                        
+                                    </div>
+                                </li>
+                                <li class="a-row">
+                                    <a class="a-title" href="javascript:void(0);">
+                                        <span>환불 조건 및 방법</span>
+                                    </a>
+                                    <div class="a-data">
+                                        
+                                    </div>
+                                </li>
+                                <li class="a-row">
+                                    <a class="a-title" href="javascript:void(0);">
+                                        <span>물품제공 불가 시 정책</span>
+                                    </a>
+                                    <div class="a-data">
+                                        물품제공 불가 시 정책 상세정보<br>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="contactbox">
+                                <div class="title">고객센터</div>
+                                <div class="row fix">
+                                    <span class="fl">*예약상품 및 매장 관련 문의 : </span>
+                                    <span><a class="tel-num" href="tel:1588-5639">1577-0711</a> (세븐일레븐 24시간 콜센터)</span>
+                                </div>
+                                <div class="row terms fix">
+                                    <a class="fl" href="javascript:void(0);">이용약관</a>
+                                    <a href="javascript:void(0);">거래조건에 관한 정보</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //deatil-list -->
+                    </div>
+				</div>
+				<!-- //detail-textbox -->
+				<!-- bot-fixed -->
+				<div class="bot-fixed">
+					<div class="inner">
+						<!-- 금액권일 때만 붙음
+                        <div class="cash fix">
+                            <div class="fl">이용가능금액</div>
+                            <div class="fr">3,000</div>
+                        </div>
+                         -->
+                        <a class="btn-type4" href="javascript:void(0);">사용하기</a>
+					</div>
+				</div>
+				<!-- //bot-fixed -->
+			</div>
+			<!-- //detail-contents -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //wrap -->
+	<div class="shadow"></div>
+    <!-- modal 유효 기간이 00일 연장되었습니다. -->
+    <div class="modal modal-alarm" id="modalAgree5">
+        <div class="modal-inner">
+            <div class="m-title">유효 기간이 <span class="text-green text-r">93</span>일 연장되었습니다.</div>
+            <div class="m-contents">
+                <span class="text-r">기간연장관련 정보</span><br>
+                상품 상세 의 ‘유효기간 연장 및 경과 시 보상 기준’을<br>
+                확인하세요.
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-m-right btn-modal-close" href="javascript:void(0);">동의</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+    <!-- modal 구매취소 규정 동의01 -->
+    <div class="modal modal-alarm" id="modalAgree6">
+        <div class="modal-inner">
+            <div class="m-title">구매취소 규정 동의</div>
+            <div class="m-contents">
+                <span class="text-green text-r">구매취소에 규정에 동의하십니까?</span><br><br>
+                <span class="text-r">구매취소 규정</span><br>
+                - 유효기간 내 미사용 쿠폰만 가능<br>
+                - 최초 결제수단 취소 처리<br>
+                유효기간 연장 규정에 동의 하십니까?<br><br>
+                유효기간 만료 시 <br>
+                결제금액의 90% 를 구매자에게 환불합니다.
+            </div>
+            <div class="m-footer fix">
+                <a class="btn-m-left btn-modal-close" href="javascript:void(0);">취소</a>
+                <a class="btn-m-right btn-modal-close" href="javascript:void(0);">동의</a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal 환불수단선택 -->
+    <div class="modal modal-refund" id="modalRefund1">
+        <div class="modal-inner">
+            <div class="modal-title">
+                환불 수단 선택
+            </div>
+            <div class="m-contents">
+                <div class="amount-list">
+                    <div class="refund-plan">
+                        환불 예정 금액
+                        <p class="amount">
+                            7,500
+                        </p>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <input type="checkbox" id="pu-check01" checked="checked">
+                            <label for="pu-check01"><img src="../images/myorder/text_Lpoint1.png" alt="L.POINT"></label>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">500</p>
+                        </div>
+                        <div class="section3">
+                            <p class="text1">500</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <input type="checkbox" id="pu-check02">
+                            <label for="pu-check02"><img src="../images/myorder/text_okcashbag1.png" alt="OK CASHBAG"></label>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">4,500</p>
+                        </div>
+                        <div class="section3">
+                            <p class="text1">14,500</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <input type="checkbox" id="pu-check03">
+                            <label for="pu-check03">신용카드</label>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">4,500</p>
+                        </div>
+                        <div class="section3">
+                            <p class="text1">14,500</p>
+                        </div>
+                    </div>
+                    <div class="refund-total">
+                        선택 금액 합계
+                        <p class="amount">
+                            7,500
+                        </p>
+                    </div>
+                </div>
+                <p class="text-point1">
+                    포인트는 결제금액 기준으로 전액 환불만 신청 가능합니다.
+                </p>
+                <dl class="dl-list1">
+                    <dt>환불규정</dt>
+                    <dd>- 구매자만 가능</dd>
+                    <dd>- 유효기간 만료 시 10%를 차감한  취소 처리</dd>
+                    <dd>- 영업일 기준으로 2~5일 소요</dd>
+                </dl>
+                <p class="text-type1">결제카드를 해지한 경우 고객센터에 연락주세요.</p>
+                <div class="m-btn-type1 btn2">
+                    <a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소하기</a>
+                    <a class="btn-type4" href="javascript:void(0);">환불신청</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal 환불금액확인 -->
+    <div class="modal modal-refund" id="modalRefund2">
+        <div class="modal-inner">
+            <div class="modal-title">
+                환불 금액 확인
+            </div>
+            <div class="m-contents">
+                <div class="amount-list">
+                    <div class="refund-plan">
+                        결제한 금액
+                        <p class="amount">
+                            7,500
+                        </p>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <span><img src="../images/myorder/text_Lpoint1.png" alt="L.POINT"></span>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">500</p>
+                        </div>
+                        <div class="section3">
+                            <p>500</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <span><img src="../images/myorder/text_okcashbag1.png" alt="OK CASHBAG"></span>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">4,500</p>
+                        </div>
+                        <div class="section3">
+                            <p>14,500</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="section1">
+                            <span>신용카드</span>
+                        </div>
+                        <div class="section2">
+                            <p class="text1">결제금액 :</p>
+                            <p class="text2">4,500</p>
+                        </div>
+                        <div class="section3">
+                            <p>14,500</p>
+                        </div>
+                    </div>
+                    <div class="refund-total">
+                        환불 예정 금액 합계
+                        <p class="amount">
+                            7,500
+                        </p>
+                    </div>
+                </div>
+                <dl class="dl-list1">
+                    <dt>환불규정</dt>
+                    <dd>- 구매자만 가능</dd>
+                    <dd>- 유효기간 만료 시 10%를 차감한  취소 처리</dd>
+                    <dd>- 영업일 기준으로 2~5일 소요</dd>
+                </dl>
+                <p class="text-type1">결제카드를 해지한 경우 고객센터에 연락주세요.</p>
+                <div class="m-btn-type1 btn2">
+                    <a class="btn-type5 btn-modal-close" href="javascript:void(0);">취소하기</a>
+                    <a class="btn-type4" href="javascript:void(0);">환불신청</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+            tabScroll('.titlebox' );
+		    accordion('.accordion', true);
+		});
+	</script>
+</body>
+</html>

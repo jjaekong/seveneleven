@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+
+    <!-- 퍼블 웹앱 확인용 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--// 퍼블 웹앱 확인용 -->
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">    
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />  
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- IOS에서 전화번호 인식 해제 (홈, 예약주문, 세븐콘, 리워드 화면에서만 추가-->
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>세븐일레븐</title> 
+
+    <!-- 새로 추가된 css -->
+    <link type="text/css" rel="stylesheet" href="../css/swiper.min.css">
+
+    <!-- 수정 및 추가 css -->
+    <link type="text/css" rel="stylesheet" href="../css/common_new.css" />
+    <link type="text/css" rel="stylesheet" href="../css/common/main_front.css" />
+
+    <!-- 옴니텔 CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/omni_common_old.css" />
+</head>
+<body> 
+    <!-- 메인일때 onmain class 추가 -->
+    <div id="wrapper">
+       
+        <!-- header -->
+        <div id="header_wrapper" class="page-wrapper">           
+            <!-- main_menu -->
+            <div class="main_menu">
+                <!-- 
+                    D : 메인 로고 타입
+                    - 흰색 : .white
+                    - 검은색 : .black
+                    - 컬러 : .color
+                -->
+                <div class="main_logo white">
+                    <span class="hidden">세븐일레븐 로고</span>        
+                </div>
+                <!-- 
+                    D : 로그인 문구 및 포인트 노출
+                    - 로그인 : .login
+                    - 비로그인 : .logout
+                    D : 로그인 문구 및 포인트 텍스트 색상
+                    - 흰색 : .white
+                    - 검은색 : .black
+                -->
+                <div class="point_box logout white">
+                    <!-- 로그인 전 텍스트 노출 -->
+                    <span>로그인 해주세요</span>
+                    <!-- //로그인 전 텍스트 노출 -->
+                    <!-- 로그인 후 포인트 노출 -->
+                    <!-- <span>70,110,000<span class="unit">P</span></span> -->
+                    <!-- //로그인 후 포인트 노출 -->
+                </div>
+                <!-- 
+                    D : 메인 알림 아이콘 타입
+                    - 흰색 : .white
+                    - 검은색 : .black
+                -->
+                <button type="button" class="icon_alarm white">
+                    <span class="hidden">알림</span>
+                </button>
+            </div> <!-- /END: main_menu -->             
+           
+            <!-- 바코드 추가 -->  
+            <!-- // 바코드 추가 -->
+        </div> 
+        <!-- /header -->
+        
+        
+        <!-- body -->
+        <!-- 메인 페이지에서는 body_onmain class 추가 -->
+        <div id="body_wrapper" class="page-wrapper body_onmain">
+
+            <!-- omni-main-contents -->
+		    <div class="omni-main-contents">
+                <!-- visual-banner -->
+                <div class="visual-banner">
+                    <!-- banner-img -->
+                    <div class="banner-img">
+                        <!-- banner-list -->
+                        <div class="banner-list fix slider-for">
+                            <div class="banner">
+                                <img src="../images/@temp_visual_banner_1080x680.jpg" alt="" />
+                            </div>
+                            <div class="banner">
+                                <img src="../images/@temp_visual_banner_1080x680.jpg" alt="" />
+                            </div>
+                            <div class="banner">
+                                <img src="../images/@temp_visual_banner_1080x680.jpg" alt="" />
+                            </div>
+                        </div>
+                        <!-- //banner-list -->
+                        <!-- current-veiw -->
+                        <div class="current-event">
+                            <a class="btn-event-view" href="javascript:void(0);" onclick="openModal('modalPromoBanner')">
+                                <span class="number">
+                                    <span class="current-banner">1</span>  /  <span class="total-banner">4</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- //current-veiw -->
+                        <div class="bg-bot">
+                            <img src="../images/bg_banner_bot.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- banner-img -->
+                    <!-- banner-product -->
+                    <div class="banner-product slider-nav fix">
+                        <!-- item-group -->
+                        <div class="item-group fix">
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <!-- 
+                                    태그 : item-tag
+                                    1. 할인 : discount
+                                    2. 1 + 1 : plus1
+                                    3. 증정 : present
+                                    4. 품절 : soldout
+                                     -->
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis"> 1 남양남양남양남양남양남양남양남양남양남양남양남양남양남양남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차십칠차십칠차십칠차십칠차</div>
+                                        <!-- <div class="item-real-price ellipsis">2,600<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">9,999,000<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag plus1">1+1</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">1롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <!-- <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">2,200<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag schedule">예정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <!-- <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">4,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //item-group -->
+                        <!-- item-group -->
+                        <div class="item-group fix">
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">2 남양남양남양남양남양남양남양남양남양남양남양남양남양남양남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차십칠차십칠차십칠차십칠차</div>
+                                        <!-- <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">99,999,000<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">2롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,200<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">[<span class="ellipsis">2남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">4,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //item-group -->
+                        <!-- item-group -->
+                        <div class="item-group fix">
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis"> 3 남양남양남양남양남양남양남양남양남양남양남양남양남양남양남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차십칠차십칠차십칠차십칠차</div>
+                                        <!-- <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">99,999,000<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">3롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,200<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">3남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">4,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //item-group -->
+                    </div>
+                    <!-- //banner-product -->
+                </div>
+                <!-- //visual-banner -->
+                <!-- category -->
+                <div class="category">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper tabs">
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category8.png" alt=" L.POINT  " />
+                                    <span class="txt"> L.POINT  </span>
+                                </a>
+                            </li>                                                                   
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category1.png" alt="음료" />
+                                    <span class="txt">음료</span>
+                                </a>
+                            </li>
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category2.png" alt="아이스크림" />
+                                    <span class="txt">아이스크림</span>
+                                </a>
+                            </li>
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category3.png" alt="과자" />
+                                    <span class="txt">과자</span>
+                                </a>
+                            </li>
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category5.png" alt="푸드" />
+                                    <span class="txt">푸드</span>
+                                </a>
+                            </li> 
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category6.png" alt="라면" />
+                                    <span class="txt">라면</span>
+                                </a>
+                            </li>     
+                            <li class="menu swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <img src="../images/category7.png" alt="금액상품권" />
+                                    <span class="txt">금액상품권</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //category -->
+                
+                <!-- 오늘의 스위트 딜 171116 위치변경 -->
+                <div class="today-deal">
+    <!--
+                    <div class="title">
+                        <img src="../images/promotion_img01.png" alt="LOTTE Black FESTA 롯데블랙페스타 11.17~11.23">
+                    </div>
+    -->
+                    <div class="title">
+                        <div class="txt1">오늘의 스위트 딜</div>
+                        <p class="txt2">엘포인트 100p로 든든한 한끼</p>
+                    </div>
+                    <div class="until">2018.07.11~07.31 (수량 소진시 조기 종료 가능)</div>
+                    <div class="swiper-container">
+                        <div class="today-slider fix swiper-wrapper">
+                            <div class="item-type3 swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_600x600.jpg" alt="" />
+                                        <!-- <div class="item-tag discount">20<span class="unit">%</span></div> -->
+                                        <div class="item-tag present">증정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">1나뚜루</span>]</div>
+                                        <div class="item-name ellipsis">자연의맛 딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type3 swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_600x600.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">2나뚜루</span>]</div>
+                                        <div class="item-name ellipsis">자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type3 swiper-slide">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_600x600.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">3나뚜루</span>]</div>
+                                        <div class="item-name ellipsis">자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵자연의맛 딸기컵</div>
+                                        <div class="item-real-price">5,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="btnbox">
+                        <a class="btn-type1" href="javascript:void(0);">구매하기</a>
+                        <!-- <a class="btn-type2" href="javascript:void(0);">선물하기</a> -->
+                        <!-- <a class="btn-type3" href="javascript:void(0);">판매종료</a> -->
+                    </div>
+                </div>
+                <!-- //오늘의 스위트 딜 -->
+                
+                <!-- thema -->
+                <div class="thema">
+                    <div class="thema-inner">
+                        <div class="title">테마</div>
+                        <!-- thema-list -->
+                        <div class="thema-list">
+                            <!-- thema-cont -->
+                            <div class="thema-cont">
+                                <!-- text-cont -->
+                                <div class="text-cont">
+                                    <div class="num"><span>01</span></div>
+                                    <div class="slogan">
+                                        <span class="txt1 ellipsis">달콤함이 필요해.</span>
+                                        <span class="txt2 ellipsis">달달한 디저트 간식모음!!</span>
+                                    </div>
+                                    <div class="until">2017.03.01~03.31</div>
+                                    <!-- 20170621 버튼 삭제
+                                    <a class="btn-arrow1" href="javascript:void(0);" title="테마 더보기"></a> -->
+                                </div>
+                                <!-- //text-cont -->
+                                <!-- thema-slider -->
+                                <div class="thema-slider">
+                                    <!-- swiper-container -->
+                                    <div class="swiper-container">
+                                        <!-- item-group -->
+                                        <div class="thema-item-group swiper-wrapper fix">
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양남양남양남양남양남양남양남양남양남양남양남양남양남양남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차십칠차십칠차십칠차십칠차</div>
+                                                        <!-- <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div> -->
+                                                        <div class="item-price ellipsis">99,999,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag plus1">1+1</div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag present">증정</div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- //item-group -->
+                                    </div>
+                                    <!-- //swiper-container -->
+                                </div>
+                                <!-- //thema-slider -->
+                            </div>
+                            <!-- //thema-cont -->
+                            <!-- thema-cont -->
+                            <div class="thema-cont">
+                                <!-- text-cont -->
+                                <div class="text-cont">
+                                    <div class="num"><span>02</span></div>
+                                    <div class="slogan">
+                                        <span class="txt1 ellipsis">내 몸이 고마워 해. 내 몸이 고마워 해. 내 몸이 고마워 해. </span>
+                                        <span class="txt2 ellipsis">기능성 음료 마시고 오늘 하루도 화이팅!! 기능성 음료 마시고 오늘 하루도 화이팅!! 기능성 음료 마시고 오늘 하루도 화이팅!! </span>
+                                    </div>
+                                    <div class="until">2017.03.01~03.31</div>
+                                    <!-- 20170621 버튼 삭제
+                                    <a class="btn-arrow1" href="javascript:void(0);" title="테마 더보기"></a> -->
+                                </div>
+                                <!-- //text-cont -->
+                                <!-- thema-slider -->
+                                <div class="thema-slider">
+                                    <!-- swiper-container -->
+                                    <div class="swiper-container">
+                                        <!-- item-group -->
+                                        <div class="thema-item-group swiper-wrapper fix">
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag soldout">품절</div>
+                                                        <!-- <div class="item-tag discount">20<span class="unit">%</span></div> -->
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양남양남양남양남양남양남양남양남양남양남양남양남양남양남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차십칠차십칠차십칠차십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">99,999,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- 20170621 더보기 추가 -->
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img" style="opacity:1;">
+                                                        <img src="../images/circle_more.png" alt="" />
+                                                        <div class="item-more">
+                                                            <span>32</span>개 상품<br>더보기
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag plus1">1+1</div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag present">증정</div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item-type2 swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="item-img">
+                                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                                        <div class="item-tag present">증정</div>
+                                                    </div>
+                                                    <div class="item-text">
+                                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                                        <div class="item-name ellipsis">십칠차</div>
+                                                        <div class="item-real-price ellipsis">4,400<span class="unit">원</span></div>
+                                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                                    </div>
+                                                </a>
+                                            </div> -->
+                                        </div>
+                                        <!-- //item-group -->
+                                    </div>
+                                    <!-- //swiper-container -->
+                                </div>
+                                <!-- //thema-slider -->
+                            </div>
+                            <!-- //thema-cont -->
+                        </div>
+                        <!-- //thema-list -->
+                    </div>
+                </div>
+                <!-- //thema -->
+                
+                <!-- promotion -->
+                <div class="promotion">
+                    <!-- pro-cont -->
+                    <div class="pro-cont">
+                        <!-- pro-titlebox -->
+                        <div class="pro-titlebox">
+                            <div class="title">
+                                <!-- <img src="../images/text_Lpoint.png" alt="" /> -->
+                                <span class="txt">POINT ONLY</span>
+                            </div>
+                            <a class="btn-arrow2" href="javascript:void(0);" title="더보기"></a>
+                        </div>
+                        <!-- //pro-titlebox -->
+                        <!-- pro-list -->
+                        <div class="pro-list fix">
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <!-- <div class="item-real-price">2,500<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">99,999,000<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag plus1">1+1</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <div class="item-real-price">2,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag present">증정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">트레비500ml</div>
+                                        <div class="item-real-price">2,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">1,800<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <!-- <div class="item-real-price">2,500<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">99,999,000<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag plus1">1+1</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <div class="item-real-price">2,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type1">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag present">증정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">트레비500ml</div>
+                                        <div class="item-real-price">2,500<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">1,800<span class="unit">P</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //pro-list -->
+                    </div>
+                    <!-- //pro-cont -->
+                    <!-- pro-cont -->
+                    <div class="pro-cont">
+                        <!-- pro-titlebox -->
+                        <div class="pro-titlebox">
+                            <div class="title">
+                                <span class="txt">이달의 할인쿠폰</span>
+                            </div>
+                            <a class="btn-arrow2" href="javascript:void(0);" title="더보기"></a>
+                        </div>
+                        <!-- //pro-titlebox -->
+                        <!-- pro-list -->
+                        <div class="pro-list2 fix">
+                            <div class="item-type4">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <!-- <div class="item-tag discount">20<span class="unit">%</span></div> -->
+                                        <div class="item-tag present">증정</div><!-- 20170726 추가 -->
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <!-- <div class="item-real-price">5,000<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type4">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <!-- <div class="item-real-price">5,000<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type4">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">롯데</span>]</div>
+                                        <div class="item-name ellipsis">트레비500ml</div>
+                                        <div class="item-real-price">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">1,800<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-type4">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="../images/@temp_320x320.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company">[<span class="ellipsis">남양</span>]</div>
+                                        <div class="item-name ellipsis">십칠차</div>
+                                        <div class="item-real-price">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">9,000<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //pro-list -->
+                    </div>
+                    <!-- //pro-cont -->
+                </div>
+                <!-- //promotion -->
+                <!-- hash-tags -->
+                <ul class="hash-tags fix">
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">스타벅스커피</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">졸릴땐이거</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">커피</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">사탕</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">금요일엔언제나할인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">아침에과일주스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">화이트데이</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                        <span class="hash">#</span><span class="txt">달달한간식</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- hash-tags -->
+            </div>
+            <!-- //omni-main-contents -->
+
+        </div>
+        <!-- /body -->
+    
+        <!-- footer -->
+        <div id="footer_wrapper" class="page-wrapper">
+            <!-- 하단 고정 메뉴 -->    
+            <div class="menu_bottom on">
+                <!-- 선택된 탭에 on 추가 -->
+                <button type="button" class="icon icon_home">
+                    <span class="icon_name">홈</span>
+                </button>
+                <button type="button" class="icon icon_reserv">
+                    <span class="icon_name">예약주문</span>
+                </button>
+                <button type="button" class="icon icon_con on">
+                    <span class="icon_name">세븐콘</span>
+                </button>
+                <button type="button" class="icon icon_reward">
+                    <span class="icon_name">리워드</span>
+                </button>
+                <button type="button" class="icon icon_allmore">
+                    <span class="icon_name">더보기</span>
+                </button>
+            </div> <!-- /END: menu_bottom -->
+
+            <!-- Menuall -->
+            <div class="menu_slide">
+                <div class="menu_contents">
+
+                    <!-- 로그인시 member_box -->
+                    <div class="member_box">
+                        <div class="member_info">
+                            <div class="member_link">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btn_mypage"><span class="hidden">마이페이지</span></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 
+                                D : 타이틀 문구
+                                - 로그인 시 : .login
+                            -->
+                            <div class="member_tit login">
+                                <p><span class="txt_bold">최재혁혁</span>님 안녕하세요.</p>
+                            </div>
+                            <div class="member_cardInfo">
+                                <ul>
+                                    <li class="detail_box">
+                                        <p class="point_num">10,000,000<span class="unit">P</span></p>
+                                        <button type="button" class="btn_refresh">
+                                            <span class="hidden">새로고침</span>
+                                        </button>
+                                        <p class="refresh_date">2019.02.22 <span>13:42:53</span></p>
+                                    </li>
+                                    <li class="simple_box">
+                                        <span class="lpoint_logo"><img src="../images/sevencard/lnb_lpoint-logo.png" alt="엘포인트"></span>
+                                        <!-- 바코드 숫자 여백 추가 lsj -->
+                                        <span class="lpoint_cont num">
+                                            <span>8700</span>
+                                            <span>1100</span>
+                                            <span>0100</span>
+                                            <span>0100</span>
+                                        </span>
+                                        <!-- 바코드 숫자 여백 추가 lsj -->
+                                       
+                                        <button type="button" class="btn_barcodeMore" onclick="fullPopupFn('barcodeView')">
+                                            <span class="hidden">바코드 보기</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="member_menu">
+                                <dl class="myInfo_box">
+                                    <dt>선물코드</dt>
+                                    <dd>L123 4567 8900 
+                                        <button type="button" class="btn_codeCopy">
+                                            <span class="hidden">선물코드 복사</span>
+                                        </button>
+                                    </dd>
+                                </dl>
+                                <div class="myInfo_box">
+                                    <dl class="one_line">
+                                        <dt>쿠폰함</dt>
+                                        <dd><a href="#none">99+</a></dd>
+                                    </dl>
+                                    <dl class="one_line">
+                                        <dt>나의찜</dt>
+                                        <dd><a href="#none">99+</a></dd>
+                                    </dl>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- //로그인시 member_box -->
+
+
+                    <!-- 비로그인시 member_box -->
+                    <!-- <div class="member_box">
+                        <div class="member_info">
+                            <div class="member_link">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btn_mypage"><span class="hidden">마이페이지</span></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="member_tit">
+                                <p>행복충전소, <span class="txt_bold">세븐일레븐</span>입니다.</p>
+                            </div>
+                            <div class="login_box">
+                                <p class="tit">로그인 해주세요</p>
+                                <p class="desc">해당 서비스를 이용하시려면 <br> 로그인이 필요합니다.</p>
+                            </div>
+                            <div class="btn_gridbox col2">
+                                <button type="button" class="btn_line_white">로그인</button>
+                                <button type="button" class="btn_line_white">회원가입</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- //비로그인시 member_box -->
+
+                    <!-- 세븐 app카드 발급 전 member_box -->
+                    <!-- <div class="member_box">
+                        <div class="member_info">
+                            <div class="member_link">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btn_mypage"><span class="hidden">마이페이지</span></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="member_tit login">
+                                <p><span class="txt_bold">최재혁혁혁</span>님 안녕하세요.</p>
+                            </div>
+                            <div class="appcard_box">
+                                <p class="tit">세븐 APP카드를 발급해주세요.</p>
+                            </div>
+                            <div class="btn_gridbox">
+                                <button type="button" class="btn_line_white">카드 발급하기</button>
+                            </div>
+                            <div class="member_menu">
+                                <dl class="myInfo_box">
+                                    <dt>선물코드</dt>
+                                    <dd>L123 4567 8900 
+                                        <button type="button" class="btn_codeCopy">
+                                            <span class="hidden">선물코드 복사</span>
+                                        </button>
+                                    </dd>
+                                </dl>
+                                <div class="myInfo_box">
+                                    <dl class="one_line">
+                                        <dt>쿠폰함</dt>
+                                        <dd><a href="#none">99+</a></dd>
+                                    </dl>
+                                    <dl class="one_line">
+                                        <dt>나의찜</dt>
+                                        <dd><a href="#none">99+</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- //세븐 app카드 발급 전 member_box -->
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li><button type="button" class="icon_event">이벤트</button></li>
+                            <li><button type="button" class="icon_winner">당첨자 발표</button></li>
+                            <li><button type="button" class="icon_coupon">할인쿠폰</button></li>
+                            <li><button type="button" class="icon_recomm">추천상품</button></li>
+                            <!-- 택배예약 비노출 5.29 lsj -->
+                            <!-- <li><button type="button" class="icon_delivery">택배예약</button></li> -->
+                            <!-- //택배예약 비노출 5.29 lsj -->
+                            <li><button type="button" class="icon_store">점포찾기</button></li>
+                        </ul>
+                    </div>
+                    <div class="etc_menu">
+                        <ul>
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">FAQ</a></li>
+                            <li><a href="#none">이용가이드</a></li>
+                            <li><a href="#none">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- /menu_slide --> 
+            
+        </div><!-- /footer -->
+        
+        <!-- 메인슬라이드 ad -->
+        <div class="left_ad banner_area">            
+            <a href="#none">
+                <img src="../images/float_ad/veni.png" />
+            </a>
+            <div class="ad_btn_x">
+                <img id="left_btn_x" src="../images/menu/btn_x.png" />
+            </div>
+        </div> 
+            
+        <div class="right_ad banner_area">
+            <a href="#none">
+                <img src="../images/float_ad/veni.png" />
+            </a>
+            <div class="ad_btn_x">
+                <img id="right_btn_x" src="../images/menu/btn_x.png" />
+            </div>            
+        </div>
+        <!-- //메인슬라이드 ad -->
+
+        <div class="btn_util hidetop">
+            <!-- lpot 버튼 -->
+            <!-- main 페이지에만 onmain버튼 추가 -->
+            <button type="button" class="icon_lpot onmain">
+                <img src="../images/icons/icon_lpot.png" />
+            </button>
+
+            <!-- top 버튼 -->
+            <button type="button" class="icon_top">
+                <span class="hidden">화면 위로</span>
+            </button>
+        </div>
+
+        <!-- common modal popup -->
+        <!-- 바코드 보기 레이어팝업 -->
+        <div class="modal_box" id="barcodeView">
+            <div class="modal_header">
+                <h3>개별 바코드</h3>
+                <button type="button" class="btn_modal_close"><img src="../images/popup/btn_pop_close.png" alt="닫기"></button>
+            </div>
+            <div class="modal_inner">
+                <div class="barcode_wrap">
+                    <!-- 카드 등록 시 노출 -->
+                    <div class="barcode_on">
+                        <div class="barcode_header">
+                            <span class="logo logo_lpoint"><img src="../images/sevencard/pop_logo_lpoint.png" alt="L.point"></span>
+                            <span class="barcode_txt">세븐 APP카드</span>
+                        </div>
+                        <div class="barcode">
+                            <span><img src="../images/sevencard/barcode_img.png" alt="바코드 이미지"></span>
+                            <span class="barcode_number">8237 1922 8281 0039</span>
+                        </div>
+                    </div>
+                    <!-- //카드 등록 시 노출 -->
+    
+                    <!-- 카드 미등록시 노출 -->
+                    <!-- <div class="barcode_off">
+                        <p class="txt_barcodeoff">세븐 APP카드 발급이 필요합니다.</p>
+                        <button type="button" class="btn_cardAdd">세븐APP카드 발급하기</button>
+                    </div> -->
+                    <!-- //카드 미등록시 노출 -->
+                </div>
+                <div class="barcode_wrap">
+                    <div class="barcode_header">
+                        <span class="logo logo_7eleven"><img src="../images/sevencard/pop_logo_7eleven.png" alt="L.point"></span>
+                        <span class="barcode_txt">이달의 할인</span>
+                    </div>
+                    <div class="barcode">
+                        <span><img src="../images/sevencard/barcode_img.png" alt="바코드 이미지"></span>
+                        <span class="barcode_number">8237 1922 8281 0039</span>
+                    </div>
+                </div>
+                <div class="barcode_wrap">
+                    <!-- 카드 등록 시 노출 -->
+                    <!-- <div class="barcode_on">
+                        <div class="barcode_header">
+                            <span class="logo logo_tmember"><img src="../images/sevencard/pop_logo_tmember.png" alt="L.point"></span>
+                            <span class="barcode_txt">SKT 멤버십</span>
+                            <button type="button" class="btn_cardDel">카드 삭제</button>
+                        </div>
+                        <div class="barcode">
+                            <span><img src="../images/sevencard/barcode_img.png" alt="바코드 이미지"></span>
+                            <span class="barcode_number">8237 1922 8281 0039</span>
+                        </div>
+                    </div> -->    
+                    <!-- //카드 등록 시 노출 -->
+                    
+                    <!-- 카드 미등록시 노출 -->
+                    <div class="barcode_off">
+                        <p class="txt_barcodeoff">등록된 T멤버십 카드가 없습니다.</p>
+                        <button type="button" class="btn_cardAdd" onclick="fullPopupFn('tmemberAdd')">T멤버십 카드 등록하기</button>
+                    </div>
+                    <!-- //카드 미등록시 노출 -->
+                </div>
+            </div>
+        </div>
+        <!-- //바코드 보기 레이어팝업 -->
+
+        <!-- t멤버십 혜택 -->
+        <div class="modal_box" id="tmemberBenefit">
+            <div class="modal_header">
+                <h3>혜택안내</h3>
+                <button type="button" class="btn_modal_close"><img src="../images/popup/btn_pop_close.png" alt="닫기"></button>
+            </div>
+            <div class="modal_inner alL">
+                <h4 class="h4_tit first">T멤버십 소개</h4>
+                <ul class="list_box">
+                    <li>세븐일레븐 점포에서 상품 구매 후 T멤버십 카드를 제시하시면 할인을 받으실 수 있습니다. (포인트 차감 할인)</li>
+                    <li>세븐일레븐 앱에 T멤버십을 등록하시면 상품 구매시 자동으로 할인 받으실 수 있습니다. (포인트 차감 할인)</li>
+                </ul>
+                <h4 class="h4_tit">어떻게 할인 받나요?</h4>
+                <ul class="list_box">
+                    <li>세븐일레븐 점포에서 상품구매 시 세븐QR(바코드)를 보여주시면 할인을 받으실 수 있습니다.</li>
+                </ul>
+                <h4 class="h4_tit">할인율 및 할인횟수</h4>
+                <ul class="list_box">
+                    <li>최대 00%할인 (일부 상품 및 매장 서비스 제외)</li>
+                    <li>1일 1회 제한</li>
+                </ul>
+                <h4 class="h4_tit">할인 미적용 상품</h4>
+                <ul class="list_box">
+                    <li>담배, 주류, 안정상비 의약품, 서비스/수탁상품</li>
+                </ul>
+                <div class="tbenefit_box">
+                    <div class="tbenefit_inner">
+                        <p class="tit">T멤버십 카드를 등록 후<br> 할인을 받고 싶지 않으실 경우,<br> <span class="txt_point">세븐QR에서 간편하게 제외</span>하세요!</p>
+                        <ul class="tbenefit_cont">
+                            <li class="off"><span>비활성</span></li>
+                            <li class="on"><span>적립가능!</span></li>
+                        </ul>
+                        <p class="txt_sub">* 체크만 하면 언제든지 다시 사용가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //t멤버십 혜택 -->
+
+        <!-- t카드 추가하기 -->
+        <div class="modal_box" id="tmemberAdd">
+            <div class="modal_header">
+                <h3>카드 등록하기</h3>
+                <button type="button" class="btn_modal_close"><img src="../images/popup/btn_pop_close.png" alt="닫기"></button>
+            </div>
+            <div class="modal_inner">
+                <div class="tcard_wrap">
+                    <form>
+                        <div class="tcard">
+                            <span class="tlogo"></span>
+                            <fieldset class="card_field">
+                                <legend class="txt_card">T멤버십 카드번호<br><span class="txt_point">16자리를 입력</span>해주세요.</legend>
+                                <label class="first"><input type="number"></label>
+                                <label><input type="number"></label>
+                                <label><input type="number"></label>
+                                <label><input type="number"></label>
+                            </fieldset>
+                            <p class="txt_desc">* 본인이 소지하신 카드 번호를 확인하신 후<br> 정확하게 입력해주세요.</p>
+                        </div>
+                        <p class="txt_notice">재로그인 시 등록카드를 자동표시하기 위해<br>
+                            <span class="txt_point">카드번호를 저장</span>합니다. 동의하지 않는 경우 카드를 등록할 수 없습니다.
+                        </p>
+                        <fieldset class="check_wrap">
+                            <label class="checkBox">
+                                <input type="checkbox"><i>카드 번호 저장 동의</i>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="btn_fixed">
+                    <button type="button" class="btn_common">카드 등록하기</button>
+                </div>
+            </div>
+        </div>
+        <!-- //t카드 추가하기 -->
+        <!-- //common modal popup -->
+    </div>
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+
+    <!-- 수정 및 추가된 js -->    
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/common/common_front.js"></script>
+    <!-- <script type="text/javascript" src="../js/main/main_front.js"></script> -->
+    <script src="../js/slick.min.js"></script>
+	<script src="../js/ui.js"></script>
+
+    <!-- 옴니텔 JS -->
+    <script type="text/javascript">
+		// 상단 메뉴
+		// var navSwiper = new Swiper('.top-nav .swiper-container', {
+		// 	initialSlide : 0, //시작 페이지
+		// 	pagination: '.swiper-pagination',
+		// 	slidesPerView: 'auto',
+		// 	paginationClickable: true,
+		// 	spaceBetween: 0,
+		// 	freeMode: true,
+		// 	pagination: false
+		// });
+		// $('.top-nav .tabs > .menu > a').on('click', function(e){
+		// 	var $this = $(this);
+		// 	$this.parent().addClass('active').siblings().removeClass('active');
+		// 	var tabIdx = $this.parent().index();
+		// 	navSwiper.slideTo(tabIdx-1, 300);
+		// 	//e.preventDefault();
+        // });
+        
+		// 카테고리 메뉴
+		var categorySwiper = new Swiper('.category .swiper-container', {
+			initialSlide : 0, //시작 페이지
+			pagination: '.swiper-pagination',
+			slidesPerView: 'auto',
+			paginationClickable: true,
+			spaceBetween: 0,
+			freeMode: true,
+			pagination: false
+		});
+		$('.category .tabs > .menu > a').on('click', function(e){
+			var $this = $(this);
+			//$this.parent().addClass('active').siblings().removeClass('active'); 
+			var tabIdx = $this.parent().index();
+			categorySwiper.slideTo(tabIdx-1, 300);
+			//e.preventDefault();
+		});
+		// 카테고리 메뉴
+		var themaSwiper = new Swiper('.thema-slider .swiper-container', {
+			initialSlide : 0, //시작 페이지
+			pagination: '.swiper-pagination',
+			slidesPerView: 'auto',
+			paginationClickable: true,
+			spaceBetween: 0,
+			freeMode: true,
+			pagination: false
+		});
+
+		//메인 배너 1
+		var $mainTopSlider = $('.slider-for');
+			$mainTopSlider.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: false,
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			asNavFor: '.slider-nav'
+		});
+		//메인 배너 2
+		var $mainBotSlider = $('.slider-nav')
+			$mainBotSlider.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			arrows: false,
+			fade: true,
+			dots: false,
+			centerMode: false,
+			focusOnSelect: true
+		});
+		
+        //오늘의 스위트 딜 20170726 스크립트 수정 시작
+        if( $('.today-deal .today-slider .swiper-slide').length !== 1 ){
+            var $todayDealSlider = new Swiper('.today-deal .swiper-container', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 1,
+                paginationClickable: true,
+                spaceBetween: 0,
+                loop: true
+            });
+        } else {
+            $('.today-slider .item-type3 .item-text').css({opacity:1});
+            $('.today-deal .swiper-container .swiper-button-next').hide();
+            $('.today-deal .swiper-container .swiper-button-prev').hide();
+        }
+
+		$(document).ready(function () {
+			var totalSlide = $('.banner-list .banner').length;
+
+			var totalSlide2 = $('.slick-dots li').length;
+			$('.banner-list .slick-dots').addClass('blind');
+			$('.total-banner').text(totalSlide2);
+
+			//20170726 스크립트 수정 beforeChange이벤트를 afterChange로 변경
+            $mainTopSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+				$('.current-banner').text(currentSlide + 1);
+			});
+			//$mainTopSlider.slick('slickGoTo', 1, true); 20170726 삭제
+		});
+	</script>
+</body>
+</html>
