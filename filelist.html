@@ -102,35 +102,18 @@
 </head>
 <body>
 	<div id="wrap">
-		<ul class="menu">
-			<li style="padding-left:30px;"><a href="#"><strong>Top</strong></a></li>
-			<li><a href="#layout">레이아웃</a></li>
-			<li><a href="#main">메인</a></li>
-			<li><a href="#login">로그인</a></li>
-		</ul>
-
-		<div class="tit">
-			<h1>세븐일레븐 목록</h1>
-			<p>
-				<span class="date">2017.04.07</span>
-				<span id="rate"></span><br />
-				<span>※ 변경내용은 각 페이지 소스 상단의 주석 확인</span>
-			</p>
-		</div>
 
 		<table class="list">
 			<colgroup>
-				<col width="20px" />
-				<col width="150px" />
-				<col width="" />
-				<col width="" />
-				<col width="" />
-				<col width="" />
-				<col width="" />
-				<col width="" />
-				<col width="55px" />
-				<col width="35px" />
-				<col width="" />
+				<col style="width:20px">
+				<col style="width:150px">
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
 			</colgroup>
 			<thead>
 				<tr>
@@ -139,30 +122,25 @@
 					<th>2depth</th>
 					<th>directory</th>
 					<th>html</th>
-					<th>date</th>
-					<th>%</th>
 					<th>비고</th>
 				</tr>
 			</thead>
 			<tbody>
-                <tr id="sublayout" class="cut">
+                <tr id="main" class="cut">
                     <td></td>
-                    <td>서브 레이아웃</td>
-                    <td></td>
-                    <td>sub_layout.html</td>
-                    <td><a href="html/sub_layout.html" target="_blank">sub_layout.html</a></td>
-                    <td class="date">2017.04.20</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
-                </tr><tr id="main" class="cut">
-                    <td></td>
-                    <td>메인</td>
+                    <td>세븐콘</td>
                     <td></td>
                     <td>index.html</td>
-                    <td><a href="index.html" target="_blank">index.html</a></td>
-                    <td class="date">2017.04.03</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td><a href="html/main.html" target="_blank">main.html</a></td>
+                    <td class="bigo"></td>
+                </tr>
+                <tr id="main" class="cut">
+                    <td></td>
+                    <td>할인쿠폰</td>
+                    <td></td>
+                    <td>index.html</td>
+                    <td><a href="html/discount_list.html" target="_blank">discount_list.html</a></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="modal" class="cut">
                     <td></td>
@@ -170,11 +148,7 @@
                     <td></td>
                     <td>modal.html</td>
                     <td><a href="html/modal.html" target="_blank">modal.html</a></td>
-                    <td class="date">2017.04.07</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p>2017.06.06 추가/<br> 
-                    2017.06.21 수정 및 추가 /<br>
-                    화면 내 나오는 로딩바 있음.</p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="list" class="cut">
                     <td></td>
@@ -182,9 +156,7 @@
                     <td>카테고리</td>
                     <td>list_category.html</td>
                     <td><a href="html/list_category.html" target="_blank">list_category.html</a></td>
-                    <td class="date">2017.04.10</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -192,9 +164,7 @@
                     <td>테마</td>
                     <td>list_thema.html</td>
                     <td><a href="html/list_thema.html" target="_blank">list_thema.html</a></td>
-                    <td class="date">2017.04.10</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -202,9 +172,7 @@
                     <td>L-Point</td>
                     <td>list_Lpoint.html</td>
                     <td><a href="html/list_Lpoint.html" target="_blank">list_Lpoint.html</a></td>
-                    <td class="date">2017.04.10</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -212,9 +180,7 @@
                     <td></td>
                     <td>item_detail.html</td>
                     <td><a href="html/item_detail.html" target="_blank">item_detail.html</a></td>
-                    <td class="date">2017.04.13</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="buy" class="cut">
                     <td></td>
@@ -222,9 +188,7 @@
                     <td>받는 사람 선택</td>
                     <td>buy_01.html</td>
                     <td><a href="html/buy_01.html" target="_blank">buy_01.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -232,9 +196,7 @@
                     <td>결제하기</td>
                     <td>buy_02.html</td>
                     <td><a href="html/buy_02.html" target="_blank">buy_02.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -242,9 +204,7 @@
                     <td>선물하기_결제하기</td>
                     <td>buy_03.html</td>
                     <td><a href="html/buy_03.html" target="_blank">buy_03.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -252,9 +212,7 @@
                     <td>선물하기_결제하기_도시락</td>
                     <td>buy_04.html</td>
                     <td><a href="html/buy_04.html" target="_blank">buy_04.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -262,9 +220,7 @@
                     <td>구매완료 _ 선물하기</td>
                     <td>buy_05.html</td>
                     <td><a href="html/buy_05.html" target="_blank">buy_05.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p>2017.06.21 수정</p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -272,9 +228,7 @@
                     <td>구매완료 _ 일반구매</td>
                     <td>buy_06.html</td>
                     <td><a href="html/buy_06.html" target="_blank">buy_06.html</a></td>
-                    <td class="date">2017.06.21</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="myOrder" class="cut">
                     <td></td>
@@ -282,9 +236,7 @@
                     <td>리스트 _ 일반상품</td>
                     <td>myorder_list.html</td>
                     <td><a href="html/myorder_list.html" target="_blank">myorder_list.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -292,9 +244,7 @@
                     <td>상세</td>
                     <td>myorder_detail.html</td>
                     <td><a href="html/myorder_detail.html" target="_blank">myorder_detail.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -302,9 +252,7 @@
                     <td>상세 _ 선물</td>
                     <td>myorder_detail_gift.html</td>
                     <td><a href="html/myorder_detail_gift.html" target="_blank">myorder_detail_gift.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -312,9 +260,7 @@
                     <td>리스트 _ 예약주문 상품</td>
                     <td>myorder_reserve_list.html</td>
                     <td><a href="html/myorder_reserve_list.html" target="_blank">myorder_reserve_list.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -322,9 +268,7 @@
                     <td>상세 _ 예약</td>
                     <td>myorder_reserve_detail.html</td>
                     <td><a href="html/myorder_reserve_detail.html" target="_blank">myorder_reserve_detail.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -332,9 +276,7 @@
                     <td>빈주문함</td>
                     <td>myorder_none.html</td>
                     <td><a href="html/myorder_none.html" target="_blank">myorder_none.html</a></td>
-                    <td class="date">2017.04.24</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="coupon" class="cut">
                     <td></td>
@@ -342,9 +284,7 @@
                     <td>리스트 _ 일반상품</td>
                     <td>cuopon_list.html</td>
                     <td><a href="html/coupon_list.html" target="_blank">coupon_list.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p>2017.06.06 수정</p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -352,9 +292,7 @@
                     <td>일반상품 상세</td>
                     <td>coupon_detail.html</td>
                     <td><a href="html/coupon_detail.html" target="_blank">coupon_detail.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -362,9 +300,7 @@
                     <td>일반상품 상세 _ 금액권인 경우</td>
                     <td>coupon_detail_cash.html</td>
                     <td><a href="html/coupon_detail_cash.html" target="_blank">coupon_detail_cash.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -372,9 +308,7 @@
                     <td>리스트 _ 예약주문상품</td>
                     <td>coupon_reserve_list.html</td>
                     <td><a href="html/coupon_reserve_list.html" target="_blank">coupon_reserve_list.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p>2017.06.06 수정</p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -382,9 +316,7 @@
                     <td>예약주문상품 상세</td>
                     <td>coupon_reserve_detail.html</td>
                     <td><a href="html/coupon_reserve_detail.html" target="_blank">coupon_reserve_detail.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -392,9 +324,7 @@
                     <td>리스트 _ 할인쿠폰</td>
                     <td>coupon_discount_list.html</td>
                     <td><a href="html/coupon_discount_list.html" target="_blank">coupon_discount_list.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -402,9 +332,7 @@
                     <td>빈쿠폰함</td>
                     <td>coupon_none.html</td>
                     <td><a href="html/coupon_none.html" target="_blank">coupon_none.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -412,9 +340,7 @@
                     <td>빈쿠폰함 2</td>
                     <td>coupon_none2.html</td>
                     <td><a href="html/coupon_none2.html" target="_blank">coupon_none2.html</a></td>
-                    <td class="date">2017.06.06</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="zzim" class="cut">
                     <td></td>
@@ -422,9 +348,7 @@
                     <td>리스트</td>
                     <td>zzim_list.html</td>
                     <td><a href="html/zzim_list.html" target="_blank">zzim_list.html</a></td>
-                    <td class="date">2017.04.26</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -432,9 +356,7 @@
                     <td>빈 찜함</td>
                     <td>zzim_none.html</td>
                     <td><a href="html/zzim_none.html" target="_blank">zzim_none.html</a></td>
-                    <td class="date">2017.06.21</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="nomember" class="cut">
                     <td></td>
@@ -442,9 +364,7 @@
                     <td></td>
                     <td>no_member.html</td>
                     <td><a href="html/no_member.html" target="_blank">no_member.html</a></td>
-                    <td class="date">2017.05.12</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
                 <tr id="paying" class="cut">
                     <td></td>
@@ -452,9 +372,7 @@
                     <td></td>
                     <td>pay_ing.html</td>
                     <td><a href="html/pay_ing.html" target="_blank">pay_ing.html</a></td>
-                    <td class="date">2017.05.18</td>
-                    <td class="rate">100</td>
-                    <td class="bigo"><p></p></td>
+                    <td class="bigo"></td>
                 </tr>
 			</tbody>
 		</table>

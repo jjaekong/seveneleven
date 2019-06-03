@@ -2,13 +2,11 @@
  * 설명:
  * - 새로변경된 세븐앱 틀에 맞춰 기존의 세븐콘 메인페이지를 표현하기 위해 필요함.
  * - 기존의 omni_common.css 파일을 복사해 만듦. (omni_common.css는 기존의 서브페이지를 표현하기 위해 필요하기 때문)
- * - 메인페이지에 필요한 내용 외에는 삭제함.
  * - 필요한 내용들은 .omni-main-contents 클래스로 래핑함
  */
 
 @charset "UTF-8";
 /* Roboto 폰트 */
-@import url(swiper.css);
 @import url(slick.css);
 @import url(modal.css);
 @import url(my_order.css);
@@ -115,7 +113,10 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
     html{font-size:30px;}
 } */
 /* html{font-size:10px;} */
-.omni-main-contents{font-size:10px;line-height:1.4; color:#000; text-align:left;background:#ececec;}
+.omni-main-contents{
+    font-size:10px;line-height:1.4; color:#000; text-align:left;background:#ececec;
+    font-family:'notokr-light',sans-serif;
+}
 @media (max-width:320px){
     .omni-main-contents{font-size:8.7px;}
 }
@@ -397,7 +398,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .category .tabs > .menu a img{display:block; width:100%;}
 .omni-main-contents .category .tabs > .menu a .txt{display:block;}
 .omni-main-contents .category .tabs > .menu.active a{color:#24c091; box-sizing:border-box;}
-.omni-main-contents .omni-main-contents .category .tabs > .menu a:link{display:block; outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0.1);}
+.omni-main-contents .category .tabs > .menu a:link{display:block; outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0.1);}
 .omni-main-contents .thema{background:#fff;text-align:left;}
 .omni-main-contents .thema .thema-inner{width:100%; box-sizing:border-box; color:#fff; padding:6.2963vw 0 0 11.1111vw; background:#179b3e;}
 .omni-main-contents .thema .title{font-size:5.55vw; padding-bottom:3.6rem;}
@@ -560,7 +561,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .phone-writebox{width:100%; margin-top:4.6296vw; padding:1.8518vw; border:0.1rem solid #000; box-sizing:border-box;}
 .omni-main-contents .phone-writebox input[type=number]{float:left;display:inline-block; width:60%; height:8.3333vw; padding-left:1.8518vw; box-sizing:border-box; font-size:3.7037vw; color:#000; font-family:'Roboto'; font-weight:400; border:none;}
 .omni-main-contents .phone-writebox .btn-type6{float:right;}
-.omni-main-contents .omni-main-contents .list-sort .inner .sort-right .text{display:none; height:4.4444vw; font-size:3.3333vw; color:#fff; font-family:'notokr-medium';}
+.omni-main-contents .list-sort .inner .sort-right .text{display:none; height:4.4444vw; font-size:3.3333vw; color:#fff; font-family:'notokr-medium';}
 .omni-main-contents .receiver-list{overflow-y:auto; -webkit-overflow-scrolling: touch; }
 .omni-main-contents .receiver-list ol{padding-top:5.5555vw; background:#fff; border-bottom:1px solid #c0c0c0; }
 .omni-main-contents .receiver-list ol li{display:table; width:100%; padding:0 3.7037vw; border-top:0.1rem solid #e3e3e3; box-sizing:border-box;}
@@ -648,7 +649,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .pay-ing-sub{width:100vw;}
 .omni-main-contents .pay-ing-sub img{padding-top:46.2962vw; width:64.8148vw; vertical-align:middle;}
 /* 20170531 메인페이지 및 서브 개발 관련 스타일 추가 */
-.omni-main-contents .contents .title{position:static;left:0;z-index:0;margin-top:0;}
+.omni-main-contents .title{position:static;left:0;z-index:0;margin-top:0;}
 .omni-main-contents #footer_wrapper{text-align:center;}
 .omni-main-contents #header_wrapper{text-align:center;}.main{font-family:'NotoSansKR-Regular-Hestia', sans-serif; line-height:normal; text-align:center;}
 .omni-main-contents .main .main_slider .main_copy .main_copy_1{font-family:'NotoSansKR-Thin-Hestia', sans-serif;}
@@ -674,4 +675,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .banner-bacode .barcode-area a .icon-big{position:absolute; top:12.8703vw; left:50%; margin-left:17.3148vw; width:2.4074vw; height:2.4074vw; background: url(/images/icon_search_plus.png) no-repeat 0 0; background-size:2.4074vw 2.4074vw;}
 
 /* 세븐앱 개선(2019) 추가 */
-.omni-main-contents .item-tag + .item-tag { top: 9.2592vw; }
+.omni-main-contents .item-type1 .item-tag + .item-tag { top: 9.2592vw; }
+.omni-main-contents .item-type3 .item-tag.fractions { display: flex; flex-direction: column; justify-content: center; align-items: center; background:url(/images/bg_red_polygon.png) no-repeat center center; background-size:contain; line-height: initial; }
+.omni-main-contents .item-type3 .item-tag.fractions span { width: 10vw; line-height: 6vw; font-size: 3.55vw }
+.omni-main-contents .item-type3 .item-tag.fractions span + span { border-top: 1px solid #fff; }

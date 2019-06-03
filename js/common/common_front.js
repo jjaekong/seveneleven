@@ -91,7 +91,7 @@ function fullPopupFn(popup){
     // 풀팝업 뜰경우 스크롤할 영역이 있을때만 스크롤락 해제
     var winHeight = $(window).innerHeight();
     var modalHeight = $popup.find('.modal_inner').innerHeight();
-    console.log(winHeight, modalHeight)
+    // console.log(winHeight, modalHeight)
     if(modalHeight > winHeight){
         enableScroll();
     }
