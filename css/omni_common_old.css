@@ -679,3 +679,4 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .item-type3 .item-tag.fractions { display: flex; flex-direction: column; justify-content: center; align-items: center; background:url(/images/bg_red_polygon.png) no-repeat center center; background-size:contain; line-height: initial; }
 .omni-main-contents .item-type3 .item-tag.fractions span { width: 10vw; line-height: 6vw; font-size: 3.55vw }
 .omni-main-contents .item-type3 .item-tag.fractions span + span { border-top: 1px solid #fff; }
+.omni-main-contents .item-type5 .item-tag.date{padding:0!important; text-align:center!important;}

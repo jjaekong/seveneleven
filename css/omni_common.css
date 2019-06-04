@@ -665,3 +665,9 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .pay-type ul li button.card p img { height: 3.88888888889vw; }
 .pay-type ul li button.mobile p img { height: 100%; }
 .pay-type ul li button.on { background: #fff; border-color: #000; }
+
+/* 리스트 태그 사각형 */
+.item-type5 .item-tag-skyblue{position:absolute; top:-2.3148vw; left:0; padding:0; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#17a3fb; box-sizing:border-box; line-height: 4.13625304136vw; }
+.item-type5 .item-tag-skyblue img { margin-left: 0.925925925926vw; margin-right: 0.925925925926vw; width: 6.75925925926vw; vertical-align: middle; }
+.item-type5 .item-tag-red{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#fa444f; box-sizing:border-box;}
+.item-type5 .item-tag-orange{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#ff9723; box-sizing:border-box;}
