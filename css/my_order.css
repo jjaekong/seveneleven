@@ -128,7 +128,7 @@
 .badge .one.txt { font-family: 'notokr-medium'; font-size: 4.25925925926vw; }
 .badge .one.num { font-size: 4.44444444444vw; font-weight: bold; }
 .badge .one.num i { font-style: normal; font-size: 3.7037037037vw; font-weight: normal; }
-.badge + .badge { top: 12.037vw; }
-.item-tag + .badge { top: 12.037vw; }
-.badge + .item-tag { top: 12.037vw; }
-.item-tag + .item-tag { top: 12.037vw; }
+.item-type5 .badge + .badge { top: 12.037vw; }
+.item-type5 .item-tag + .badge { top: 12.037vw; }
+.item-type5 .badge + .item-tag { top: 12.037vw; }
+.item-type5 .item-tag + .item-tag { top: 12.037vw; }
