@@ -671,3 +671,18 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .item-type5 .item-tag-skyblue img { margin-left: 0.925925925926vw; margin-right: 0.925925925926vw; width: 6.75925925926vw; vertical-align: middle; }
 .item-type5 .item-tag-red{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#fa444f; box-sizing:border-box;}
 .item-type5 .item-tag-orange{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#ff9723; box-sizing:border-box;}
+
+/* 리스트 태그 사각형 새로운 클래스 */
+.tag-row { display: flex; }
+.tag { height: 3.33333333333vw; display: flex; justify-content: center; align-items: center; padding-left: 1vw; padding-right: 1vw; }
+.tag.green { background: #25c092; }
+.tag.blue { background: #17a3fb; }
+.tag.red { background: #fa444f; }
+.tag.orange { background: #ff9723; }
+.tag.gray { background: #626262; }
+.tag.black { background: #000; }
+.tag span { display: block; color: #fff; font-family:'notokr-medium'; font-size: 2.40740740741vw; line-height: 3.33333333333vw; }
+.tag img { display: block; }
+.tag.lpoint img { height: 1.2037037037vw; }
+.item-type5 .item-text { padding-top: 5vw; }
+.item-type5 .item-text .tag-row { position: absolute; top: 0; }
