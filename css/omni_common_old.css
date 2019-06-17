@@ -637,7 +637,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .list-contents.zzim-list .list-sort{background:#fff;}
 .omni-main-contents .list-contents.zzim-list .list-sort.fixed .inner{background:none;}
 .omni-main-contents .list-contents.zzim-list .item-type5 .item-text{height:27.4074vw;}
-.omni-main-contents .discount-list{background:#ececec;}
+.omni-main-contents .discount-list{background:#ececec;margin-top:15vw;}
 .omni-main-contents .discount-list .list-sort{background:#fff; margin-top:-1.7vw;}
 .omni-main-contents .discount-list .list-sort .inner{padding-left:5.0925vw;}
 .omni-main-contents .discount-list .list-sort .inner .sort-right{right:5.0925vw;}
