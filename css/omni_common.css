@@ -622,6 +622,10 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .discount-list .list-sort.fixed .inner{background:none;}
 .discount-list .list-sort .inner .sort-right .text{display:block; color:#000;}
 .discount-list .item-type5 .item-text .item-amount{bottom:4.1666vw;}
+
+/* 2019-06-17 */
+.discount-list .list-sort { position: sticky; top: 15vw; z-index: 1; }
+
 .box-type1 + .list-view{padding-top:0;}
 .pay-ing-sub{width:100vw;}
 .pay-ing-sub img{padding-top:46.2962vw; width:64.8148vw; vertical-align:middle;}
