@@ -61,10 +61,17 @@
 								<img src="/images/text_Lpoint2.png" alt="L-point" />
 							</div>
 							<div class="use"><!-- 모달창에서 포인트 사용 금액을 받아 올 경우 use에 addClass :on -->
-								<a class="btn-useLpoint text-blue" href="javascript:openModal('modalLpointUse');">
+								<!--
+									# 개선2019
+									- 회원일 경우: openModal('modalLpointUseForMember')를 호출하여 모달을 보이게 합니다.
+									- 비회원일 경우: javascript:openModal('modalLpointUse')를 호출하여 모달을 보이게 합니다.
+								-->
+								<a class="btn-useLpoint text-blue" href="javascript:openModal('modalLpointUseForMember');">
 									<span class="text">사용하기</span>
 									<span class="view-point">20,000,000P</span>
 								</a>
+								<!-- 이 버튼은 테스트 용이므로 사용하지 않습니다. (모달 확인용) -->
+								<a class="btn-useLpoint text-blue" href="javascript:openModal('modalLpointUse');">사용하기</a>
 								<a class="btn-cancel" href="javascript:void(0);">취소</a>
 							</div>
 						</div>
@@ -168,42 +175,81 @@
 						<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="카드번호 입력" value="" maxlength="16" oninput="maxLengthCheck(this)" autofocus />
 					</div>
 				</div>
+				<div class="pay-row">
+					<div class="p-th">비밀번호</div>
+					<div class="p-td pwd">
+						<input type="password" placeholder="비밀번호 입력" />
+						<a class="btn-type8" href="javascript:void(0);">포인트 조회</a>
+					</div>
+				</div>
 				<div class="has-error" style="display:block;">
-					카드번호를 확인 후 다시 입력하세요.
+					카드번호 또는 비밀번호를 확인하신 후 다시 입력하세요.
 				</div>
-				<div class="pay-row no-line">
-					<a class="btn-next-step btn-type11" href="javascript:void(0);">포인트 조회</a>
-				</div>
-				<div class="hidden-form">
-					<div class="pay-row">
-						<div class="p-th">사용가능 포인트</div>
-						<div class="p-td">
-							<span class="p-available">0</span>
-						</div>
-					</div>
-					<div class="pay-row">
-						<div class="p-th">사용 할 포인트</div>
-						<div class="p-td will-use">
-							<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
-							<a class="btn-type8" href="javascript:void(0);">모두 사용</a>
-						</div>
-					</div>
-					<div class="has-error" style="display:block;">
-						사용가능 포인트를 확인 후 다시 입력하세요.
-					</div>
-					<div class="pay-row">
-						<div class="p-th">비밀번호</div>
-						<div class="p-td">
-							<input type="password"  placeholder="비밀번호 입력" value="" />
-						</div>
-					</div>
-					<div class="btn2 fix">
-						<a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
-						<a class="btn-type10" href="javascript:void(0);">사용하기</a>
-					</div>
+				<div class="noti-row">
+					<p>L.POINT 비밀번호가 기억나지 않거나<br>5회 이상 오류 시 재설정하세요.</p>
+					<a class="btn-type8" href="javascript:void(0);">재설정</a>
 				</div>
 			</div>
 			<!-- //pay-tbl -->
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- modal L-point 사용 -->
+	<div class="modal modal-alarm bg-blue" id="modalLpointUseForMember">
+		<div class="modal-inner">
+			<div class="modal-h">
+				<a href="javascript:void(0);" class="btn-modal-close">레이어 닫기</a>
+				<h1 class="logo"><img src="/images/logo_Lpoint.png" alt="" /></h1>
+			</div>
+			<!-- pay-tbl -->
+			<div class="pay-tbl">
+				<div class="pay-row">
+					<div class="p-th">카드번호</div>
+					<div class="p-td card-num">
+						<input type="text" readonly="readonly" value="1234 5678 9012" />
+					</div>
+				</div>
+				<div class="pay-row">
+					<div class="p-th">사용가능 포인트</div>
+					<div class="p-td">
+						<span class="p-available">0</span>
+					</div>
+				</div>
+				<div class="pay-row">
+					<div class="p-th">사용 할 포인트</div>
+					<div class="p-td will-use">
+						<input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="0" value="" />
+						<a class="btn-type8" href="javascript:void(0);">모두 사용</a>
+					</div>
+				</div>
+				<div class="has-error" style="display:block;">
+					L.POINT는 10P단위로 사용하실 수 있습니다.<br>
+					사용 가능 포인트를 확인 후 다시 입력하세요.						
+				</div>
+				<div class="pay-row border-top">
+					<div class="p-th">비밀번호</div>
+					<div class="p-td">
+						<input type="password"  placeholder="비밀번호 입력" value="" />
+					</div>
+				</div>
+				<div class="has-error" style="display:block;">
+					카드번호 또는 비밀번호를 확인 후 다시 입력하세요.										
+				</div>
+				<div class="noti-row">
+					<p>L.POINT 비밀번호가 기억나지 않거나<br>5회 이상 오류 시 재설정하세요.</p>
+					<a class="btn-type8 btn-reset" href="javascript:void(0);">재설정</a>
+				</div>
+				<div class="btn2 fix">
+					<a class="btn-type9 btn-modal-close" href="javascript:void(0);">취소</a>
+					<a class="btn-type10" href="javascript:void(0);">사용하기</a>
+				</div>
+			</div>
+			<!-- //pay-tbl -->
+			<!-- 고객센터 -->
+			<div class="cs-center">
+				<p>L.POINT 문의사항은 고객센터(1899-8900)로 문의해주세요.</p>
+			</div>
+			<!-- //고객센터 -->
 		</div>
 	</div>
 	<!-- //modal -->

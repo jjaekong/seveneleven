@@ -211,3 +211,18 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .coupon-use-cont .barcode-area img{width:100%;}
 .modal-type3.modal-couponUse .btn-modal-close{top:0; left:0; width:12.4074vw; height:11.7592vw; background: url(/images/btn_x5.png) no-repeat center center; background-size:5.1851vw 5.1851vw}
 .modal-couponUse .coupon-use-cont .barcode-area .win-number{height:28.3333vw; line-height:28.3333vw; font-family:'notokr-regular'; color:#000; font-size:6.4814vw; letter-spacing:0.1rem;}
+
+/* 개선2019 추가 */
+#modalLpointUse .card-num input[type="number"] { padding-left: 0; }
+#modalLpointUse .pwd input[type="password"] { text-align: left !important; }
+#modalLpointUse .btn-type8 { padding: 0; display: flex; align-items: center; justify-content: center; width: 22.037037037vw; }
+#modalLpointUse .btn-search-point { width: 22.037037037vw; }
+#modalLpointUse .noti-row { display: flex; align-items: center; margin-top: 5.55555555556vw; }
+#modalLpointUse .noti-row p { flex: 1; font-size: 3.33333333333vw; line-height: 4.62962962963vw; color: #fff; opacity: .6; }
+
+#modalLpointUseForMember .card-num input { display: block; color: #fff; font-family: 'Roboto'; font-weight: 500; font-size: 4.074vw; background: transparent; height: 7.4074vw; width: 100%; border: none; border-radius: 0; box-sizing: border-box; outline: none; padding-top: 0.9259vw; padding-left: 4vw; }
+#modalLpointUseForMember .btn-type8 { padding: 0; display: flex; align-items: center; justify-content: center; width: 22.037037037vw; }
+#modalLpointUseForMember .noti-row { display: flex; align-items: center; margin-top: 5.55555555556vw; }
+#modalLpointUseForMember .noti-row p { flex: 1; padding-right: 1vw; font-size: 3.33333333333vw; line-height: 4.62962962963vw; color: #fff; opacity: .6; }
+#modalLpointUseForMember .pay-row.border-top { margin-top: 3.7037037037vw; padding-top: 1vw; border-top:0.1rem solid rgba(255,255,255,0.4); }
+#modalLpointUseForMember .cs-center { position: absolute; left: 0; bottom: -10vw; width: 100%; color: #fff; font-size: 3.33333333333vw; text-align: center; }
