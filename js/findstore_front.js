@@ -29,19 +29,19 @@ $('.store_list').each(function(){
 
 function layerEvent(){
     $('.layer_storelabel').each(function(){
-        isStoreLayer = true;
+        // isStoreLayer = true;
         var thisLayer = $(this);
         var closeBtn = $(this).find('.close');
 
         // 외부영역 클릭시 닫기
-        $(document).on('click', function(e){
-            var thisLayer = $('.layer_storelabel')
-            var parentClass = e.target.parentNode.className;
-            var isStoreBtn = parentClass === 'store_type' || parentClass === 'store';
-            if(thisLayer.has(e.target).length === 0 && !isStoreBtn){
-                layerClose(thisLayer);
-            }
-        });
+        // $(document).on('click', function(e){
+        //     var thisLayer = $('.layer_storelabel')
+        //     var parentClass = e.target.parentNode.className;
+        //     var isStoreBtn = parentClass === 'store_type' || parentClass === 'store';
+        //     if(thisLayer.has(e.target).length === 0 && !isStoreBtn){
+        //         layerClose(thisLayer);
+        //     }
+        // });
 
         closeBtn.on('click', function(){
             layerClose(thisLayer);
@@ -49,7 +49,7 @@ function layerEvent(){
 
         function layerClose(target){
             target.remove();
-            isStoreLayer = false;
+            // isStoreLayer = false;
         }
     });
 }
@@ -70,9 +70,12 @@ $('.pin').on('click', function(){
 
     // 기본 : 상단에 있는 지도영역으로 scroll
     if(!isMapType){
-        $('html, body').animate({
-            scrollTop:mapOffsetTop - topBarHeight
-        });
+        $('.store_wrap').removeClass('on');
+        layerInit();
+        layerEvent();
+        // $('html, body').animate({
+        //     scrollTop:mapOffsetTop - topBarHeight
+        // });
     // 점포검색 타입 : 리스트 다음영역에 있는 지도 노출
     } else {
 
@@ -88,6 +91,31 @@ $('.pin').on('click', function(){
     }
 });
 
+// store list btn click
+$('.btn_storeList').on('click', function(){
+    var storeList = $(this).parents('.store_wrap');
+    var isMapOpen = $('.store_wrap').hasClass('on');
+    
+    if(isMapOpen){
+        storeList.removeClass('on');
+        layerInit();
+        layerEvent();
+    }else {
+        $('.store_wrap').removeClass('on');
+        storeList.addClass('on');
+    }
+});
+
+// store list 외 영역 클릭시 닫기
+$(document).on('touchend', function(e){
+    var store_container = $('.store_wrap');
+
+    if(store_container.has(e.target).length === 0){
+        $('.store_wrap').removeClass('on');
+        layerInit();
+        layerEvent();
+    }
+});
 
 // 점포 검색 입력값 초기화
 var serchIpt = $('#storeSearch');

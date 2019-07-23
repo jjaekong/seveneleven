@@ -166,7 +166,7 @@ function bottomMenuShowFn(){
         if(isSlideMenuOpen){
             return false;
         } else {
-            bottomMove();
+            //bottomMove();
         }
     }
 

@@ -17,6 +17,7 @@
     
     <!-- 수정 및 추가 css -->
     <link type="text/css" rel="stylesheet" href="/css/common_new.css" />
+    <link type="text/css" rel="stylesheet" href="/css/omni_common_old.css" />
 </head>
 
 <body>
@@ -47,7 +48,323 @@
                     <a href="#">카테고리</a>
                 </div>
 
-                <div>
+                <div class="omni-main-contents">
+                    <!-- 카테고리 -->
+                    <div class="category-wrapper" style="display: none;">
+                        <div class="category-list">
+                            <!-- 아래 스타일에 출력될 카테고리의 갯수를 입력해 주세요 -->
+                            <ul style="width: calc(18.5185185185vw * 7);">
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category1.png">
+                                            <img src="/images/category1_on.png">
+                                        </p>
+                                        <span>음료</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category2.png">
+                                            <img src="/images/category2_on.png">
+                                        </p>
+                                        <span>아이스크림</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category3.png">
+                                            <img src="/images/category3_on.png">
+                                        </p>
+                                        <span>과자류</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category4.png">
+                                            <img src="/images/category4_on.png">
+                                        </p>
+                                        <span>식품</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category5.png">
+                                            <img src="/images/category5_on.png">
+                                        </p>
+                                        <span>간편식사</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category6.png">
+                                            <img src="/images/category6_on.png">
+                                        </p>
+                                        <span>즉석식품</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="/images/category7.png">
+                                            <img src="/images/category7_on.png">
+                                        </p>
+                                        <span>교환권</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // 카테고리 -->
+                    <!-- list-view -->
+                    <div class="list-view fix">
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag schedule">예정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag plus1">1+1</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <!-- <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag present">증정</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">롯데</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <!-- <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag plus1">1+1</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데롯데</div>
+                                        <div class="item-name ellipsis">델몬트180ml</div>
+                                        <!-- <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div> -->
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag discount">20<span class="unit">%</span></div>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //list-view -->
                 </div>
             </div>
             <!-- /END: sub -->
@@ -324,6 +641,101 @@
     <!-- 수정 및 추가된 js -->
     <script type="text/javascript" src="/js/swiper.min.js"></script>
     <script type="text/javascript" src="/js/common/common_front.js"></script>
+    
+    <!-- 세븐앱 개선 추가 -->
+    <div class="shadow2"></div>
+    <script>
+    $(document).ready(function () {
+        //구매하기 선물하기 찜하기 레이어 노출
+        $(document).on('click', '.btn-item-menu', function () {
+            var $this = $(this);
+            $this.next('.layer-menu').show();
+            $('.shadow2').addClass('on');
+        });
+        //구매하기 선물하기 찜하기 레이어 숨김
+        $(document).on('click', '.layer-menu .layer-inner a, .shadow2', function () {
+            $('.layer-menu').hide();
+            $('.shadow2').removeClass('on');
+        });
+        // 카테고리 메뉴 클릭 시, 카테고리 목록 보이기
+        $(document).on('click', '.tab_common_nav a:eq(3)', function() {
+            $('.category-wrapper').show();
+            $('body').css('overflow', 'hidden');
+        });
+        // 카테고리 외 다른 메뉴 클릭 시, 카테고리 목록 숨기기
+        $(document).on('click', '.tab_common_nav a:not( .tab_common_nav a:eq(3) )', function() {
+            $('.category-wrapper').hide();
+            $('body').css('overflow', 'auto');
+        });
+        // 카테고리 목록이 열려있을 때, 딤드된 영역 클릭 시, 카테고리 목록 닫기
+        $(document).on('click', '.category-wrapper', function(e) {
+            if ($(e.target).hasClass('category-wrapper')) {
+                $('.category-wrapper').hide();
+                $('body').css('overflow', 'auto');
+            }
+        });
+        // 카테고리 항목 클릭 시, 카테고리 목록 숨기기
+        $(document).on('click', '.category-list a', function() {
+            $('.category-list a').removeClass('on');
+            $(this).addClass('on');
+            $('.category-wrapper').hide();
+            $('body').css('overflow', 'auto');
+        });
+        // 스크롤시 자동로드
+        var win = $(window),
+            list = $('.list-view'),
+            state = false;
+
+        win.on('load scroll', function(){
+            var maxH = $(document).height(),
+                footH = 0 //$('footer').height(),
+                curScroll = $(this).scrollTop()+$(this).height()+footH,
+                con = '';
+                con = '<div class="item-type5">';
+                con += '    <div class="item-type5-inner">';
+                con += '        <a href="javascript:void(0);">';
+                con += '            <div class="item-img">';
+                con += '                <img src="/images/@temp_424x424.jpg" alt="" />';
+                con += '                <div class="item-tag discount">20<span class="unit">%</span></div>';
+                con += '            </div>';
+                con += '            <div class="item-text">';
+                con += '                <div class="item-company ellipsis">나뚜르</div>';
+                con += '                <div class="item-name ellipsis">딸기컵</div>';
+                con += '                <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>';
+                con += '                <div class="item-price ellipsis">2,500<span class="unit">원</span></div>';
+                con += '            </div>';
+                con += '        </a>';
+                con += '        <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>';
+                con += '        <div class="layer-menu">';
+                con += '            <div class="layer-inner">';
+                con += '                <a href="javascript:void(0);">구매하기</a>';
+                con += '                <a href="javascript:void(0);">선물하기</a>';
+                con += '                <a href="javascript:void(0);">찜하기</a>';
+                con += '            </div>';
+                con += '        </div>';
+                con += '    </div>';
+                con += '</div>';
+
+            if(!state){
+                if( maxH <= curScroll ){
+                    list.append('<div class="loading"><div></div></div>');
+                    state = true;
+                    setTimeout(function(){
+                        list.append($(con));
+                        list.append($(con));
+                        list.append($(con));
+                        list.append($(con));
+                        $('.loading').remove();
+                        state = false;
+                    }, 500);
+
+                }
+
+            }
+        });
+    });
+    </script>
+    <!-- //세븐앱 개선 추가 -->
 </body>
 
 </html>

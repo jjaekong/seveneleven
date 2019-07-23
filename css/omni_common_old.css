@@ -114,6 +114,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 } */
 /* html{font-size:10px;} */
 .omni-main-contents{
+    position: relative;
     font-size:10px;line-height:1.4; color:#000; text-align:left;background:#ececec;
     font-family:'notokr-light',sans-serif;
 }
@@ -680,3 +681,16 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .item-type3 .item-tag.fractions span { width: 10vw; line-height: 6vw; font-size: 3.55vw }
 .omni-main-contents .item-type3 .item-tag.fractions span + span { border-top: 1px solid #fff; }
 .omni-main-contents .item-type5 .item-tag.date{padding:0!important; text-align:center!important;}
+.omni-main-contents .category-wrapper { z-index: 25; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, .3); }
+.omni-main-contents .category-wrapper .category-list { overflow: auto; width: 100%; height: 25.9259259259vw; background: #fff; }
+.omni-main-contents .category-wrapper .category-list ul { height: 100%; }
+.omni-main-contents .category-wrapper .category-list li { float: left; width: 18.5185185185vw; height: 100%; }
+.omni-main-contents .category-wrapper .category-list li a { display: flex; width: 100%; height: 100%; flex-direction: column; align-items: center; }
+.omni-main-contents .category-wrapper .category-list li a p { position: relative; width: 18.1481481481vw; height: 16.1111111111vw; }
+.omni-main-contents .category-wrapper .category-list li a span { font-size: 3.14814814815vw; color: #000; font-weight: 600; }
+.omni-main-contents .category-wrapper .category-list li a p { margin-top: 1vw; }
+.omni-main-contents .category-wrapper .category-list li a p img { position: absolute; width: 100%; }
+.omni-main-contents .category-wrapper .category-list li a p img + img { display: none; }
+.omni-main-contents .category-wrapper .category-list li a.on span { color: #25c092; }
+.omni-main-contents .category-wrapper .category-list li a.on p img { display: none; }
+.omni-main-contents .category-wrapper .category-list li a.on p img + img { display: block; }

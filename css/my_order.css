@@ -131,4 +131,4 @@
 .item-type5 .badge + .badge { top: 12.037vw; }
 .item-type5 .item-tag + .badge { top: 12.037vw; }
 .item-type5 .badge + .item-tag { top: 12.037vw; }
-.item-type5 .item-tag + .item-tag { top: 12.037vw; }
+.item-type5 .item-tag + .item-tag { top: 12.037vw!important; }

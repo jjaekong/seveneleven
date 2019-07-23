@@ -5,7 +5,10 @@ $(document).ready(function(event) {
     // 예약주문 main slider
     sevenui.preorder_top_slider = new Swiper('.preorder_top_slider', {
         loop: true,
-        autoplay: $('.swiper-container .swiper-slide').length > 1 ? true : false,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
@@ -37,7 +40,10 @@ $(document).ready(function(event) {
     // 예약주문 main slider
     sevenui.preorder_fee_slider = new Swiper('.preorder_fee_slider', {
         loop: true,
-        autoplay: $('.swiper-container .swiper-slide').length > 1 ? true : false,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
