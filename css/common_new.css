@@ -151,7 +151,7 @@ width 1080기준
 /* 자주 사용되는 css */
 .bold{font-weight:bold;}
 .clear{clear:both;}
-.green_font{color:#189b3e;}
+.green_font{color:#009c7a;}
 .gray_font{color:#aaabab;} 
 .red_font{color:red;}
 .blue_font{color:rgb(024,164,251);}
@@ -993,7 +993,7 @@ width 1080기준
 }
 
 /* 상단 탑 바 (뒤로가기, 제목, 공유, 퀵메뉴) */
-.top_bar{width:100%;background-color:#189b3e;padding:0.5% 0;overflow:hidden;position:fixed;top:0%;left:0%;z-index:10;}
+.top_bar{width:100%;background-color:#009c7a;padding:0.5% 0;overflow:hidden;position:fixed;top:0%;left:0%;z-index:10;}
 .top_bar .btn_back{width:8vw;height:11vw;float:left;background:url('/images/reward/reward_detail/btn_back.png') no-repeat center center;background-size:6.2963vw;margin-left:1.5%;}
 .top_bar .reward_title{width:66.9444%;line-height:11vw;float:left;text-align:left;font-size:4.6296vw;color:white;margin-left:5.6481%;margin-top:0%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .top_bar .btn_sns{width:8vw;height:11vw;float:left;background:url('/images/reward/reward_detail/btn_sns.png') no-repeat center center;background-size:4.7222vw;}
@@ -1001,7 +1001,7 @@ width 1080기준
 
 
 /* 상단 탑 바 x (닫기버튼, 제목)*/
-.top_bar_x{width:100%;background-color:#189b3e;padding:0.5% 0;overflow:hidden;position:fixed;top:0%;left:0%;z-index:10;}
+.top_bar_x{width:100%;background-color:#009c7a;padding:0.5% 0;overflow:hidden;position:fixed;top:0%;left:0%;z-index:10;}
 .top_bar_x .btn_x{width:8vw;height:11vw;float:left;background:url('/images/icons/btn_white_x.png') no-repeat center center;background-size:5.2778vw;margin-left:1.5%;}
 .top_bar_x .reward_title{width:66.9444%;line-height:11vw;float:left;text-align:left;font-size:4.6296vw;color:white;margin-left:5.6481%;margin-top:0%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .top_bar_x .btn_home{width:8vw;height:11vw;float:left;background:url('/images/icons/btn_home.png') no-repeat center center;background-size:5.9259vw;margin-left:8%;}
@@ -1012,7 +1012,7 @@ width 1080기준
 
 /* 버튼 */
 .css_button_div{width:100%;background-color:white;padding:2% 0 2% 0;border-bottom:2px solid #ececec;}
-.css_button{width:92.5926%;background-color:#179b3e;font-size:4.4444vw;text-align:center;color:white;font-weight:600;margin:0 auto;padding:3% 0 3% 0;}
+.css_button{width:92.5926%;background-color:#009c7a;font-size:4.4444vw;text-align:center;color:white;font-weight:600;margin:0 auto;padding:3% 0 3% 0;}
 .css_fixed_button{width:92.5926%;background-color:#009c7a;font-size:4.4444vw;text-align:center;color:white;font-weight:600;margin:0 auto;padding:3% 0 3% 0;}
 .btn_fixed {
     display:flex;
@@ -2015,7 +2015,7 @@ table.tbtype1.tdL td{
     padding-top: 4%;
     padding-bottom: 4%;
     font-size: 3.7037vw;
-    color: #189b3e;
+    color: #009c7a;
 }
 #msg_gift {
     width: 50%;

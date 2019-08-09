@@ -245,7 +245,7 @@ function updateQty(addType){
 $(function(){ 
     var tabComNav = $('.tab_common_nav a');
     tabComNav.on('click', function(e){
-        e.preventDefault();
+        // e.preventDefault();
         tabComNav.removeClass('on');
         $(this).addClass('on');
     });

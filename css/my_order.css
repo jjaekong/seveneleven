@@ -17,11 +17,11 @@
 .item-type5 .item-amount{position:absolute; bottom:11.1111vw; left:0; color:#ff0000; font-family:'notokr-regular'; font-size:3.3333vw;}
 .item-type5 .item-amount span{font-family:'Roboto'; font-weight:400;}
 .item-type5 .item-date{position:absolute; left:0; bottom:4.2592vw; font-size:3.3333vw; color:#252525; font-family:'Roboto'; font-weight:300; line-height:1.2;}
-.item-type5 .item-gift-gray{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#25c092; box-sizing:border-box;}
+.item-type5 .item-gift-gray{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#009c7a; box-sizing:border-box;}
 .item-type5 .item-tag.date{padding:0; text-align:center;}
 .item-type5 .item-tag.date .txt1{height:6.4814vw; padding-top:2.1vw; margin:0 1.6666vw; font-family:'Roboto'; font-size:3.8888vw; font-weight:500; border-bottom:0.1rem solid #fff; box-sizing:border-box; line-height:1.1;}
 .item-type5 .item-tag.date .txt2{padding-top:0.4vw; font-family:'notokr-medium'; font-size:2.4074vw; letter-spacing:-0.075rem;}
-.item-type5 .item-tag.date.remain{background-color:#24c091!important;}
+.item-type5 .item-tag.date.remain{background-color:#009c7a!important;}
 .item-type5 .item-tag.date.today{background-color:#ff9724;}
 .item-type5 .item-tag.date.today .txt1{font-family:'notokr-medium'; font-size:3.5185vw;}
 .item-type5 .item-tag.date.refusal{background-color:#f9040c;}
@@ -34,7 +34,7 @@
 .detail-imgbox .item-tag.date{text-align:center; padding:0 2.1296vw; box-sizing:border-box;}
 .detail-imgbox .item-tag.date .txt1{height:9.074vw; padding-top:1.6vw; font-family:'Roboto'; font-size:5.9259vw; font-weight:500; border-bottom:0.1rem solid rgba(255,255,255,0.8); box-sizing:border-box;}
 .detail-imgbox .item-tag.date .txt2{padding-top:0.7407vw; font-family:'notokr-medium'; font-size:3.3333vw; letter-spacing:-0.05rem;}
-.detail-imgbox .item-tag.date.remain{background:#25c092;}
+.detail-imgbox .item-tag.date.remain{background:#009c7a;}
 .detail-imgbox .item-tag.date.today{background-color:#ff9724;}
 .detail-imgbox .item-tag.date.today .txt1{font-family:'notokr-medium'; font-size:5.0925vw;}
 .detail-imgbox .item-tag.date.end{padding:0.6481vw 0 0 0; background-color:#000; color:#fff; font-family:'notokr-bold'; font-size:3.7037vw; letter-spacing:-0.025rem; line-height:16.6666vw;}
@@ -61,7 +61,7 @@
 .deatil-list.myorder .buy-list .btn{position:relative; padding-top:3.7037vw; text-align:right;}
 .deatil-list.myorder .buy-list .btn.remain {margin-top:6.4814vw;}
 .deatil-list.myorder .buy-list .btn a{display:inline-block; height:7.037vw;  margin-left:1.1111vw; padding:1.574vw 3.5185vw 0 3.5185vw; color:#898989; font-family:'notokr-regular'; font-size:3.3333vw; border:0.1rem solid #898989; box-sizing:border-box;}
-.deatil-list.myorder .buy-list .btn a.use{border-color:#179b3e; color:#179b3e;}
+.deatil-list.myorder .buy-list .btn a.use{border-color:#009c7a; color:#009c7a;}
 .deatil-list.myorder .buy-list .btn .total{position:absolute; top:4.6296vw; left:0; color:#000; font-family:'notokr-regular'; font-size:3.7037vw; line-height:1.2;}
 .deatil-list.myorder .buy-list .btn .total span{font-family:'Roboto'; font-weight:400;}
 .deatil-list.myorder .buy-list .more{padding-bottom:5.5555vw; border-bottom:none; text-align:center;}
@@ -117,7 +117,7 @@
 
 /* #개선2019 뱃지(badge) 클래스 추가 */
 .badge { position: absolute; right: 0; top: 0; width: 12.037vw; height: 12.037vw; border-radius: 12.037vw; color: #fff; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #000; }
-.badge.green { background: #25c092; }
+.badge.green { background: #009c7a; }
 .badge.orange { background: #ff9723; }
 .badge.gray { background: #626262; }
 .badge.red { background: #fa444f; }
