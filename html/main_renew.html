@@ -373,230 +373,6 @@
         </div>
         <!-- /body -->
 
-        <!-- footer -->
-        <div id="footer_wrapper" class="page-wrapper">
-            <!-- 하단 고정 메뉴 -->    
-            <div class="menu_bottom on">
-                <!-- 선택된 탭에 on 추가 -->
-                <!-- 하단 tab bar가 안나오는 경우 hide class 추가 -->
-                <button type="button" class="icon icon_home">
-                    <span class="icon_name">홈</span>
-                </button>
-                <button type="button" class="icon icon_reserv">
-                    <span class="icon_name">예약주문</span>
-                </button>
-                <button type="button" class="icon icon_con on">
-                    <span class="icon_name">세븐콘</span>
-                </button>
-                <button type="button" class="icon icon_reward">
-                    <span class="icon_name">이벤트</span>
-                </button>
-                <button type="button" class="icon icon_allmore">
-                    <span class="icon_name">더보기</span>
-                </button>
-            </div> <!-- /END: menu_bottom -->
-
-            <!-- Menuall -->
-            <div class="menu_slide">
-                <div class="menu_contents">
-                    
-                    <!-- 로그인시 member_box -->
-                    <!-- 로그인시 battery_type class 추가 -->
-                    <div class="member_box battery_type">
-                        <div class="member_info">                            
-                            <!-- 
-                                D : 타이틀 문구
-                                - 로그인 시 : .login
-                            -->
-                            <div class="member_tit login">
-                                <!-- 회원명 4글자까지 노출/ 4글자 이후부터 말줄임 표시 -->
-                                <!-- 상단 문구에 member_top class 추가 -->
-                                <p class="member_top"><span class="txt_bold">최둥글레차</span>님 안녕하세요.</p>
-                                <!-- 로그아웃 버튼 추가 0603 -->
-                                <button type="button" class="txt_logout">로그아웃</button>
-                                <!-- //로그아웃 버튼 추가 0603 -->
-
-                                <!-- 설정버튼 위치 변경 0709 -->
-                                <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
-                            </div>
-                            <div class="member_code">                            
-                                <dl>
-                                    <dt>선물코드</dt>
-                                    <dd>L123 4567 8900 
-                                        <button type="button" class="btn_codeCopy">
-                                            <span class="hidden">선물코드 복사</span>
-                                        </button>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="member_cardInfo">
-                                <ul>
-                                    <li class="detail_box">
-                                        <p class="point_num">10,000,000<span class="unit">P</span></p>
-                                        <button type="button" class="btn_refresh">
-                                            <span class="hidden">새로고침</span>
-                                        </button>
-                                        <p class="refresh_date">2019.02.22 <span>13:42:53</span></p>
-                                    </li>
-                                    <li class="simple_box">
-                                        <span class="lpoint_logo"><img src="/images/sevencard/lnb_lpoint-logo.png" alt="엘포인트"></span>
-                                        <!-- 바코드 숫자 여백 추가 lsj -->
-                                        <span class="lpoint_cont num">
-                                            <span>8700</span>
-                                            <span>1100</span>
-                                            <span>0100</span>
-                                            <span>0100</span>
-                                        </span>
-                                        <!-- 바코드 숫자 여백 추가 lsj -->
-                                        
-                                        <button type="button" class="btn_barcodeMore" onclick="fullPopupFn('barcodeView')">
-                                            <span class="hidden">바코드 보기</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="member_menu">
-                                <h4>My Coupon Battery</h4>
-                                <div class="member_battery">
-                                    <div class="myInfo_box">
-                                        <ul>
-                                            <li>
-                                                <button type="button">
-                                                    <span class="tit">1+1 / 2+1</span>
-                                                    <span class="count">35</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button">
-                                                    <span class="tit">예약주문상품</span>
-                                                    <span class="count">12</span>
-                                                </button>
-                                            </li>
-                                            <!-- count의 개수가 0일 경우 no_data class 추가 -->
-                                            <li class="no_data">
-                                                <button type="button">
-                                                    <span class="tit">증정상품</span>
-                                                    <span class="count">0</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                    <!-- //로그인시 member_box -->
-
-
-                    <!-- 비로그인시 member_box -->
-                    <!-- <div class="member_box">
-                        <div class="member_info">
-                            <div class="member_tit">
-                                <p class="member_top">행복충전소, <span class="txt_bold">세븐일레븐</span>입니다.</p>
-                                <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
-                            </div>
-                            <div class="login_box">
-                                <p class="tit">로그인 해주세요</p>
-                                <p class="desc">해당 서비스를 이용하시려면 <br> 로그인이 필요합니다.</p>
-                            </div>
-                            <div class="btn_gridbox col2">
-                                <button type="button" class="btn_line_white">로그인</button>
-                                <button type="button" class="btn_line_white">회원가입</button>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- //비로그인시 member_box -->
-
-                    <!-- 세븐 app카드 발급 전 member_box -->
-                    <!-- 로그인시 battery_type class 추가 -->
-                    <!-- <div class="member_box battery_type">
-                        <div class="member_info">
-                            <div class="member_tit login">
-                                <p class="member_top"><span class="txt_bold">최둥글레차</span>님 안녕하세요.</p>
-                                <button type="button" class="txt_logout">로그아웃</button>
-                                <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
-                            </div>
-                            <div class="member_code">                            
-                                <dl>
-                                    <dt>선물코드</dt>
-                                    <dd>L123 4567 8900 
-                                        <button type="button" class="btn_codeCopy">
-                                            <span class="hidden">선물코드 복사</span>
-                                        </button>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="appcard_box">
-                                <p class="tit">세븐 APP카드를 발급해주세요.</p>
-                            </div>
-                            <div class="btn_gridbox">
-                                <button type="button" class="btn_line_white">카드 발급하기</button>
-                            </div>
-                            <div class="member_menu">
-                                <h4>My Coupon Battery</h4>
-                                <div class="member_battery">
-                                    <div class="myInfo_box">
-                                        <ul>
-                                            <li>
-                                                <button type="button">
-                                                    <span class="tit">1+1 / 2+1</span>
-                                                    <span class="count">35</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button">
-                                                    <span class="tit">예약주문상품</span>
-                                                    <span class="count">12</span>
-                                                </button>
-                                            </li>
-                                            <li class="disabled">
-                                                <button type="button">
-                                                    <span class="tit">증정상품</span>
-                                                    <span class="count">0</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- //세븐 app카드 발급 전 member_box -->
-                    
-                    <div class="nav_menu">
-                        <ul>
-                            <li><button type="button" class="icon_recomm">이&middot;주&middot;아</button></li>
-                            <li><button type="button" class="icon_store">점포찾기</button></li>
-                            <li>
-                                <!--
-                                    할인쿠폰
-                                    99이상일 경우 99+ 로 노출
-                                    0개일 경우 0으로 노출
-                                -->
-                                <button type="button" class="icon_coupon">
-                                할인쿠폰 <span class="count">99+</span>
-                                </button>
-                            </li>
-                            <li><button type="button" class="icon_winner">당첨자 발표</button></li>
-                            <li><button type="button" class="icon_mypage">마이페이지</button></li>
-                            <!-- 택배예약 비노출 5.29 lsj -->
-                            <!-- <li><button type="button" class="icon_delivery">택배예약</button></li> -->
-                            <!-- //택배예약 비노출 5.29 lsj -->
-                        </ul>
-                    </div>
-                    <div class="etc_menu">
-                        <ul>
-                            <li><a href="#none">공지사항</a></li>
-                            <li><a href="#none">FAQ</a></li>
-                            <li><a href="#none">이용가이드</a></li>
-                            <li><a href="#none">이용약관</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- /menu_slide --> 
-            
-        </div><!-- /footer -->
-
         <!-- 하단 tab bar가 안나오는 페이지인 경우 hidetop class 추가 -->
         <!-- 서브페이지에서 sub class 추가 -->
         <div class="btn_util hidetop">
@@ -606,6 +382,230 @@
             </button>
         </div>
     </div>
+
+    <!-- footer -->
+    <div id="footer_wrapper" class="page-wrapper">
+        <!-- 하단 고정 메뉴 -->    
+        <div class="menu_bottom on">
+            <!-- 선택된 탭에 on 추가 -->
+            <!-- 하단 tab bar가 안나오는 경우 hide class 추가 -->
+            <button type="button" class="icon icon_home">
+                <span class="icon_name">홈</span>
+            </button>
+            <button type="button" class="icon icon_reserv">
+                <span class="icon_name">예약주문</span>
+            </button>
+            <button type="button" class="icon icon_con on">
+                <span class="icon_name">세븐콘</span>
+            </button>
+            <button type="button" class="icon icon_reward">
+                <span class="icon_name">이벤트</span>
+            </button>
+            <button type="button" class="icon icon_allmore">
+                <span class="icon_name">더보기</span>
+            </button>
+        </div> <!-- /END: menu_bottom -->
+
+        <!-- Menuall -->
+        <div class="menu_slide">
+            <div class="menu_contents">
+                
+                <!-- 로그인시 member_box -->
+                <!-- 로그인시 battery_type class 추가 -->
+                <div class="member_box battery_type">
+                    <div class="member_info">                            
+                        <!-- 
+                            D : 타이틀 문구
+                            - 로그인 시 : .login
+                        -->
+                        <div class="member_tit login">
+                            <!-- 회원명 4글자까지 노출/ 4글자 이후부터 말줄임 표시 -->
+                            <!-- 상단 문구에 member_top class 추가 -->
+                            <p class="member_top"><span class="txt_bold">최둥글레차</span>님 안녕하세요.</p>
+                            <!-- 로그아웃 버튼 추가 0603 -->
+                            <button type="button" class="txt_logout">로그아웃</button>
+                            <!-- //로그아웃 버튼 추가 0603 -->
+
+                            <!-- 설정버튼 위치 변경 0709 -->
+                            <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                        </div>
+                        <div class="member_code">                            
+                            <dl>
+                                <dt>선물코드</dt>
+                                <dd>L123 4567 8900 
+                                    <button type="button" class="btn_codeCopy">
+                                        <span class="hidden">선물코드 복사</span>
+                                    </button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="member_cardInfo">
+                            <ul>
+                                <li class="detail_box">
+                                    <p class="point_num">10,000,000<span class="unit">P</span></p>
+                                    <button type="button" class="btn_refresh">
+                                        <span class="hidden">새로고침</span>
+                                    </button>
+                                    <p class="refresh_date">2019.02.22 <span>13:42:53</span></p>
+                                </li>
+                                <li class="simple_box">
+                                    <span class="lpoint_logo"><img src="/images/sevencard/lnb_lpoint-logo.png" alt="엘포인트"></span>
+                                    <!-- 바코드 숫자 여백 추가 lsj -->
+                                    <span class="lpoint_cont num">
+                                        <span>8700</span>
+                                        <span>1100</span>
+                                        <span>0100</span>
+                                        <span>0100</span>
+                                    </span>
+                                    <!-- 바코드 숫자 여백 추가 lsj -->
+                                    
+                                    <button type="button" class="btn_barcodeMore" onclick="fullPopupFn('barcodeView')">
+                                        <span class="hidden">바코드 보기</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member_menu">
+                            <h4>My Coupon Battery</h4>
+                            <div class="member_battery">
+                                <div class="myInfo_box">
+                                    <ul>
+                                        <li>
+                                            <button type="button">
+                                                <span class="tit">1+1 / 2+1</span>
+                                                <span class="count">35</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                <span class="tit">예약주문상품</span>
+                                                <span class="count">12</span>
+                                            </button>
+                                        </li>
+                                        <!-- count의 개수가 0일 경우 no_data class 추가 -->
+                                        <li class="no_data">
+                                            <button type="button">
+                                                <span class="tit">증정상품</span>
+                                                <span class="count">0</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+                <!-- //로그인시 member_box -->
+
+
+                <!-- 비로그인시 member_box -->
+                <!-- <div class="member_box">
+                    <div class="member_info">
+                        <div class="member_tit">
+                            <p class="member_top">행복충전소, <span class="txt_bold">세븐일레븐</span>입니다.</p>
+                            <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                        </div>
+                        <div class="login_box">
+                            <p class="tit">로그인 해주세요</p>
+                            <p class="desc">해당 서비스를 이용하시려면 <br> 로그인이 필요합니다.</p>
+                        </div>
+                        <div class="btn_gridbox col2">
+                            <button type="button" class="btn_line_white">로그인</button>
+                            <button type="button" class="btn_line_white">회원가입</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- //비로그인시 member_box -->
+
+                <!-- 세븐 app카드 발급 전 member_box -->
+                <!-- 로그인시 battery_type class 추가 -->
+                <!-- <div class="member_box battery_type">
+                    <div class="member_info">
+                        <div class="member_tit login">
+                            <p class="member_top"><span class="txt_bold">최둥글레차</span>님 안녕하세요.</p>
+                            <button type="button" class="txt_logout">로그아웃</button>
+                            <button type="button" class="btn_mysetting"><span class="hidden">설정</span></button>
+                        </div>
+                        <div class="member_code">                            
+                            <dl>
+                                <dt>선물코드</dt>
+                                <dd>L123 4567 8900 
+                                    <button type="button" class="btn_codeCopy">
+                                        <span class="hidden">선물코드 복사</span>
+                                    </button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="appcard_box">
+                            <p class="tit">세븐 APP카드를 발급해주세요.</p>
+                        </div>
+                        <div class="btn_gridbox">
+                            <button type="button" class="btn_line_white">카드 발급하기</button>
+                        </div>
+                        <div class="member_menu">
+                            <h4>My Coupon Battery</h4>
+                            <div class="member_battery">
+                                <div class="myInfo_box">
+                                    <ul>
+                                        <li>
+                                            <button type="button">
+                                                <span class="tit">1+1 / 2+1</span>
+                                                <span class="count">35</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                <span class="tit">예약주문상품</span>
+                                                <span class="count">12</span>
+                                            </button>
+                                        </li>
+                                        <li class="disabled">
+                                            <button type="button">
+                                                <span class="tit">증정상품</span>
+                                                <span class="count">0</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- //세븐 app카드 발급 전 member_box -->
+                
+                <div class="nav_menu">
+                    <ul>
+                        <li><button type="button" class="icon_recomm">이&middot;주&middot;아</button></li>
+                        <li><button type="button" class="icon_store">점포찾기</button></li>
+                        <li>
+                            <!--
+                                할인쿠폰
+                                99이상일 경우 99+ 로 노출
+                                0개일 경우 0으로 노출
+                            -->
+                            <button type="button" class="icon_coupon">
+                            할인쿠폰 <span class="count">99+</span>
+                            </button>
+                        </li>
+                        <li><button type="button" class="icon_winner">당첨자 발표</button></li>
+                        <li><button type="button" class="icon_mypage">마이페이지</button></li>
+                        <!-- 택배예약 비노출 5.29 lsj -->
+                        <!-- <li><button type="button" class="icon_delivery">택배예약</button></li> -->
+                        <!-- //택배예약 비노출 5.29 lsj -->
+                    </ul>
+                </div>
+                <div class="etc_menu">
+                    <ul>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">FAQ</a></li>
+                        <li><a href="#none">이용가이드</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- /menu_slide --> 
+        
+    </div><!-- /footer -->
 
     <!-- 메인, 예약주문 메인에만 footer 노출 -->
     <!-- 마크업 일부 변경 건이 있으므로 확인하여 적용 -->
