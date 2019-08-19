@@ -645,7 +645,7 @@
     <script type="text/javascript" src="/js/common/common_front.js"></script>
     
     <!-- 세븐앱 개선 추가 -->
-    <div class="shadow2"></div>
+    <div class="shadow2" onclick="javascript:void(0);"></div>
     <script>
     $(document).ready(function () {
         //구매하기 선물하기 찜하기 레이어 노출
@@ -656,8 +656,8 @@
         });
         //구매하기 선물하기 찜하기 레이어 숨김
         $(document).on('click', '.layer-menu .layer-inner a, .shadow2', function () {
-            $('.layer-menu').hide();
             $('.shadow2').removeClass('on');
+            $('.layer-menu').hide();
         });
         // 카테고리 메뉴 클릭 시, 카테고리 목록 보이기
         $(document).on('click', '.tab_common_nav a:eq(3)', function() {
