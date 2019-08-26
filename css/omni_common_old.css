@@ -694,3 +694,13 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .category-wrapper .category-list li a.on span { color: #009c7a; }
 .omni-main-contents .category-wrapper .category-list li a.on p img { display: none; }
 .omni-main-contents .category-wrapper .category-list li a.on p img + img { display: block; }
+
+/* 핫딜 관련 스타일 추가 */
+.omni-main-contents .hot-deal { padding: 2.03703703704vw 2.22222222222vw; }
+.omni-main-contents .hot-deal .item-type5 { margin-bottom: 0; }
+.omni-main-contents .hot-deal .item-type5 .item-text { padding-top: 3.7037037037vw; }
+.omni-main-contents .hot-deal .item-type5 .item-text .item-company { font-size: 3.88888888889vw; }
+.omni-main-contents .hot-deal .item-type5 .item-text .item-name { font-size: 4.44444444444vw; }
+.omni-main-contents .hot-deal .item-type5 .item-text .item-real-price { font-size: 3.33333333333vw; bottom: 11.5740740741vw; color: #bebebe; }
+.omni-main-contents .hot-deal .item-type5 .item-text .item-price { font-size: 4.25925925926vw; }
+.omni-main-contents .hot-deal .item-type5 .item-expire { background: orange; color: #fff; font-size: 3.88888888889vw; line-height: 7.22222222222vw; text-align: center; font-weight: 500; }

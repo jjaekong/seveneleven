@@ -42,8 +42,8 @@
             <div class="contents">
                 <!-- 2depth 존재 시 depth_type class 추가 -->
                 <div class="tab_common_nav">
-                    <a href="#">핫딜</a>
-                    <a href="#" class="on">1+1</a>
+                    <a href="#" class="on">핫딜</a>
+                    <a href="#">1+1</a>
                     <a href="#">2+1</a>
                     <a href="#">L.POINT</a>
                     <a href="#">카테고리</a>
@@ -123,6 +123,39 @@
                         </div>
                     </div>
                     <!-- // 카테고리 -->
+                    
+                    <!-- 핫딜 -->
+                    <div class="hot-deal">
+                        <div class="item-type5">
+                            <div class="item-type5-inner">
+                                <a href="javascript:void(0);">
+                                    <div class="item-img">
+                                        <img src="/images/@temp_424x424.jpg" alt="" />
+                                        <div class="item-tag schedule">예정</div>
+                                    </div>
+                                    <div class="item-expire">
+                                        2019.08.01 ~ 2019.08.07 까지 구매 가능
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-company ellipsis">나뚜르</div>
+                                        <div class="item-name ellipsis">딸기컵</div>
+                                        <div class="item-real-price ellipsis">5,000<span class="unit">원</span></div>
+                                        <div class="item-price ellipsis">2,500<span class="unit">원</span></div>
+                                    </div>
+                                </a>
+                                <a class="btn-item-menu" href="javascript:void(0);" title="메뉴"></a>
+                                <div class="layer-menu">
+                                    <div class="layer-inner">
+                                        <a href="javascript:void(0);">구매하기</a>
+                                        <a href="javascript:void(0);">선물하기</a>
+                                        <a href="javascript:void(0);">찜하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //핫딜 -->
+
                     <!-- list-view -->
                     <div class="list-view fix">
                         <div class="item-type5">
@@ -660,12 +693,12 @@
             $('.layer-menu').hide();
         });
         // 카테고리 메뉴 클릭 시, 카테고리 목록 보이기
-        $(document).on('click', '.tab_common_nav a:eq(3)', function() {
+        $(document).on('click', '.tab_common_nav a:eq(4)', function() {
             $('.category-wrapper').show();
             $('body').css('overflow', 'hidden');
         });
         // 카테고리 외 다른 메뉴 클릭 시, 카테고리 목록 숨기기
-        $(document).on('click', '.tab_common_nav a:not( .tab_common_nav a:eq(3) )', function() {
+        $(document).on('click', '.tab_common_nav a:not( .tab_common_nav a:eq(4) )', function() {
             $('.category-wrapper').hide();
             $('body').css('overflow', 'auto');
         });
