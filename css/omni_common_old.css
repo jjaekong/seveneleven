@@ -703,4 +703,6 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .hot-deal .item-type5 .item-text .item-name { font-size: 4.44444444444vw; }
 .omni-main-contents .hot-deal .item-type5 .item-text .item-real-price { font-size: 3.33333333333vw; bottom: 11.5740740741vw; color: #bebebe; }
 .omni-main-contents .hot-deal .item-type5 .item-text .item-price { font-size: 4.25925925926vw; }
-.omni-main-contents .hot-deal .item-type5 .item-expire { background: orange; color: #fff; font-size: 3.88888888889vw; line-height: 7.22222222222vw; text-align: center; font-weight: 500; }
+.omni-main-contents .hot-deal .item-type5 .item-expire { background: #ff7a08; color: #fff; font-size: 3.88888888889vw; line-height: 7.22222222222vw; text-align: center; font-weight: 500; }
+.omni-main-contents .hot-deal .item-type5 .item-price { color: #009c7a; }
+.omni-main-contents .hot-deal .item-type5 .item-price .unit { color: #009c7a; }
