@@ -694,3 +694,8 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 /* 핫딜 관련 스타일 추가 */
 .hotdeal-expire { background: orange; color: #fff; font-size: 3.88888888889vw; line-height: 7.22222222222vw; text-align: center; font-weight: 500; }
 .detail-textbox .ment-row { padding: 8.7962962963vw 0; }
+
+/* 결제버튼 관련 스타일 추가: 191029 */
+.pay-btns { padding: 2.7777vw; width: 100%; background: #fff; box-sizing: border-box; display: flex; }
+.pay-btns a { flex: 1; }
+.pay-btns a + a { margin-left: 2.7777vw; }
