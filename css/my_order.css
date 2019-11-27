@@ -25,7 +25,7 @@
 .item-type5 .item-tag.date.today{background-color:#ff9724;}
 .item-type5 .item-tag.date.today .txt1{font-family:'notokr-medium'; font-size:3.5185vw;}
 .item-type5 .item-tag.date.refusal{background-color:#f9040c;}
-.item-type5 .item-reserve{height:13.8888vw; padding-top:3.3333vw; border-top:0.1rem solid #ccc;}
+.item-type5 .item-reserve{height:16.8888vw; padding-top:3.3333vw; border-top:0.1rem solid #ccc;}
 .item-type5 .item-reserve-date{font-size:3.3333vw; color:#252525; font-family:'Roboto'; font-weight:300; line-height:1.2;}
 .item-type5 .item-reserve-date span{font-size:3.3333vw; color:#252525; font-family:'notokr-light'; line-height:1.2;}
 .item-type5 .item-reserve-branch{padding-top:0.9259vw; font-size:3.3333vw; color:#000; font-family:'notokr-regular'; line-height:1.2;}
