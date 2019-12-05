@@ -483,7 +483,7 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .detail-contents{position:relative; padding-bottom:17.5925vw;background-color:#fff}
 .detail-contents.coupon-detail-cash{padding-bottom:24.074vw;}
 .detail-contents .detail-imgbox{margin:0 3.7037vw; position:relative;}
-.detail-imgbox .item-img{padding:14.8148vw 0 18.5185vw 0; width:59.2592vw; margin:0 auto;}
+.detail-imgbox .item-img{padding:14.8148vw 0 18.5185vw 0; /*width:59.2592vw;*/ margin:0 auto;}
 .detail-imgbox .item-img img{width:100%;}
 .detail-imgbox .Lpoint-img{position:absolute; right:2.7777vw; top:5.5555vw;}
 .detail-imgbox .item-tag + .Lpoint-img{position:absolute; right:2.7777vw; top: auto; bottom: 15vw; }
