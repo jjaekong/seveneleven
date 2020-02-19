@@ -489,9 +489,10 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .detail-imgbox .item-tag + .Lpoint-img{position:absolute; right:2.7777vw; top: auto; bottom: 15vw; }
 .detail-imgbox .Lpoint-img img{width:13.8888vw;}
 .detail-imgbox .item-tag{position:absolute; right:0.9259vw; top:5.5555vw; width:16.6666vw; height:16.6666vw; border-radius:16.6666vw; color:#fff; overflow:hidden; box-sizing:border-box; padding-top:4.1vw;}
-.detail-imgbox .item-tag.discount{background-color:#009c7a; font-size:6.4814vw; text-align:center; font-family:'Roboto'; font-weight:500;}
+.detail-imgbox .item-tag.discount{background-color:#009bfa; font-size:6.4814vw; text-align:center; font-family:'Roboto'; font-weight:500;}
 .detail-imgbox .item-tag.discount .unit{font-size:4.6296vw; font-family:'Roboto'; font-weight:400;}
 .detail-imgbox .item-tag.plus1{background-color:#ff9723; font-size:6.4814vw; text-align:center; font-family:'Roboto'; font-weight:500;}
+.detail-imgbox .item-tag.plus2{background-color:#009c7a; font-size:6.4814vw; text-align:center; font-family:'Roboto'; font-weight:500;}
 .detail-imgbox .item-tag.present{background-color:#ff9723; font-size:5.5555vw; text-align:center; font-family:'notokr-medium'; padding-top:5vw;}
 .detail-textbox{width:100%; background:#fff;}
 .detail-imgbox .item-tag.soldout{background-color:#626262; font-size:5.5555vw; text-align:center; font-family:'notokr-medium'; padding-top:5vw;}

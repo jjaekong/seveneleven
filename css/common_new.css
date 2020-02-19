@@ -1716,11 +1716,18 @@ table.tbtype1.tdL td{
 .tab_common_nav > a {
     position: relative;
     flex: 1;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     font-size: 4.16vw;
     line-height: 15.55vw;
     color: #666;
+}
+.tab_common_nav > a.lpoint > img {
+    position: relative;
+    top: .25vw;
+    width: 80%;
 }
 
 .tab_common_nav > a.on:before{

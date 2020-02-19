@@ -326,9 +326,10 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; -moz-ap
 .omni-main-contents .item-type5 .item-price{position:absolute; left:0; bottom:4.2592vw; font-size:4.074vw; color:#000; font-family:'Roboto'; font-weight:400; line-height:1.2;}
 .omni-main-contents .item-type5 .item-price .unit{display:inline-block; font-size:3.1481vw; font-family:'notokr-light'; color:#000;}
 .omni-main-contents .item-type5 .item-tag{display:block; position:absolute; right:0; top:0; width:12.037vw; height:12.037vw; border-radius:12.037vw; color:#fff; overflow:hidden; box-sizing:border-box; padding-top:3.1vw;}
-.omni-main-contents .item-type5 .item-tag.discount{background-color:#009c7a; font-size:4.4444vw; text-align:center; font-family:'Roboto'; font-weight:500;}
+.omni-main-contents .item-type5 .item-tag.discount{background-color:#009bfa; font-size:4.4444vw; text-align:center; font-family:'Roboto'; font-weight:500;}
 .omni-main-contents .item-type5 .item-tag.discount .unit{font-size:3.7037vw; font-family:'Roboto'; font-weight:400;}
 .omni-main-contents .item-type5 .item-tag.plus1{background-color:#ff9723; font-size:4.4444vw; text-align:center; font-family:'Roboto'; font-weight:500;}
+.omni-main-contents .item-type5 .item-tag.plus2{background-color:#009c7a; font-size:4.4444vw; text-align:center; font-family:'Roboto'; font-weight:500;}
 .omni-main-contents .item-type5 .item-tag.present{background-color:#ff9723; font-size:4.2592vw; text-align:center; font-family:'notokr-medium'; padding-top:3.5vw;}
 .omni-main-contents .item-type5 .item-gift-red{position:absolute; top:-2.3148vw; left:0; padding:0.45vw 0.7407vw 0.2vw 0.7407vw; color:#fff; font-family:'notokr-medium'; font-size:2.4074vw; background:#f9040c; box-sizing:border-box;}
 .omni-main-contents .item-type5 .item-gift-blue{position:absolute; top:-2.3148vw; left:0; height:3.5185vw;  padding:1.1111vw 0.9259vw 0 0.9259vw; background:#17a3fb; text-align:center; box-sizing:border-box; }
