@@ -83,7 +83,7 @@ button {
 input[type="radio"]{
     appearance: none;
     -webkit-appearance: none;
-    -webkit-border-radius: 0;
+    border-radius: 0;
     border: 0;
     display: inline-block;
     width: 4.81vw;
@@ -116,7 +116,7 @@ textarea{
     font-size: 3.61vw;
     border: 1px solid #e1e1e1;
     color: #333;
-    -webkit-border-radius: 0;
+    border-radius: 0;
     -webkit-appearance: none;
 }
 
@@ -1142,7 +1142,7 @@ width 1080기준
     margin-right: 5.83%;
     border:0;
     box-sizing: border-box;
-    -webkit-border-radius:0;
+    border-radius:0;
     -webkit-appearance: none;
 }
 .check_wrap .checkBox > i {
@@ -1724,12 +1724,6 @@ table.tbtype1.tdL td{
     line-height: 15.55vw;
     color: #666;
 }
-.tab_common_nav > a.lpoint > img {
-    position: relative;
-    top: .25vw;
-    width: 80%;
-}
-
 .tab_common_nav > a.on:before{
     display: block;
     content:'';
@@ -1741,7 +1735,7 @@ table.tbtype1.tdL td{
     background: #009c7a;
 }
 .tab_common_nav > a.on{
-    color: #009c7a;
+    /* color: #009c7a; */
     font-family: 'NotoSansKR-Bold-Hestia';
     font-style: normal;   
 }
@@ -1776,6 +1770,51 @@ table.tbtype1.tdL td{
     position: absolute;
     top: 3.05vw;
     right: 5.55vw;
+}
+.tab_common_nav > a.promo {
+    color: #666;
+}
+.tab_common_nav > a.promo.on {
+    background: rgba(102, 102, 102, .1);
+}
+.tab_common_nav > a.promo.on:before {
+    background: #666;
+}
+.tab_common_nav > a.plus1 {
+    color: #ff9723;
+}
+.tab_common_nav > a.plus1.on {
+    background: rgba(255, 151, 35, .1);
+}
+.tab_common_nav > a.plus1.on:before {
+    background: #ff9723;
+}
+.tab_common_nav > a.plus2 {
+    color: #009c7a;
+}
+.tab_common_nav > a.plus2.on {
+    background: rgba(0, 156, 122, .1);
+}
+.tab_common_nav > a.plus2.on:before {
+    background: #009c7a;
+}
+.tab_common_nav > a.lpoint {
+    color: #009bfa;
+}
+.tab_common_nav > a.lpoint.on {
+    background: rgba(0, 155, 250, .1);
+}
+.tab_common_nav > a.lpoint.on:before {
+    background: #009bfa;
+}
+.tab_common_nav > a.category {
+    color: #666;
+}
+.tab_common_nav > a.category.on {
+    background: rgba(102, 102, 102, .1);
+}
+.tab_common_nav > a.category.on:before {
+    background: #666;
 }
 
 /* 스탬프 관련 */
@@ -1982,7 +2021,6 @@ table.tbtype1.tdL td{
     filter: alpha(opacity=70); /* for IE */
     opacity: 0.7; /* CSS3 standard */
     -moz-opacity: 0.7; /* for Mozilla */
-    display:;
 }
 .result_message {    
     float: left;
@@ -1993,8 +2031,7 @@ table.tbtype1.tdL td{
     left: 6.2963%;
     z-index: 101; /*레이어들 중 맨 앞으로 오게 하기위해 높은 숫자 세팅.*/
     background-color: rgba(255, 255, 255, 1.0);
-    text-align: left;   
-    display:;
+    text-align: left;
 }
 #msg_close {
     float: left;
