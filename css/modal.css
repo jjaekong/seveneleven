@@ -198,7 +198,7 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .coupon-use-cont .how-to-use p{font-size:4.8148vw; font-family:'notokr-medium'; padding-bottom:5.5555vw;}
 .modal-couponUse .coupon-use-cont .how-to-use ol li{line-height:7.9629vw;}
 .modal-couponUse .coupon-use-cont .how-to-use ol li.text-orange{color:#f47521;}
-.modal-couponUse .coupon-use-cont .coupon-use-bot{width:100%; /*height:29.6296vw;*/ padding:5vw 9.2592vw 10vw; box-sizing:border-box; background: url(/images/bg_coupon_use.jpg) no-repeat 0 100%; background-size:contain;}
+.modal-couponUse .coupon-use-cont .coupon-use-bot{width:100%; /* height:29.6296vw; */ padding:5vw 9.2592vw 10vw; box-sizing:border-box; background: url(/images/bg_coupon_use.jpg) no-repeat 0 100%; background-size:contain;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot > div{display:table; width:100%; height:25vw;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot div > div{display:table-cell; vertical-align:middle;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot div .text01{font-size:4.8148vw; color:#a0a0a0; line-height: 8.3333vw; font-family:'notokr-regular'; letter-spacing:-0.025rem;}
@@ -207,7 +207,8 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot div .text02{font-size:4.8148vw; color:#000; line-height: 8.3333vw; font-family:'notokr-regular'; letter-spacing:-0.025rem;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot div .text03{font-size:4.444vw; color:#000; line-height: 8.3333vw; font-family:'notokr-regular'; letter-spacing:-0.025rem;}
 .modal-couponUse .coupon-use-cont .coupon-use-bot div .text04{font-size:3.7037vw; color:#f33155; line-height: 5.1851vw; font-family:'notokr-regular'; letter-spacing:-0.025rem;}
-.modal-couponUse .coupon-use-cont .barcode-area{padding-bottom:5.5555vw; box-shadow: 0 5px 5px rgba(000,000,000,0.1);}
+/* .modal-couponUse .coupon-use-cont .barcode-area{padding-bottom:5.5555vw; box-shadow: 0 5px 5px rgba(000,000,000,0.1);} */
+.modal-couponUse .coupon-use-cont .barcode-area{padding-bottom: 5.5555vw; display: flex; justify-content: center; align-items: center; } /* 200311 수정 */
 .modal-couponUse .coupon-use-cont .barcode-area img{width:100%;}
 .modal-type3.modal-couponUse .btn-modal-close{top:0; left:0; width:12.4074vw; height:11.7592vw; background: url(/images/btn_x5.png) no-repeat center center; background-size:5.1851vw 5.1851vw}
 .modal-couponUse .coupon-use-cont .barcode-area .win-number{height:28.3333vw; line-height:28.3333vw; font-family:'notokr-regular'; color:#000; font-size:6.4814vw; letter-spacing:0.1rem;}
