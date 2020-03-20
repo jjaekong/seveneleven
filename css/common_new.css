@@ -356,7 +356,8 @@ width 1080기준
 .menu_slide .menu_contents{width:100%;position:absolute;top:0%;right:-90%;background-color:#fff;height:100%;overflow-y:auto;}
 .menu_slide .member_box {
     position: relative;
-    height: 76.574vw;
+    /* height: 76.574vw; 200320 수정 */ 
+    height: auto;
     padding: 6.67% 0 5.555%;
     background: #009c7a;
     box-sizing: border-box;
