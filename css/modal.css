@@ -183,7 +183,7 @@ body.modal-open{overflow:hidden;}
 .modal-alarm .modal-inner .new-pay-tbl .btn2{padding-top:5.555vw;}
 .modal-alarm .modal-inner .new-pay-tbl .hidden-form{display:none;}
 .modal-alarm.bg-red .modal-inner .new-pay-tbl .btn2 a.btn-type10{color:#fb525b;}
-.modal-type3.modal-couponUse{padding:0; height:100%; background: #dcdcdc; overflow:auto; box-sizing:border-box; padding-bottom:1.8518vw;}
+.modal-type3.modal-couponUse{padding:0; height:100%; background: #dcdcdc; overflow:auto; box-sizing:border-box; }
 .modal-type3.modal-couponUse  .modal-inner{width:100%; background:url(/images/bg_green_top.jpg) no-repeat 0 0; background-size: contain;}
 .modal-couponUse .cuopon-item{display:table; padding:9.2592vw 6vw 0 7.4074vw; box-sizing:border-box; height:40.7407vw;}
 .modal-couponUse .cuopon-item .item-img{display:table-cell; vertical-align:middle; width:31.4814vw; height:31.4814vw;}
@@ -193,7 +193,7 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .cuopon-item .item-text .item-name{font-size:4.2592vw; font-family:'notokr-regular'; line-height:5.9259vw; margin-bottom:3.5vw;}
 .modal-couponUse .cuopon-item .item-text .btn-item{display:inline-block; border:0.2rem solid #fff; color:#fff; padding:3.7% 12.8%; font-size:3.7037vw; font-family:'notokr-medium';}
 .modal-couponUse .cuopon-item .title-text01 img{padding-left:5.5555vw; width:64.8148vw;}
-.modal-couponUse .coupon-use-cont{margin:6.4814vw 3.7037vw 0 3.7037vw; background:#fff;/* box-shadow: 0 5px 5px rgba(000,000,000,0.1);*/ }
+.modal-couponUse .coupon-use-cont{margin:6.4814vw 3.7037vw 3.7037vw 3.7037vw; background:#fff;/* box-shadow: 0 5px 5px rgba(000,000,000,0.1);*/ }
 .modal-couponUse .coupon-use-cont .how-to-use{padding:5.9259vw 9.2592vw 0 9.2592vw; font-size:4.8148vw; font-family:'notokr-regular'; color:#000; box-sizing:border-box; height:55.0925vw; box-shadow: 0 1vw 5.5555vw rgba(000,000,000,0.1);}
 .modal-couponUse .coupon-use-cont .how-to-use p{font-size:4.8148vw; font-family:'notokr-medium'; padding-bottom:5.5555vw;}
 .modal-couponUse .coupon-use-cont .how-to-use ol li{line-height:7.9629vw;}
@@ -212,6 +212,12 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .coupon-use-cont .barcode-area img{width:100%;}
 .modal-type3.modal-couponUse .btn-modal-close{top:0; left:0; width:12.4074vw; height:11.7592vw; background: url(/images/btn_x5.png) no-repeat center center; background-size:5.1851vw 5.1851vw}
 .modal-couponUse .coupon-use-cont .barcode-area .win-number{height:28.3333vw; line-height:28.3333vw; font-family:'notokr-regular'; color:#000; font-size:6.4814vw; letter-spacing:0.1rem;}
+.modal-couponUse .stamp-duty { padding: 1vw 3.7037vw 3.7037vw; }
+.modal-couponUse .stamp-duty div { background: #fff; border: 1px solid #aaa; padding: 2.77vw 0; }
+.modal-couponUse .stamp-duty div ul { display: flex; justify-content: space-between; margin: 0; padding: 0; }
+.modal-couponUse .stamp-duty div ul li { flex: 1 1 auto; font-size: 3.33vw; margin: 0; padding: 0; text-align: center; letter-spacing: .25vw; color: #272727; }
+.modal-couponUse .stamp-duty div ul li + li { border-left: 1px solid #aaa; }
+.modal-couponUse .stamp-duty div ul li:nth-of-type(1) { letter-spacing: 1vw; font-weight: bolder; }
 
 /* 개선2019 추가 */
 #modalLpointUse .card-num input[type="number"] { padding-left: 0; }
