@@ -1704,7 +1704,8 @@ table.tbtype1.tdL td{
 
 
 .tab_common_nav {
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
     height: 15.55vw;
     background: #fff;
