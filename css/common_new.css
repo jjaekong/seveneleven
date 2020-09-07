@@ -1712,12 +1712,12 @@ table.tbtype1.tdL td{
 }
 .tab_common_nav > div {
     display: flex;
-    width: calc(100% + (100% / 4));
+    width: 100%;
     height: 15.55vw;
     border-bottom: 1px solid #e1e1e1;
     box-sizing: border-box;
 }
-.tab_common_nav.depth_type{
+.tab_common_nav.depth_type {
     margin-bottom: 12.22vw;
 }
 .tab_common_nav a {
@@ -1726,17 +1726,12 @@ table.tbtype1.tdL td{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 4);
-    height: 100%;
     font-size: 4.16vw;
     line-height: 15.55vw;
     color: #666;
 }
-.tab_common_nav.hotdeal div {
-    width: calc(100% + (100% / 5)) !important;
-}
 .tab_common_nav.hotdeal a {
-    width: calc(100% / 5) !important;
+    flex: 1 1 auto;
 }
 .tab_common_nav.hotdeal a.promo {
     display: block;
@@ -1789,6 +1784,7 @@ table.tbtype1.tdL td{
     right: 5.55vw;
 }
 .tab_common_nav a.promo {
+    display: none;
     color: #666;
 }
 .tab_common_nav a.promo.on {
@@ -1820,7 +1816,7 @@ table.tbtype1.tdL td{
 }
 .tab_common_nav a.lpoint img {
     width: auto;
-    height: 3vw;
+    height: 2.8vw;
     vertical-align: middle;
 }
 .tab_common_nav a.lpoint.on {
@@ -1834,7 +1830,7 @@ table.tbtype1.tdL td{
 }
 .tab_common_nav a.lpay img {
     width: auto;
-    height: 4vw;
+    height: 3.9vw;
     vertical-align: middle;
 }
 .tab_common_nav a.lpay.on {
