@@ -1848,6 +1848,15 @@ table.tbtype1.tdL td{
 .tab_common_nav a.category.on:before {
     background: #666;
 }
+.tab_common_nav a.bfriday {
+    color: #000;
+}
+.tab_common_nav a.bfriday.on {
+    background: rgba(0, 0, 0, .1);
+}
+.tab_common_nav a.bfriday.on:before {
+    background: #000;
+}
 
 /* 스탬프 관련 */
 .stp_icons{
