@@ -690,7 +690,7 @@ a.btn-type12{display:block; padding:2.9629vw 0 2.9629vw 0; font-size:4.074vw; co
 .tag.black { background: #000; }
 .tag span { display: block; color: #fff; font-family:'notokr-medium'; font-size: 2.40740740741vw; line-height: 3.33333333333vw; }
 .tag img { display: block; }
-.tag.lpoint img { height: 1.2037037037vw; }
+.tag.lpoint img { height: 1.5vw; }
 .item-type5 .item-text { padding-top: 5vw; }
 .item-type5 .item-text .tag-row { position: absolute; top: 0; }
 
