@@ -1712,6 +1712,7 @@ table.tbtype1.tdL td{
 }
 .tab_common_nav > div {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 15.55vw;
     border-bottom: 1px solid #e1e1e1;
@@ -1722,7 +1723,7 @@ table.tbtype1.tdL td{
 }
 .tab_common_nav a {
     position: relative;
-    flex: 1;
+    flex: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1784,7 +1785,7 @@ table.tbtype1.tdL td{
     right: 5.55vw;
 }
 .tab_common_nav a.promo {
-    display: none;
+    /* display: none; */
     color: #666;
 }
 .tab_common_nav a.promo.on {
@@ -1815,8 +1816,9 @@ table.tbtype1.tdL td{
     color: #009bfa;
 }
 .tab_common_nav a.lpoint img {
+    display: block;
     width: auto;
-    height: 3.5vw;
+    height: 3vw;
     vertical-align: middle;
 }
 .tab_common_nav a.lpoint.on {
@@ -1829,8 +1831,9 @@ table.tbtype1.tdL td{
     color: #0095c5;
 }
 .tab_common_nav a.lpay img {
+    display: block;
     width: auto;
-    height: 3.5vw;
+    height: 3vw;
     vertical-align: middle;
 }
 .tab_common_nav a.lpay.on {
