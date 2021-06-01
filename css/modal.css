@@ -191,7 +191,7 @@ body.modal-open{overflow:hidden;}
 .modal-couponUse .cuopon-item .item-text{display:table-cell; vertical-align:middle; padding-left:4.6296vw; color:#fff; letter-spacing:-0.025rem;}
 .modal-couponUse .cuopon-item .item-text .item-company{font-size:4.2592vw; font-family:'notokr-light'; line-height:5.9259vw;}
 .modal-couponUse .cuopon-item .item-text .item-name{font-size:4.2592vw; font-family:'notokr-regular'; line-height:5.9259vw; margin-bottom:3.5vw;}
-.modal-couponUse .cuopon-item .item-text .btn-item{display:inline-block; border:0.2rem solid #fff; color:#fff; padding:3.7% 12.8%; font-size:3.7037vw; font-family:'notokr-medium';}
+.modal-couponUse .cuopon-item .item-text .btn-item{display:inline-block; border:0.2rem solid #fff; color:#fff; padding:3.7% 12.8%; font-size:3.7037vw; width: 25vw; text-align: center; font-family:'notokr-medium';}
 .modal-couponUse .cuopon-item .title-text01 img{padding-left:5.5555vw; width:64.8148vw;}
 .modal-couponUse .coupon-use-cont{margin:6.4814vw 3.7037vw 3.7037vw 3.7037vw; background:#fff;/* box-shadow: 0 5px 5px rgba(000,000,000,0.1);*/ }
 .modal-couponUse .coupon-use-cont .how-to-use{padding:5.9259vw 9.2592vw 0 9.2592vw; font-size:4.8148vw; font-family:'notokr-regular'; color:#000; box-sizing:border-box; height:55.0925vw; box-shadow: 0 1vw 5.5555vw rgba(000,000,000,0.1);}
